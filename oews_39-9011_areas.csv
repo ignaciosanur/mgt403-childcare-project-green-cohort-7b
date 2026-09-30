@@ -1,0 +1,520 @@
+year,oews_area,AREA_TITLE,AREA_TYPE,PRIM_STATE,metro,OCC_CODE,OCC_TITLE,TOT_EMP,EMP_PRSE,A_MEAN,A_MEAN_RAW,H_MEAN,MEAN_PRSE,A_MEDIAN,SOURCE_FILE
+2022,0100001,Northwest Alabama nonmetropolitan area,6,AL,False,39-9011,Childcare Workers,110.0,12.5,21940,21940,10.55,2.8,20910,BOS_M2022_dl.xlsx
+2022,0100002,Northeast Alabama nonmetropolitan area,6,AL,False,39-9011,Childcare Workers,290.0,9.4,21760,21760,10.46,2.7,20920,BOS_M2022_dl.xlsx
+2022,0100003,Southwest Alabama nonmetropolitan area,6,AL,False,39-9011,Childcare Workers,180.0,8.4,20990,20990,10.09,3.0,20940,BOS_M2022_dl.xlsx
+2022,0100004,Southeast Alabama nonmetropolitan area,6,AL,False,39-9011,Childcare Workers,120.0,19.4,21020,21020,10.11,2.8,18350,BOS_M2022_dl.xlsx
+2022,0200006,Alaska nonmetropolitan area,6,AK,False,39-9011,Childcare Workers,250.0,15.9,32550,32550,15.65,3.1,30090,BOS_M2022_dl.xlsx
+2022,0400001,Arizona nonmetropolitan area,6,AZ,False,39-9011,Childcare Workers,90.0,19.5,31690,31690,15.24,1.9,31380,BOS_M2022_dl.xlsx
+2022,0500001,North Arkansas nonmetropolitan area,6,AR,False,39-9011,Childcare Workers,410.0,7.0,25110,25110,12.07,1.1,24260,BOS_M2022_dl.xlsx
+2022,0500002,East Arkansas nonmetropolitan area,6,AR,False,39-9011,Childcare Workers,400.0,9.8,26090,26090,12.55,1.0,24760,BOS_M2022_dl.xlsx
+2022,0500003,West Arkansas nonmetropolitan area,6,AR,False,39-9011,Childcare Workers,400.0,6.0,25070,25070,12.05,0.8,23770,BOS_M2022_dl.xlsx
+2022,0500004,South Arkansas nonmetropolitan area,6,AR,False,39-9011,Childcare Workers,340.0,9.1,25660,25660,12.34,1.1,24110,BOS_M2022_dl.xlsx
+2022,0600003,North Coast Region of California nonmetropolitan area,6,CA,False,39-9011,Childcare Workers,290.0,8.2,36180,36180,17.39,1.2,34890,BOS_M2022_dl.xlsx
+2022,0600006,Eastern Sierra-Mother Lode Region of California nonmetropolitan area,6,CA,False,39-9011,Childcare Workers,260.0,5.0,37250,37250,17.91,1.1,37410,BOS_M2022_dl.xlsx
+2022,0600007,North Valley-Northern Mountains Region of California nonmetropolitan area,6,CA,False,39-9011,Childcare Workers,270.0,17.3,36570,36570,17.58,1.6,34890,BOS_M2022_dl.xlsx
+2022,0800001,Eastern and Southern Colorado nonmetropolitan area,6,CO,False,39-9011,Childcare Workers,200.0,11.4,33810,33810,16.25,2.4,31180,BOS_M2022_dl.xlsx
+2022,0800002,Southwest Colorado nonmetropolitan area,6,CO,False,39-9011,Childcare Workers,300.0,5.3,33030,33030,15.88,1.4,30580,BOS_M2022_dl.xlsx
+2022,0800003,Northwest Colorado nonmetropolitan area,6,CO,False,39-9011,Childcare Workers,370.0,5.1,38200,38200,18.37,1.0,37060,BOS_M2022_dl.xlsx
+2022,0900001,Connecticut nonmetropolitan area,6,CT,False,39-9011,Childcare Workers,130.0,10.5,32800,32800,15.77,1.5,32120,BOS_M2022_dl.xlsx
+2022,1200003,South Florida nonmetropolitan area,6,FL,False,39-9011,Childcare Workers,280.0,7.8,28020,28020,13.47,1.4,27920,BOS_M2022_dl.xlsx
+2022,1200006,North Florida nonmetropolitan area,6,FL,False,39-9011,Childcare Workers,430.0,9.1,27150,27150,13.06,2.0,27280,BOS_M2022_dl.xlsx
+2022,1300001,North Georgia nonmetropolitan area,6,GA,False,39-9011,Childcare Workers,650.0,6.9,23550,23550,11.32,1.8,22340,BOS_M2022_dl.xlsx
+2022,1300002,Middle Georgia nonmetropolitan area,6,GA,False,39-9011,Childcare Workers,470.0,4.4,22800,22800,10.96,1.7,21480,BOS_M2022_dl.xlsx
+2022,1300003,East Georgia nonmetropolitan area,6,GA,False,39-9011,Childcare Workers,490.0,6.4,23070,23070,11.09,1.7,21540,BOS_M2022_dl.xlsx
+2022,1300004,South Georgia nonmetropolitan area,6,GA,False,39-9011,Childcare Workers,700.0,6.2,23050,23050,11.08,1.8,21880,BOS_M2022_dl.xlsx
+2022,1500001,Hawaii / Kauai nonmetropolitan area,6,HI,False,39-9011,Childcare Workers,210.0,10.3,31540,31540,15.16,2.1,29760,BOS_M2022_dl.xlsx
+2022,1600006,Northwestern Idaho nonmetropolitan area,6,ID,False,39-9011,Childcare Workers,300.0,9.3,24460,24460,11.76,2.6,20580,BOS_M2022_dl.xlsx
+2022,1600007,Southeast-Central Idaho nonmetropolitan area,6,ID,False,39-9011,Childcare Workers,230.0,12.7,23270,23270,11.19,3.8,20940,BOS_M2022_dl.xlsx
+2022,1700001,Northwest Illinois nonmetropolitan area,6,IL,False,39-9011,Childcare Workers,420.0,8.8,27560,27560,13.25,1.3,26070,BOS_M2022_dl.xlsx
+2022,1700002,West Central Illinois nonmetropolitan area,6,IL,False,39-9011,Childcare Workers,590.0,6.9,27900,27900,13.41,1.8,26400,BOS_M2022_dl.xlsx
+2022,1700003,East Central Illinois nonmetropolitan area,6,IL,False,39-9011,Childcare Workers,490.0,6.3,27300,27300,13.12,1.4,25970,BOS_M2022_dl.xlsx
+2022,1700004,South Illinois nonmetropolitan area,6,IL,False,39-9011,Childcare Workers,350.0,7.8,28390,28390,13.65,1.1,26480,BOS_M2022_dl.xlsx
+2022,1800001,Northern Indiana nonmetropolitan area,6,IN,False,39-9011,Childcare Workers,430.0,8.6,25660,25660,12.34,1.9,27140,BOS_M2022_dl.xlsx
+2022,1800002,Central Indiana nonmetropolitan area,6,IN,False,39-9011,Childcare Workers,220.0,10.3,25200,25200,12.12,1.8,24420,BOS_M2022_dl.xlsx
+2022,1800003,Southern Indiana nonmetropolitan area,6,IN,False,39-9011,Childcare Workers,410.0,5.5,25560,25560,12.29,1.8,25230,BOS_M2022_dl.xlsx
+2022,1900001,Northeast Iowa nonmetropolitan area,6,IA,False,39-9011,Childcare Workers,500.0,10.4,22710,22710,10.92,1.6,22920,BOS_M2022_dl.xlsx
+2022,1900002,Northwest Iowa nonmetropolitan area,6,IA,False,39-9011,Childcare Workers,610.0,9.9,21790,21790,10.48,1.9,20680,BOS_M2022_dl.xlsx
+2022,1900003,Southwest Iowa nonmetropolitan area,6,IA,False,39-9011,Childcare Workers,380.0,8.0,22840,22840,10.98,1.5,22530,BOS_M2022_dl.xlsx
+2022,1900004,Southeast Iowa nonmetropolitan area,6,IA,False,39-9011,Childcare Workers,750.0,8.3,22540,22540,10.84,1.5,21920,BOS_M2022_dl.xlsx
+2022,2000006,Kansas nonmetropolitan area,6,KS,False,39-9011,Childcare Workers,1400.0,4.6,23410,23410,11.25,1.2,21570,BOS_M2022_dl.xlsx
+2022,2100001,West Kentucky nonmetropolitan area,6,KY,False,39-9011,Childcare Workers,960.0,3.0,24170,24170,11.62,1.2,24410,BOS_M2022_dl.xlsx
+2022,2100002,South Central Kentucky nonmetropolitan area,6,KY,False,39-9011,Childcare Workers,1130.0,2.3,23100,23100,11.1,1.2,22520,BOS_M2022_dl.xlsx
+2022,2100003,Central Kentucky nonmetropolitan area,6,KY,False,39-9011,Childcare Workers,1230.0,3.2,24490,24490,11.77,1.1,24640,BOS_M2022_dl.xlsx
+2022,2100004,East Kentucky nonmetropolitan area,6,KY,False,39-9011,Childcare Workers,670.0,3.6,22680,22680,10.9,1.3,21810,BOS_M2022_dl.xlsx
+2022,2200002,Central Louisiana nonmetropolitan area,6,LA,False,39-9011,Childcare Workers,300.0,2.5,19360,19360,9.31,2.1,17610,BOS_M2022_dl.xlsx
+2022,2200003,Northeast Louisiana nonmetropolitan area,6,LA,False,39-9011,Childcare Workers,360.0,3.4,19570,19570,9.41,1.4,17940,BOS_M2022_dl.xlsx
+2022,2200006,Southwest Louisiana nonmetropolitan area,6,LA,False,39-9011,Childcare Workers,330.0,5.3,19630,19630,9.44,1.5,17990,BOS_M2022_dl.xlsx
+2022,2300001,Northeast Maine nonmetropolitan area,6,ME,False,39-9011,Childcare Workers,420.0,6.9,31450,31450,15.12,1.5,29390,BOS_M2022_dl.xlsx
+2022,2300002,Southwest Maine nonmetropolitan area,6,ME,False,39-9011,Childcare Workers,1560.0,4.6,31430,31430,15.11,1.2,29780,BOS_M2022_dl.xlsx
+2022,2400006,Maryland nonmetropolitan area,6,MD,False,39-9011,Childcare Workers,210.0,15.7,31370,31370,15.08,3.4,27110,BOS_M2022_dl.xlsx
+2022,2500006,Massachusetts nonmetropolitan area,6,MA,False,39-9011,Childcare Workers,280.0,8.7,40040,40040,19.25,1.2,37620,BOS_M2022_dl.xlsx
+2022,2600001,Upper Peninsula of Michigan nonmetropolitan area,6,MI,False,39-9011,Childcare Workers,480.0,6.1,26110,26110,12.55,1.7,25250,BOS_M2022_dl.xlsx
+2022,2600002,Northeast Lower Peninsula of Michigan nonmetropolitan area,6,MI,False,39-9011,Childcare Workers,360.0,14.6,30800,30800,14.81,2.6,27840,BOS_M2022_dl.xlsx
+2022,2600003,Northwest Lower Peninsula of Michigan nonmetropolitan area,6,MI,False,39-9011,Childcare Workers,450.0,5.0,27960,27960,13.44,1.2,27090,BOS_M2022_dl.xlsx
+2022,2600004,Balance of Lower Peninsula of Michigan nonmetropolitan area,6,MI,False,39-9011,Childcare Workers,880.0,9.5,27070,27070,13.01,1.5,26290,BOS_M2022_dl.xlsx
+2022,2700001,Northwest Minnesota nonmetropolitan area,6,MN,False,39-9011,Childcare Workers,370.0,15.3,29180,29180,14.03,1.4,27860,BOS_M2022_dl.xlsx
+2022,2700002,Northeast Minnesota nonmetropolitan area,6,MN,False,39-9011,Childcare Workers,60.0,14.5,28450,28450,13.68,1.8,27420,BOS_M2022_dl.xlsx
+2022,2700003,Southwest Minnesota nonmetropolitan area,6,MN,False,39-9011,Childcare Workers,340.0,15.5,27300,27300,13.13,3.0,25590,BOS_M2022_dl.xlsx
+2022,2700004,Southeast Minnesota nonmetropolitan area,6,MN,False,39-9011,Childcare Workers,390.0,8.0,28670,28670,13.79,1.6,27110,BOS_M2022_dl.xlsx
+2022,2800001,Northeast Mississippi nonmetropolitan area,6,MS,False,39-9011,Childcare Workers,990.0,9.6,21680,21680,10.43,2.9,20460,BOS_M2022_dl.xlsx
+2022,2800002,Northwest Mississippi nonmetropolitan area,6,MS,False,39-9011,Childcare Workers,710.0,9.3,20910,20910,10.05,2.2,20170,BOS_M2022_dl.xlsx
+2022,2800003,Southeast Mississippi nonmetropolitan area,6,MS,False,39-9011,Childcare Workers,650.0,7.3,21870,21870,10.51,1.9,20210,BOS_M2022_dl.xlsx
+2022,2800004,Southwest Mississippi nonmetropolitan area,6,MS,False,39-9011,Childcare Workers,420.0,7.8,20980,20980,10.09,1.8,20350,BOS_M2022_dl.xlsx
+2022,2900001,Central Missouri nonmetropolitan area,6,MO,False,39-9011,Childcare Workers,580.0,8.3,26540,26540,12.76,1.0,25900,BOS_M2022_dl.xlsx
+2022,2900002,North Missouri nonmetropolitan area,6,MO,False,39-9011,Childcare Workers,400.0,8.1,26890,26890,12.93,1.4,25900,BOS_M2022_dl.xlsx
+2022,2900003,Southeast Missouri nonmetropolitan area,6,MO,False,39-9011,Childcare Workers,670.0,9.9,26660,26660,12.82,1.1,26570,BOS_M2022_dl.xlsx
+2022,2900004,Southwest Missouri nonmetropolitan area,6,MO,False,39-9011,Childcare Workers,200.0,8.2,27280,27280,13.12,1.7,25580,BOS_M2022_dl.xlsx
+2022,3000003,Southwest Montana nonmetropolitan area,6,MT,False,39-9011,Childcare Workers,560.0,9.6,26300,26300,12.65,1.9,26720,BOS_M2022_dl.xlsx
+2022,3000004,West Montana nonmetropolitan area,6,MT,False,39-9011,Childcare Workers,360.0,6.2,26860,26860,12.91,1.6,26980,BOS_M2022_dl.xlsx
+2022,3000006,East-Central Montana nonmetropolitan area,6,MT,False,39-9011,Childcare Workers,220.0,10.4,25720,25720,12.37,2.3,25260,BOS_M2022_dl.xlsx
+2022,3100001,Northwest Nebraska nonmetropolitan area,6,NE,False,39-9011,Childcare Workers,180.0,6.3,27460,27460,13.2,3.3,26420,BOS_M2022_dl.xlsx
+2022,3100003,Northeast Nebraska nonmetropolitan area,6,NE,False,39-9011,Childcare Workers,620.0,7.6,26540,26540,12.76,1.7,24480,BOS_M2022_dl.xlsx
+2022,3100006,South Nebraska nonmetropolitan area,6,NE,False,39-9011,Childcare Workers,1200.0,3.6,26010,26010,12.51,2.1,24950,BOS_M2022_dl.xlsx
+2022,3200006,Nevada nonmetropolitan area,6,NV,False,39-9011,Childcare Workers,130.0,13.8,27360,27360,13.16,3.2,26060,BOS_M2022_dl.xlsx
+2022,3300001,Northern New Hampshire nonmetropolitan area,6,NH,False,39-9011,Childcare Workers,80.0,18.5,26610,26610,12.79,4.4,28080,BOS_M2022_dl.xlsx
+2022,3300002,Central New Hampshire nonmetropolitan area,6,NH,False,39-9011,Childcare Workers,280.0,14.4,25370,25370,12.2,4.5,23810,BOS_M2022_dl.xlsx
+2022,3300006,West Central-Southwest New Hampshire nonmetropolitan area,6,NH,False,39-9011,Childcare Workers,270.0,11.0,26640,26640,12.81,2.7,26040,BOS_M2022_dl.xlsx
+2022,3500006,Northern New Mexico nonmetropolitan area,6,NM,False,39-9011,Childcare Workers,140.0,13.2,26010,26010,12.51,1.5,23920,BOS_M2022_dl.xlsx
+2022,3500007,Eastern New Mexico nonmetropolitan area,6,NM,False,39-9011,Childcare Workers,360.0,12.8,26910,26910,12.94,1.3,24680,BOS_M2022_dl.xlsx
+2022,3600001,Capital/Northern New York nonmetropolitan area,6,NY,False,39-9011,Childcare Workers,460.0,12.8,31140,31140,14.97,1.5,28930,BOS_M2022_dl.xlsx
+2022,3600004,Southwest New York nonmetropolitan area,6,NY,False,39-9011,Childcare Workers,750.0,7.8,32450,32450,15.6,1.7,29560,BOS_M2022_dl.xlsx
+2022,3600006,Central East New York nonmetropolitan area,6,NY,False,39-9011,Childcare Workers,570.0,6.6,31980,31980,15.38,1.1,29460,BOS_M2022_dl.xlsx
+2022,3700001,Southeast Coastal North Carolina nonmetropolitan area,6,NC,False,39-9011,Childcare Workers,540.0,12.5,25140,25140,12.09,2.4,26360,BOS_M2022_dl.xlsx
+2022,3700002,Northeast Coastal North Carolina nonmetropolitan area,6,NC,False,39-9011,Childcare Workers,200.0,10.5,26680,26680,12.83,2.3,26870,BOS_M2022_dl.xlsx
+2022,3700003,Piedmont North Carolina nonmetropolitan area,6,NC,False,39-9011,Childcare Workers,530.0,9.9,25370,25370,12.2,1.5,25550,BOS_M2022_dl.xlsx
+2022,3700004,Mountain North Carolina nonmetropolitan area,6,NC,False,39-9011,Childcare Workers,380.0,12.6,28470,28470,13.69,5.0,25930,BOS_M2022_dl.xlsx
+2022,3800006,West North Dakota nonmetropolitan area,6,ND,False,39-9011,Childcare Workers,820.0,7.3,29130,29130,14.01,2.1,27200,BOS_M2022_dl.xlsx
+2022,3800007,East North Dakota nonmetropolitan area,6,ND,False,39-9011,Childcare Workers,720.0,8.2,27940,27940,13.44,3.3,27610,BOS_M2022_dl.xlsx
+2022,3900001,West Northwestern Ohio nonmetropolitan area,6,OH,False,39-9011,Childcare Workers,640.0,8.8,24970,24970,12.01,2.3,22410,BOS_M2022_dl.xlsx
+2022,3900002,North Northeastern Ohio nonmetropolitan area (noncontiguous),6,OH,False,39-9011,Childcare Workers,610.0,7.7,24630,24630,11.84,2.1,22970,BOS_M2022_dl.xlsx
+2022,3900003,Eastern Ohio nonmetropolitan area,6,OH,False,39-9011,Childcare Workers,280.0,6.7,27230,27230,13.09,2.3,25900,BOS_M2022_dl.xlsx
+2022,3900004,Southern Ohio nonmetropolitan area,6,OH,False,39-9011,Childcare Workers,300.0,7.6,26040,26040,12.52,2.4,23920,BOS_M2022_dl.xlsx
+2022,4000001,Northeast Oklahoma nonmetropolitan area,6,OK,False,39-9011,Childcare Workers,630.0,8.8,23750,23750,11.42,2.3,22260,BOS_M2022_dl.xlsx
+2022,4000002,Northwest Oklahoma nonmetropolitan area,6,OK,False,39-9011,Childcare Workers,430.0,5.6,22930,22930,11.02,2.1,21870,BOS_M2022_dl.xlsx
+2022,4000003,Southwest Oklahoma nonmetropolitan area,6,OK,False,39-9011,Childcare Workers,280.0,7.1,21470,21470,10.32,2.8,20850,BOS_M2022_dl.xlsx
+2022,4000004,Southeast Oklahoma nonmetropolitan area,6,OK,False,39-9011,Childcare Workers,1030.0,7.8,24130,24130,11.6,1.3,22660,BOS_M2022_dl.xlsx
+2022,4100006,Coast Oregon nonmetropolitan area,6,OR,False,39-9011,Childcare Workers,160.0,25.9,34100,34100,16.39,12.9,30490,BOS_M2022_dl.xlsx
+2022,4100007,Central Oregon nonmetropolitan area,6,OR,False,39-9011,Childcare Workers,190.0,11.0,32630,32630,15.69,2.8,29960,BOS_M2022_dl.xlsx
+2022,4100008,Eastern Oregon nonmetropolitan area,6,OR,False,39-9011,Childcare Workers,170.0,10.7,33630,33630,16.17,1.8,29030,BOS_M2022_dl.xlsx
+2022,4200001,Western Pennsylvania nonmetropolitan area,6,PA,False,39-9011,Childcare Workers,380.0,20.9,23330,23330,11.22,2.4,22470,BOS_M2022_dl.xlsx
+2022,4200002,Northern Pennsylvania nonmetropolitan area,6,PA,False,39-9011,Childcare Workers,550.0,6.3,23780,23780,11.44,1.4,22920,BOS_M2022_dl.xlsx
+2022,4200003,Southern Pennsylvania nonmetropolitan area,6,PA,False,39-9011,Childcare Workers,460.0,8.1,23930,23930,11.51,2.0,22770,BOS_M2022_dl.xlsx
+2022,4500002,Upper Savannah South Carolina nonmetropolitan area,6,SC,False,39-9011,Childcare Workers,250.0,10.4,23280,23280,11.19,2.8,21890,BOS_M2022_dl.xlsx
+2022,4500004,Lower Savannah South Carolina nonmetropolitan area,6,SC,False,39-9011,Childcare Workers,160.0,9.2,23470,23470,11.28,3.3,21490,BOS_M2022_dl.xlsx
+2022,4500006,Northeast South Carolina nonmetropolitan area,6,SC,False,39-9011,Childcare Workers,230.0,15.0,23600,23600,11.35,3.0,22100,BOS_M2022_dl.xlsx
+2022,4600002,East South Dakota nonmetropolitan area,6,SD,False,39-9011,Childcare Workers,500.0,3.8,25140,25140,12.09,1.1,24900,BOS_M2022_dl.xlsx
+2022,4600003,West South Dakota nonmetropolitan area,6,SD,False,39-9011,Childcare Workers,360.0,5.3,26090,26090,12.54,1.2,26380,BOS_M2022_dl.xlsx
+2022,4700001,West Tennessee nonmetropolitan area,6,TN,False,39-9011,Childcare Workers,350.0,9.0,24360,24360,11.71,1.7,23040,BOS_M2022_dl.xlsx
+2022,4700002,South Central Tennessee nonmetropolitan area,6,TN,False,39-9011,Childcare Workers,390.0,7.6,24310,24310,11.69,1.6,23080,BOS_M2022_dl.xlsx
+2022,4700003,North Central Tennessee nonmetropolitan area,6,TN,False,39-9011,Childcare Workers,290.0,11.4,23740,23740,11.41,2.2,22170,BOS_M2022_dl.xlsx
+2022,4700004,East Tennessee nonmetropolitan area,6,TN,False,39-9011,Childcare Workers,,,24140,24140,11.61,10.0,22340,BOS_M2022_dl.xlsx
+2022,4800001,West Texas Region of Texas nonmetropolitan area,6,TX,False,39-9011,Childcare Workers,570.0,4.8,26460,26460,12.72,1.8,22440,BOS_M2022_dl.xlsx
+2022,4800002,North Texas Region of Texas nonmetropolitan area,6,TX,False,39-9011,Childcare Workers,940.0,9.1,21870,21870,10.51,4.6,20580,BOS_M2022_dl.xlsx
+2022,4800003,Big Thicket Region of Texas nonmetropolitan area,6,TX,False,39-9011,Childcare Workers,440.0,4.7,23010,23010,11.06,1.2,21480,BOS_M2022_dl.xlsx
+2022,4800004,Hill Country Region of Texas nonmetropolitan area,6,TX,False,39-9011,Childcare Workers,580.0,4.5,23650,23650,11.37,1.5,22260,BOS_M2022_dl.xlsx
+2022,4800005,Border Region of Texas nonmetropolitan area,6,TX,False,39-9011,Childcare Workers,260.0,6.3,23010,23010,11.06,2.3,22220,BOS_M2022_dl.xlsx
+2022,4800006,Coastal Plains Region of Texas nonmetropolitan area,6,TX,False,39-9011,Childcare Workers,630.0,5.0,24330,24330,11.7,2.4,22120,BOS_M2022_dl.xlsx
+2022,4900006,Eastern Utah nonmetropolitan area,6,UT,False,39-9011,Childcare Workers,200.0,10.4,26770,26770,12.87,2.7,26030,BOS_M2022_dl.xlsx
+2022,4900007,Central Utah nonmetropolitan area,6,UT,False,39-9011,Childcare Workers,230.0,5.7,26980,26980,12.97,1.8,26340,BOS_M2022_dl.xlsx
+2022,5000001,Southern Vermont nonmetropolitan area,6,VT,False,39-9011,Childcare Workers,390.0,11.3,34920,34920,16.79,3.2,33650,BOS_M2022_dl.xlsx
+2022,5000002,Northern Vermont nonmetropolitan area,6,VT,False,39-9011,Childcare Workers,190.0,15.9,32310,32310,15.53,4.9,29090,BOS_M2022_dl.xlsx
+2022,5100001,Southwest Virginia nonmetropolitan area,6,VA,False,39-9011,Childcare Workers,200.0,8.6,25560,25560,12.29,1.4,23510,BOS_M2022_dl.xlsx
+2022,5100002,Southside Virginia nonmetropolitan area,6,VA,False,39-9011,Childcare Workers,220.0,8.3,25960,25960,12.48,1.7,24270,BOS_M2022_dl.xlsx
+2022,5100003,Northeast Virginia nonmetropolitan area,6,VA,False,39-9011,Childcare Workers,140.0,9.6,25180,25180,12.11,1.4,24400,BOS_M2022_dl.xlsx
+2022,5100004,Northwest Virginia nonmetropolitan area,6,VA,False,39-9011,Childcare Workers,200.0,5.7,28150,28150,13.54,0.8,26370,BOS_M2022_dl.xlsx
+2022,5300006,Western Washington nonmetropolitan area,6,WA,False,39-9011,Childcare Workers,230.0,11.0,35290,35290,16.97,1.2,33330,BOS_M2022_dl.xlsx
+2022,5300007,Eastern Washington nonmetropolitan area,6,WA,False,39-9011,Childcare Workers,140.0,11.7,34320,34320,16.5,1.2,33230,BOS_M2022_dl.xlsx
+2022,5400001,Southern West Virginia nonmetropolitan area,6,WV,False,39-9011,Childcare Workers,150.0,19.6,22280,22280,10.71,3.1,20960,BOS_M2022_dl.xlsx
+2022,5400002,Northern West Virginia nonmetropolitan area,6,WV,False,39-9011,Childcare Workers,360.0,10.7,22290,22290,10.71,2.1,21740,BOS_M2022_dl.xlsx
+2022,5500001,Northwestern Wisconsin nonmetropolitan area,6,WI,False,39-9011,Childcare Workers,50.0,22.3,28950,28950,13.92,4.7,27360,BOS_M2022_dl.xlsx
+2022,5500002,Northeastern Wisconsin nonmetropolitan area,6,WI,False,39-9011,Childcare Workers,220.0,14.5,27070,27070,13.02,3.8,23850,BOS_M2022_dl.xlsx
+2022,5500003,South Central Wisconsin nonmetropolitan area,6,WI,False,39-9011,Childcare Workers,290.0,32.3,29660,29660,14.26,6.3,29790,BOS_M2022_dl.xlsx
+2022,5500004,Western Wisconsin nonmetropolitan area,6,WI,False,39-9011,Childcare Workers,300.0,26.1,27150,27150,13.06,4.3,25810,BOS_M2022_dl.xlsx
+2022,5600006,Western Wyoming nonmetropolitan area,6,WY,False,39-9011,Childcare Workers,290.0,14.2,30550,30550,14.69,7.2,26170,BOS_M2022_dl.xlsx
+2022,5600007,Eastern Wyoming nonmetropolitan area,6,WY,False,39-9011,Childcare Workers,380.0,13.3,27290,27290,13.12,3.5,24450,BOS_M2022_dl.xlsx
+2022,6600001,Guam,6,GU,False,39-9011,Childcare Workers,180.0,20.0,20640,20640,9.92,1.0,20340,BOS_M2022_dl.xlsx
+2022,7800001,Virgin Islands,6,VI,False,39-9011,Childcare Workers,50.0,6.8,26070,26070,12.54,1.2,24200,BOS_M2022_dl.xlsx
+2022,0010180,"Abilene, TX",4,TX,True,39-9011,Childcare Workers,240.0,5.9,26090,26090,12.54,2.1,23050,MSA_M2022_dl.xlsx
+2022,0010380,"Aguadilla-Isabela, PR",4,PR,True,39-9011,Childcare Workers,100.0,19.4,19810,19810,9.53,2.0,18620,MSA_M2022_dl.xlsx
+2022,0010420,"Akron, OH",4,OH,True,39-9011,Childcare Workers,720.0,8.7,28250,28250,13.58,1.9,28490,MSA_M2022_dl.xlsx
+2022,0010500,"Albany, GA",4,GA,True,39-9011,Childcare Workers,350.0,6.8,22890,22890,11.01,1.7,21850,MSA_M2022_dl.xlsx
+2022,0010540,"Albany, OR",4,OR,True,39-9011,Childcare Workers,50.0,10.8,30740,30740,14.78,3.4,28430,MSA_M2022_dl.xlsx
+2022,0010580,"Albany-Schenectady-Troy, NY",4,NY,True,39-9011,Childcare Workers,1860.0,5.1,33350,33350,16.03,1.3,31260,MSA_M2022_dl.xlsx
+2022,0010740,"Albuquerque, NM",4,NM,True,39-9011,Childcare Workers,850.0,14.3,27560,27560,13.25,2.1,26770,MSA_M2022_dl.xlsx
+2022,0010780,"Alexandria, LA",4,LA,True,39-9011,Childcare Workers,320.0,3.6,21190,21190,10.19,1.2,19740,MSA_M2022_dl.xlsx
+2022,0010900,"Allentown-Bethlehem-Easton, PA-NJ",4,PA,True,39-9011,Childcare Workers,1290.0,5.3,27550,27550,13.25,1.1,27980,MSA_M2022_dl.xlsx
+2022,0011020,"Altoona, PA",4,PA,True,39-9011,Childcare Workers,160.0,12.0,24330,24330,11.7,2.0,23450,MSA_M2022_dl.xlsx
+2022,0011100,"Amarillo, TX",4,TX,True,39-9011,Childcare Workers,500.0,6.6,24450,24450,11.75,1.2,22020,MSA_M2022_dl.xlsx
+2022,0011180,"Ames, IA",4,IA,True,39-9011,Childcare Workers,210.0,11.5,23660,23660,11.38,3.1,22620,MSA_M2022_dl.xlsx
+2022,0011260,"Anchorage, AK",4,AK,True,39-9011,Childcare Workers,660.0,8.7,33270,33270,15.99,1.6,31500,MSA_M2022_dl.xlsx
+2022,0011460,"Ann Arbor, MI",4,MI,True,39-9011,Childcare Workers,800.0,5.8,28530,28530,13.72,1.5,28300,MSA_M2022_dl.xlsx
+2022,0011500,"Anniston-Oxford-Jacksonville, AL",4,AL,True,39-9011,Childcare Workers,120.0,16.8,21660,21660,10.41,4.3,19760,MSA_M2022_dl.xlsx
+2022,0011540,"Appleton, WI",4,WI,True,39-9011,Childcare Workers,150.0,9.0,25600,25600,12.31,1.9,23370,MSA_M2022_dl.xlsx
+2022,0011700,"Asheville, NC",4,NC,True,39-9011,Childcare Workers,460.0,9.0,27640,27640,13.29,1.4,27870,MSA_M2022_dl.xlsx
+2022,0012020,"Athens-Clarke County, GA",4,GA,True,39-9011,Childcare Workers,370.0,5.8,25270,25270,12.15,1.5,23590,MSA_M2022_dl.xlsx
+2022,0012060,"Atlanta-Sandy Springs-Roswell, GA",4,GA,True,39-9011,Childcare Workers,8940.0,17.3,28060,28060,13.49,4.2,26110,MSA_M2022_dl.xlsx
+2022,0012100,"Atlantic City-Hammonton, NJ",4,NJ,True,39-9011,Childcare Workers,250.0,8.4,30540,30540,14.68,1.1,29360,MSA_M2022_dl.xlsx
+2022,0012220,"Auburn-Opelika, AL",4,AL,True,39-9011,Childcare Workers,220.0,15.0,23590,23590,11.34,1.6,21670,MSA_M2022_dl.xlsx
+2022,0012260,"Augusta-Richmond County, GA-SC",4,GA,True,39-9011,Childcare Workers,890.0,5.5,23600,23600,11.34,1.6,22040,MSA_M2022_dl.xlsx
+2022,0012420,"Austin-Round Rock, TX",4,TX,True,39-9011,Childcare Workers,4320.0,15.4,27780,27780,13.36,1.9,27190,MSA_M2022_dl.xlsx
+2022,0012540,"Bakersfield, CA",4,CA,True,39-9011,Childcare Workers,680.0,7.8,34980,34980,16.82,2.1,34150,MSA_M2022_dl.xlsx
+2022,0012580,"Baltimore-Columbia-Towson, MD",4,MD,True,39-9011,Childcare Workers,3340.0,8.7,31190,31190,15.0,1.3,29120,MSA_M2022_dl.xlsx
+2022,0012940,"Baton Rouge, LA",4,LA,True,39-9011,Childcare Workers,2000.0,3.8,23030,23030,11.07,1.6,21440,MSA_M2022_dl.xlsx
+2022,0012980,"Battle Creek, MI",4,MI,True,39-9011,Childcare Workers,170.0,8.3,27210,27210,13.08,1.4,27080,MSA_M2022_dl.xlsx
+2022,0013020,"Bay City, MI",4,MI,True,39-9011,Childcare Workers,90.0,18.2,25490,25490,12.25,1.4,25860,MSA_M2022_dl.xlsx
+2022,0013140,"Beaumont-Port Arthur, TX",4,TX,True,39-9011,Childcare Workers,500.0,5.8,23750,23750,11.42,1.4,22060,MSA_M2022_dl.xlsx
+2022,0013220,"Beckley, WV",4,WV,True,39-9011,Childcare Workers,90.0,21.0,21690,21690,10.43,1.8,21740,MSA_M2022_dl.xlsx
+2022,0013380,"Bellingham, WA",4,WA,True,39-9011,Childcare Workers,,,33530,33530,16.12,1.8,32590,MSA_M2022_dl.xlsx
+2022,0013460,"Bend-Redmond, OR",4,OR,True,39-9011,Childcare Workers,150.0,14.0,32760,32760,15.75,2.8,30630,MSA_M2022_dl.xlsx
+2022,0013740,"Billings, MT",4,MT,True,39-9011,Childcare Workers,450.0,7.4,26980,26980,12.97,1.7,26210,MSA_M2022_dl.xlsx
+2022,0013780,"Binghamton, NY",4,NY,True,39-9011,Childcare Workers,420.0,6.9,30600,30600,14.71,1.8,28760,MSA_M2022_dl.xlsx
+2022,0013820,"Birmingham-Hoover, AL",4,AL,True,39-9011,Childcare Workers,1150.0,8.6,23410,23410,11.25,1.6,22120,MSA_M2022_dl.xlsx
+2022,0013900,"Bismarck, ND",4,ND,True,39-9011,Childcare Workers,630.0,3.8,28210,28210,13.56,1.0,26860,MSA_M2022_dl.xlsx
+2022,0013980,"Blacksburg-Christiansburg-Radford, VA",4,VA,True,39-9011,Childcare Workers,240.0,6.9,26920,26920,12.94,1.1,23940,MSA_M2022_dl.xlsx
+2022,0014010,"Bloomington, IL",4,IL,True,39-9011,Childcare Workers,550.0,5.3,28200,28200,13.56,0.9,26800,MSA_M2022_dl.xlsx
+2022,0014020,"Bloomington, IN",4,IN,True,39-9011,Childcare Workers,190.0,9.8,25360,25360,12.19,2.7,25100,MSA_M2022_dl.xlsx
+2022,0014100,"Bloomsburg-Berwick, PA",4,PA,True,39-9011,Childcare Workers,130.0,7.6,25730,25730,12.37,2.2,23850,MSA_M2022_dl.xlsx
+2022,0014260,"Boise City, ID",4,ID,True,39-9011,Childcare Workers,1060.0,11.5,24800,24800,11.92,2.5,22130,MSA_M2022_dl.xlsx
+2022,0014500,"Boulder, CO",4,CO,True,39-9011,Childcare Workers,620.0,6.7,36650,36650,17.62,1.1,35880,MSA_M2022_dl.xlsx
+2022,0014540,"Bowling Green, KY",4,KY,True,39-9011,Childcare Workers,400.0,4.2,23660,23660,11.38,1.2,23090,MSA_M2022_dl.xlsx
+2022,0015180,"Brownsville-Harlingen, TX",4,TX,True,39-9011,Childcare Workers,2380.0,3.3,31250,31250,15.02,1.3,36790,MSA_M2022_dl.xlsx
+2022,0015260,"Brunswick, GA",4,GA,True,39-9011,Childcare Workers,160.0,4.2,24570,24570,11.81,2.3,22660,MSA_M2022_dl.xlsx
+2022,0015380,"Buffalo-Cheektowaga-Niagara Falls, NY",4,NY,True,39-9011,Childcare Workers,2230.0,11.3,32290,32290,15.53,1.4,29730,MSA_M2022_dl.xlsx
+2022,0015500,"Burlington, NC",4,NC,True,39-9011,Childcare Workers,170.0,11.8,25370,25370,12.2,1.4,22590,MSA_M2022_dl.xlsx
+2022,0015680,"California-Lexington Park, MD",4,MD,True,39-9011,Childcare Workers,90.0,8.3,29280,29280,14.08,2.3,27650,MSA_M2022_dl.xlsx
+2022,0015940,"Canton-Massillon, OH",4,OH,True,39-9011,Childcare Workers,360.0,8.1,25470,25470,12.24,2.1,23460,MSA_M2022_dl.xlsx
+2022,0015980,"Cape Coral-Fort Myers, FL",4,FL,True,39-9011,Childcare Workers,560.0,7.2,28290,28290,13.6,1.0,28230,MSA_M2022_dl.xlsx
+2022,0016020,"Cape Girardeau, MO-IL",4,MO,True,39-9011,Childcare Workers,240.0,6.5,26750,26750,12.86,1.0,26570,MSA_M2022_dl.xlsx
+2022,0016060,"Carbondale-Marion, IL",4,IL,True,39-9011,Childcare Workers,200.0,9.8,27190,27190,13.07,1.2,26350,MSA_M2022_dl.xlsx
+2022,0016180,"Carson City, NV",4,NV,True,39-9011,Childcare Workers,50.0,19.2,31080,31080,14.94,6.1,29540,MSA_M2022_dl.xlsx
+2022,0016220,"Casper, WY",4,WY,True,39-9011,Childcare Workers,130.0,11.8,26180,26180,12.59,1.9,24920,MSA_M2022_dl.xlsx
+2022,0016300,"Cedar Rapids, IA",4,IA,True,39-9011,Childcare Workers,630.0,10.8,25820,25820,12.42,2.0,25100,MSA_M2022_dl.xlsx
+2022,0016540,"Chambersburg-Waynesboro, PA",4,PA,True,39-9011,Childcare Workers,170.0,7.0,24930,24930,11.99,1.2,25690,MSA_M2022_dl.xlsx
+2022,0016580,"Champaign-Urbana, IL",4,IL,True,39-9011,Childcare Workers,440.0,6.5,28800,28800,13.85,1.0,27310,MSA_M2022_dl.xlsx
+2022,0016620,"Charleston, WV",4,WV,True,39-9011,Childcare Workers,200.0,11.7,22440,22440,10.79,1.6,22460,MSA_M2022_dl.xlsx
+2022,0016700,"Charleston-North Charleston, SC",4,SC,True,39-9011,Childcare Workers,1560.0,21.5,26090,26090,12.54,7.2,22810,MSA_M2022_dl.xlsx
+2022,0016740,"Charlotte-Concord-Gastonia, NC-SC",4,NC,True,39-9011,Childcare Workers,3310.0,7.1,27600,27600,13.27,1.2,28450,MSA_M2022_dl.xlsx
+2022,0016820,"Charlottesville, VA",4,VA,True,39-9011,Childcare Workers,360.0,9.2,28490,28490,13.7,1.2,26100,MSA_M2022_dl.xlsx
+2022,0016860,"Chattanooga, TN-GA",4,TN,True,39-9011,Childcare Workers,660.0,7.9,24910,24910,11.98,2.4,22640,MSA_M2022_dl.xlsx
+2022,0016940,"Cheyenne, WY",4,WY,True,39-9011,Childcare Workers,120.0,13.9,24980,24980,12.01,2.2,22420,MSA_M2022_dl.xlsx
+2022,0016980,"Chicago-Naperville-Elgin, IL-IN-WI",4,IL,True,39-9011,Childcare Workers,16840.0,6.5,31830,31830,15.3,1.8,29510,MSA_M2022_dl.xlsx
+2022,0017020,"Chico, CA",4,CA,True,39-9011,Childcare Workers,220.0,7.6,34950,34950,16.8,1.5,34350,MSA_M2022_dl.xlsx
+2022,0017140,"Cincinnati, OH-KY-IN",4,OH,True,39-9011,Childcare Workers,3360.0,5.1,28260,28260,13.59,1.1,28020,MSA_M2022_dl.xlsx
+2022,0017300,"Clarksville, TN-KY",4,TN,True,39-9011,Childcare Workers,590.0,7.2,23980,23980,11.53,1.2,22960,MSA_M2022_dl.xlsx
+2022,0017420,"Cleveland, TN",4,TN,True,39-9011,Childcare Workers,140.0,7.5,23410,23410,11.25,1.8,22160,MSA_M2022_dl.xlsx
+2022,0017460,"Cleveland-Elyria, OH",4,OH,True,39-9011,Childcare Workers,2180.0,8.4,28870,28870,13.88,2.1,28120,MSA_M2022_dl.xlsx
+2022,0017660,"Coeur d'Alene, ID",4,ID,True,39-9011,Childcare Workers,190.0,10.1,25040,25040,12.04,2.2,22090,MSA_M2022_dl.xlsx
+2022,0017780,"College Station-Bryan, TX",4,TX,True,39-9011,Childcare Workers,590.0,4.3,22640,22640,10.89,1.0,21860,MSA_M2022_dl.xlsx
+2022,0017820,"Colorado Springs, CO",4,CO,True,39-9011,Childcare Workers,730.0,9.0,32440,32440,15.6,1.4,31200,MSA_M2022_dl.xlsx
+2022,0017860,"Columbia, MO",4,MO,True,39-9011,Childcare Workers,570.0,6.4,29070,29070,13.98,1.1,27310,MSA_M2022_dl.xlsx
+2022,0017900,"Columbia, SC",4,SC,True,39-9011,Childcare Workers,900.0,13.5,24760,24760,11.9,2.4,23200,MSA_M2022_dl.xlsx
+2022,0017980,"Columbus, GA-AL",4,GA,True,39-9011,Childcare Workers,450.0,7.1,22940,22940,11.03,1.3,21830,MSA_M2022_dl.xlsx
+2022,0018140,"Columbus, OH",4,OH,True,39-9011,Childcare Workers,3470.0,12.6,30370,30370,14.6,3.4,28050,MSA_M2022_dl.xlsx
+2022,0018580,"Corpus Christi, TX",4,TX,True,39-9011,Childcare Workers,860.0,3.5,25800,25800,12.4,1.4,22630,MSA_M2022_dl.xlsx
+2022,0018700,"Corvallis, OR",4,OR,True,39-9011,Childcare Workers,60.0,18.0,30840,30840,14.83,2.7,29900,MSA_M2022_dl.xlsx
+2022,0018880,"Crestview-Fort Walton Beach-Destin, FL",4,FL,True,39-9011,Childcare Workers,320.0,6.1,27760,27760,13.35,1.3,28020,MSA_M2022_dl.xlsx
+2022,0019060,"Cumberland, MD-WV",4,MD,True,39-9011,Childcare Workers,70.0,10.6,25300,25300,12.17,2.4,26000,MSA_M2022_dl.xlsx
+2022,0019100,"Dallas-Fort Worth-Arlington, TX",4,TX,True,39-9011,Childcare Workers,12220.0,6.6,26720,26720,12.84,1.4,26160,MSA_M2022_dl.xlsx
+2022,0019140,"Dalton, GA",4,GA,True,39-9011,Childcare Workers,120.0,12.2,22240,22240,10.69,4.1,21530,MSA_M2022_dl.xlsx
+2022,0019180,"Danville, IL",4,IL,True,39-9011,Childcare Workers,150.0,33.1,26400,26400,12.69,5.8,24960,MSA_M2022_dl.xlsx
+2022,0019300,"Daphne-Fairhope-Foley, AL",4,AL,True,39-9011,Childcare Workers,190.0,7.2,22730,22730,10.93,2.3,21600,MSA_M2022_dl.xlsx
+2022,0019340,"Davenport-Moline-Rock Island, IA-IL",4,IA,True,39-9011,Childcare Workers,610.0,5.9,27330,27330,13.14,1.3,26330,MSA_M2022_dl.xlsx
+2022,0019380,"Dayton, OH",4,OH,True,39-9011,Childcare Workers,770.0,7.4,26720,26720,12.85,1.7,26520,MSA_M2022_dl.xlsx
+2022,0019460,"Decatur, AL",4,AL,True,39-9011,Childcare Workers,100.0,8.8,22680,22680,10.9,1.9,21960,MSA_M2022_dl.xlsx
+2022,0019500,"Decatur, IL",4,IL,True,39-9011,Childcare Workers,130.0,11.0,29080,29080,13.98,2.4,27780,MSA_M2022_dl.xlsx
+2022,0019660,"Deltona-Daytona Beach-Ormond Beach, FL",4,FL,True,39-9011,Childcare Workers,630.0,8.6,26140,26140,12.57,1.1,24350,MSA_M2022_dl.xlsx
+2022,0019740,"Denver-Aurora-Lakewood, CO",4,CO,True,39-9011,Childcare Workers,4820.0,6.6,35510,35510,17.07,0.8,35830,MSA_M2022_dl.xlsx
+2022,0019780,"Des Moines-West Des Moines, IA",4,IA,True,39-9011,Childcare Workers,1420.0,10.7,25650,25650,12.33,2.2,24370,MSA_M2022_dl.xlsx
+2022,0019820,"Detroit-Warren-Dearborn, MI",4,MI,True,39-9011,Childcare Workers,6920.0,6.9,28770,28770,13.83,1.2,28100,MSA_M2022_dl.xlsx
+2022,0020020,"Dothan, AL",4,AL,True,39-9011,Childcare Workers,170.0,10.3,19720,19720,9.48,3.7,17500,MSA_M2022_dl.xlsx
+2022,0020100,"Dover, DE",4,DE,True,39-9011,Childcare Workers,120.0,23.0,26840,26840,12.91,3.0,24300,MSA_M2022_dl.xlsx
+2022,0020220,"Dubuque, IA",4,IA,True,39-9011,Childcare Workers,180.0,10.5,25370,25370,12.2,2.1,22950,MSA_M2022_dl.xlsx
+2022,0020260,"Duluth, MN-WI",4,MN,True,39-9011,Childcare Workers,320.0,8.5,26860,26860,12.91,1.8,25730,MSA_M2022_dl.xlsx
+2022,0020500,"Durham-Chapel Hill, NC",4,NC,True,39-9011,Childcare Workers,590.0,10.0,30120,30120,14.48,1.6,30810,MSA_M2022_dl.xlsx
+2022,0020700,"East Stroudsburg, PA",4,PA,True,39-9011,Childcare Workers,180.0,11.7,25330,25330,12.18,1.5,25420,MSA_M2022_dl.xlsx
+2022,0020740,"Eau Claire, WI",4,WI,True,39-9011,Childcare Workers,100.0,17.0,25640,25640,12.33,2.3,23930,MSA_M2022_dl.xlsx
+2022,0020940,"El Centro, CA",4,CA,True,39-9011,Childcare Workers,140.0,12.5,36530,36530,17.56,3.8,34970,MSA_M2022_dl.xlsx
+2022,0021060,"Elizabethtown-Fort Knox, KY",4,KY,True,39-9011,Childcare Workers,350.0,3.7,24690,24690,11.87,1.9,26020,MSA_M2022_dl.xlsx
+2022,0021140,"Elkhart-Goshen, IN",4,IN,True,39-9011,Childcare Workers,110.0,9.5,28880,28880,13.88,5.9,26800,MSA_M2022_dl.xlsx
+2022,0021300,"Elmira, NY",4,NY,True,39-9011,Childcare Workers,100.0,5.3,30290,30290,14.56,1.2,28520,MSA_M2022_dl.xlsx
+2022,0021340,"El Paso, TX",4,TX,True,39-9011,Childcare Workers,1100.0,6.0,22990,22990,11.05,1.7,20950,MSA_M2022_dl.xlsx
+2022,0021420,"Enid, OK",4,OK,True,39-9011,Childcare Workers,100.0,5.8,22590,22590,10.86,1.6,21130,MSA_M2022_dl.xlsx
+2022,0021500,"Erie, PA",4,PA,True,39-9011,Childcare Workers,420.0,9.0,24810,24810,11.93,1.4,23220,MSA_M2022_dl.xlsx
+2022,0021660,"Eugene, OR",4,OR,True,39-9011,Childcare Workers,210.0,12.5,32560,32560,15.66,1.7,29850,MSA_M2022_dl.xlsx
+2022,0021780,"Evansville, IN-KY",4,IN,True,39-9011,Childcare Workers,550.0,3.7,24830,24830,11.94,1.1,22880,MSA_M2022_dl.xlsx
+2022,0021820,"Fairbanks, AK",4,AK,True,39-9011,Childcare Workers,90.0,13.1,33820,33820,16.26,4.0,30880,MSA_M2022_dl.xlsx
+2022,0022020,"Fargo, ND-MN",4,ND,True,39-9011,Childcare Workers,1500.0,2.4,28710,28710,13.8,1.0,26700,MSA_M2022_dl.xlsx
+2022,0022140,"Farmington, NM",4,NM,True,39-9011,Childcare Workers,110.0,15.4,27270,27270,13.11,1.4,25220,MSA_M2022_dl.xlsx
+2022,0022180,"Fayetteville, NC",4,NC,True,39-9011,Childcare Workers,350.0,9.0,24970,24970,12.0,1.5,23800,MSA_M2022_dl.xlsx
+2022,0022220,"Fayetteville-Springdale-Rogers, AR-MO",4,AR,True,39-9011,Childcare Workers,1130.0,11.9,26950,26950,12.96,1.0,26310,MSA_M2022_dl.xlsx
+2022,0022380,"Flagstaff, AZ",4,AZ,True,39-9011,Childcare Workers,80.0,18.0,32320,32320,15.54,1.4,31470,MSA_M2022_dl.xlsx
+2022,0022420,"Flint, MI",4,MI,True,39-9011,Childcare Workers,550.0,9.3,26360,26360,12.67,1.4,26220,MSA_M2022_dl.xlsx
+2022,0022500,"Florence, SC",4,SC,True,39-9011,Childcare Workers,320.0,8.5,24120,24120,11.6,1.3,21990,MSA_M2022_dl.xlsx
+2022,0022520,"Florence-Muscle Shoals, AL",4,AL,True,39-9011,Childcare Workers,140.0,9.8,21400,21400,10.29,1.9,20680,MSA_M2022_dl.xlsx
+2022,0022660,"Fort Collins, CO",4,CO,True,39-9011,Childcare Workers,380.0,7.3,33690,33690,16.2,0.8,32480,MSA_M2022_dl.xlsx
+2022,0022900,"Fort Smith, AR-OK",4,AR,True,39-9011,Childcare Workers,400.0,4.8,24770,24770,11.91,1.0,24340,MSA_M2022_dl.xlsx
+2022,0023060,"Fort Wayne, IN",4,IN,True,39-9011,Childcare Workers,530.0,7.3,25250,25250,12.14,1.5,24490,MSA_M2022_dl.xlsx
+2022,0023420,"Fresno, CA",4,CA,True,39-9011,Childcare Workers,590.0,36.9,35970,35970,17.3,1.4,35220,MSA_M2022_dl.xlsx
+2022,0023540,"Gainesville, FL",4,FL,True,39-9011,Childcare Workers,500.0,5.8,26850,26850,12.91,0.9,24330,MSA_M2022_dl.xlsx
+2022,0023580,"Gainesville, GA",4,GA,True,39-9011,Childcare Workers,330.0,6.3,26050,26050,12.53,1.9,24280,MSA_M2022_dl.xlsx
+2022,0023900,"Gettysburg, PA",4,PA,True,39-9011,Childcare Workers,100.0,20.5,27630,27630,13.28,3.4,27940,MSA_M2022_dl.xlsx
+2022,0024020,"Glens Falls, NY",4,NY,True,39-9011,Childcare Workers,170.0,7.0,30280,30280,14.56,1.1,29050,MSA_M2022_dl.xlsx
+2022,0024140,"Goldsboro, NC",4,NC,True,39-9011,Childcare Workers,100.0,10.9,24130,24130,11.6,1.7,22010,MSA_M2022_dl.xlsx
+2022,0024220,"Grand Forks, ND-MN",4,ND,True,39-9011,Childcare Workers,300.0,2.8,28520,28520,13.71,1.6,26020,MSA_M2022_dl.xlsx
+2022,0024260,"Grand Island, NE",4,NE,True,39-9011,Childcare Workers,230.0,5.1,26870,26870,12.92,3.2,25830,MSA_M2022_dl.xlsx
+2022,0024300,"Grand Junction, CO",4,CO,True,39-9011,Childcare Workers,190.0,15.0,31100,31100,14.95,1.5,29860,MSA_M2022_dl.xlsx
+2022,0024340,"Grand Rapids-Wyoming, MI",4,MI,True,39-9011,Childcare Workers,2460.0,6.2,27870,27870,13.4,1.3,26920,MSA_M2022_dl.xlsx
+2022,0024420,"Grants Pass, OR",4,OR,True,39-9011,Childcare Workers,50.0,12.7,31110,31110,14.96,2.5,29040,MSA_M2022_dl.xlsx
+2022,0024500,"Great Falls, MT",4,MT,True,39-9011,Childcare Workers,220.0,6.7,26570,26570,12.77,1.3,27270,MSA_M2022_dl.xlsx
+2022,0024540,"Greeley, CO",4,CO,True,39-9011,Childcare Workers,290.0,8.3,33150,33150,15.94,0.8,32770,MSA_M2022_dl.xlsx
+2022,0024580,"Green Bay, WI",4,WI,True,39-9011,Childcare Workers,210.0,8.0,26980,26980,12.97,1.4,26910,MSA_M2022_dl.xlsx
+2022,0024660,"Greensboro-High Point, NC",4,NC,True,39-9011,Childcare Workers,950.0,9.6,26620,26620,12.8,1.2,28010,MSA_M2022_dl.xlsx
+2022,0024780,"Greenville, NC",4,NC,True,39-9011,Childcare Workers,150.0,10.7,23970,23970,11.52,2.2,22710,MSA_M2022_dl.xlsx
+2022,0024860,"Greenville-Anderson-Mauldin, SC",4,SC,True,39-9011,Childcare Workers,1550.0,8.4,24670,24670,11.86,2.4,22520,MSA_M2022_dl.xlsx
+2022,0025060,"Gulfport-Biloxi-Pascagoula, MS",4,MS,True,39-9011,Childcare Workers,810.0,6.8,21270,21270,10.23,1.4,20450,MSA_M2022_dl.xlsx
+2022,0025180,"Hagerstown-Martinsburg, MD-WV",4,MD,True,39-9011,Childcare Workers,150.0,13.2,27450,27450,13.2,2.2,26330,MSA_M2022_dl.xlsx
+2022,0025220,"Hammond, LA",4,LA,True,39-9011,Childcare Workers,440.0,4.4,20680,20680,9.94,1.6,20530,MSA_M2022_dl.xlsx
+2022,0025260,"Hanford-Corcoran, CA",4,CA,True,39-9011,Childcare Workers,90.0,27.4,36050,36050,17.33,2.6,34620,MSA_M2022_dl.xlsx
+2022,0025420,"Harrisburg-Carlisle, PA",4,PA,True,39-9011,Childcare Workers,880.0,6.2,26100,26100,12.55,1.3,27180,MSA_M2022_dl.xlsx
+2022,0025500,"Harrisonburg, VA",4,VA,True,39-9011,Childcare Workers,110.0,9.5,26070,26070,12.53,1.4,24470,MSA_M2022_dl.xlsx
+2022,0025620,"Hattiesburg, MS",4,MS,True,39-9011,Childcare Workers,230.0,23.6,19540,19540,9.39,3.1,17550,MSA_M2022_dl.xlsx
+2022,0025860,"Hickory-Lenoir-Morganton, NC",4,NC,True,39-9011,Childcare Workers,230.0,8.3,25440,25440,12.23,1.5,24160,MSA_M2022_dl.xlsx
+2022,0025940,"Hilton Head Island-Bluffton-Beaufort, SC",4,SC,True,39-9011,Childcare Workers,160.0,20.1,25290,25290,12.16,9.1,24670,MSA_M2022_dl.xlsx
+2022,0025980,"Hinesville, GA",4,GA,True,39-9011,Childcare Workers,110.0,8.8,23090,23090,11.1,2.3,21790,MSA_M2022_dl.xlsx
+2022,0026300,"Hot Springs, AR",4,AR,True,39-9011,Childcare Workers,150.0,15.8,25890,25890,12.45,0.9,24760,MSA_M2022_dl.xlsx
+2022,0026380,"Houma-Thibodaux, LA",4,LA,True,39-9011,Childcare Workers,240.0,4.2,21080,21080,10.14,1.4,19840,MSA_M2022_dl.xlsx
+2022,0026420,"Houston-The Woodlands-Sugar Land, TX",4,TX,True,39-9011,Childcare Workers,10300.0,11.7,25700,25700,12.35,1.9,23110,MSA_M2022_dl.xlsx
+2022,0026580,"Huntington-Ashland, WV-KY-OH",4,WV,True,39-9011,Childcare Workers,420.0,4.4,22900,22900,11.01,1.2,22630,MSA_M2022_dl.xlsx
+2022,0026620,"Huntsville, AL",4,AL,True,39-9011,Childcare Workers,470.0,7.9,26100,26100,12.55,3.8,23520,MSA_M2022_dl.xlsx
+2022,0026820,"Idaho Falls, ID",4,ID,True,39-9011,Childcare Workers,250.0,10.7,25990,25990,12.49,4.4,24090,MSA_M2022_dl.xlsx
+2022,0026900,"Indianapolis-Carmel-Anderson, IN",4,IN,True,39-9011,Childcare Workers,3390.0,7.4,26420,26420,12.7,3.2,25730,MSA_M2022_dl.xlsx
+2022,0026980,"Iowa City, IA",4,IA,True,39-9011,Childcare Workers,510.0,10.8,25010,25010,12.02,2.2,25640,MSA_M2022_dl.xlsx
+2022,0027060,"Ithaca, NY",4,NY,True,39-9011,Childcare Workers,300.0,3.5,33760,33760,16.23,1.0,31930,MSA_M2022_dl.xlsx
+2022,0027100,"Jackson, MI",4,MI,True,39-9011,Childcare Workers,280.0,7.6,26700,26700,12.84,1.8,25710,MSA_M2022_dl.xlsx
+2022,0027140,"Jackson, MS",4,MS,True,39-9011,Childcare Workers,1400.0,6.5,21270,21270,10.22,1.6,20460,MSA_M2022_dl.xlsx
+2022,0027180,"Jackson, TN",4,TN,True,39-9011,Childcare Workers,200.0,26.4,21900,21900,10.53,5.3,21440,MSA_M2022_dl.xlsx
+2022,0027260,"Jacksonville, FL",4,FL,True,39-9011,Childcare Workers,1780.0,15.0,26740,26740,12.85,2.1,27080,MSA_M2022_dl.xlsx
+2022,0027340,"Jacksonville, NC",4,NC,True,39-9011,Childcare Workers,160.0,13.8,25710,25710,12.36,2.1,25230,MSA_M2022_dl.xlsx
+2022,0027620,"Jefferson City, MO",4,MO,True,39-9011,Childcare Workers,420.0,5.0,26130,26130,12.56,1.5,24550,MSA_M2022_dl.xlsx
+2022,0027740,"Johnson City, TN",4,TN,True,39-9011,Childcare Workers,130.0,16.1,23350,23350,11.23,2.2,21750,MSA_M2022_dl.xlsx
+2022,0027780,"Johnstown, PA",4,PA,True,39-9011,Childcare Workers,290.0,6.4,21580,21580,10.38,1.4,22160,MSA_M2022_dl.xlsx
+2022,0027860,"Jonesboro, AR",4,AR,True,39-9011,Childcare Workers,310.0,11.1,26680,26680,12.83,1.1,27140,MSA_M2022_dl.xlsx
+2022,0027900,"Joplin, MO",4,MO,True,39-9011,Childcare Workers,280.0,10.8,27030,27030,12.99,1.4,26160,MSA_M2022_dl.xlsx
+2022,0027980,"Kahului-Wailuku-Lahaina, HI",4,HI,True,39-9011,Childcare Workers,170.0,9.4,32050,32050,15.41,2.3,29370,MSA_M2022_dl.xlsx
+2022,0028020,"Kalamazoo-Portage, MI",4,MI,True,39-9011,Childcare Workers,620.0,5.5,26640,26640,12.81,1.1,25470,MSA_M2022_dl.xlsx
+2022,0028100,"Kankakee, IL",4,IL,True,39-9011,Childcare Workers,230.0,10.9,27600,27600,13.27,1.9,27420,MSA_M2022_dl.xlsx
+2022,0028140,"Kansas City, MO-KS",4,MO,True,39-9011,Childcare Workers,4440.0,5.0,28190,28190,13.55,1.1,28190,MSA_M2022_dl.xlsx
+2022,0028420,"Kennewick-Richland, WA",4,WA,True,39-9011,Childcare Workers,240.0,15.0,35370,35370,17.0,2.7,33460,MSA_M2022_dl.xlsx
+2022,0028660,"Killeen-Temple, TX",4,TX,True,39-9011,Childcare Workers,670.0,4.5,23180,23180,11.14,1.4,21600,MSA_M2022_dl.xlsx
+2022,0028700,"Kingsport-Bristol-Bristol, TN-VA",4,TN,True,39-9011,Childcare Workers,170.0,11.3,24250,24250,11.66,3.1,22880,MSA_M2022_dl.xlsx
+2022,0028740,"Kingston, NY",4,NY,True,39-9011,Childcare Workers,370.0,4.7,32210,32210,15.49,1.3,30790,MSA_M2022_dl.xlsx
+2022,0028940,"Knoxville, TN",4,TN,True,39-9011,Childcare Workers,1530.0,5.5,23310,23310,11.21,1.7,22620,MSA_M2022_dl.xlsx
+2022,0029020,"Kokomo, IN",4,IN,True,39-9011,Childcare Workers,90.0,7.5,24530,24530,11.79,3.3,23760,MSA_M2022_dl.xlsx
+2022,0029100,"La Crosse-Onalaska, WI-MN",4,WI,True,39-9011,Childcare Workers,270.0,4.6,23920,23920,11.5,1.2,23350,MSA_M2022_dl.xlsx
+2022,0029180,"Lafayette, LA",4,LA,True,39-9011,Childcare Workers,1300.0,4.6,22040,22040,10.6,2.0,20800,MSA_M2022_dl.xlsx
+2022,0029200,"Lafayette-West Lafayette, IN",4,IN,True,39-9011,Childcare Workers,310.0,5.7,27230,27230,13.09,1.5,27580,MSA_M2022_dl.xlsx
+2022,0029340,"Lake Charles, LA",4,LA,True,39-9011,Childcare Workers,290.0,2.8,21630,21630,10.4,1.5,20930,MSA_M2022_dl.xlsx
+2022,0029420,"Lake Havasu City-Kingman, AZ",4,AZ,True,39-9011,Childcare Workers,110.0,9.2,31360,31360,15.08,1.1,29060,MSA_M2022_dl.xlsx
+2022,0029460,"Lakeland-Winter Haven, FL",4,FL,True,39-9011,Childcare Workers,510.0,8.5,27310,27310,13.13,1.0,27180,MSA_M2022_dl.xlsx
+2022,0029540,"Lancaster, PA",4,PA,True,39-9011,Childcare Workers,560.0,6.9,26370,26370,12.68,1.2,26750,MSA_M2022_dl.xlsx
+2022,0029620,"Lansing-East Lansing, MI",4,MI,True,39-9011,Childcare Workers,780.0,5.6,27520,27520,13.23,1.0,27060,MSA_M2022_dl.xlsx
+2022,0029700,"Laredo, TX",4,TX,True,39-9011,Childcare Workers,350.0,8.6,21450,21450,10.31,1.7,20130,MSA_M2022_dl.xlsx
+2022,0029740,"Las Cruces, NM",4,NM,True,39-9011,Childcare Workers,200.0,18.2,25730,25730,12.37,2.0,24960,MSA_M2022_dl.xlsx
+2022,0029820,"Las Vegas-Henderson-Paradise, NV",4,NV,True,39-9011,Childcare Workers,1340.0,17.9,27970,27970,13.45,10.2,25960,MSA_M2022_dl.xlsx
+2022,0029940,"Lawrence, KS",4,KS,True,39-9011,Childcare Workers,280.0,12.2,23240,23240,11.17,1.5,21560,MSA_M2022_dl.xlsx
+2022,0030020,"Lawton, OK",4,OK,True,39-9011,Childcare Workers,180.0,9.7,22010,22010,10.58,1.1,22360,MSA_M2022_dl.xlsx
+2022,0030140,"Lebanon, PA",4,PA,True,39-9011,Childcare Workers,160.0,11.1,25480,25480,12.25,1.8,27010,MSA_M2022_dl.xlsx
+2022,0030300,"Lewiston, ID-WA",4,ID,True,39-9011,Childcare Workers,90.0,14.6,25790,25790,12.4,3.3,21590,MSA_M2022_dl.xlsx
+2022,0030460,"Lexington-Fayette, KY",4,KY,True,39-9011,Childcare Workers,1660.0,3.4,26360,26360,12.68,1.6,27090,MSA_M2022_dl.xlsx
+2022,0030620,"Lima, OH",4,OH,True,39-9011,Childcare Workers,100.0,9.6,28520,28520,13.71,2.6,28400,MSA_M2022_dl.xlsx
+2022,0030700,"Lincoln, NE",4,NE,True,39-9011,Childcare Workers,1520.0,6.7,29070,29070,13.98,2.6,27680,MSA_M2022_dl.xlsx
+2022,0030780,"Little Rock-North Little Rock-Conway, AR",4,AR,True,39-9011,Childcare Workers,1410.0,7.1,26890,26890,12.93,0.8,26400,MSA_M2022_dl.xlsx
+2022,0030860,"Logan, UT-ID",4,UT,True,39-9011,Childcare Workers,220.0,9.0,26000,26000,12.5,1.8,24880,MSA_M2022_dl.xlsx
+2022,0030980,"Longview, TX",4,TX,True,39-9011,Childcare Workers,350.0,7.1,23300,23300,11.2,1.2,21250,MSA_M2022_dl.xlsx
+2022,0031020,"Longview, WA",4,WA,True,39-9011,Childcare Workers,40.0,15.0,36080,36080,17.34,1.6,36200,MSA_M2022_dl.xlsx
+2022,0031080,"Los Angeles-Long Beach-Anaheim, CA",4,CA,True,39-9011,Childcare Workers,8340.0,10.7,36160,36160,17.39,1.8,33280,MSA_M2022_dl.xlsx
+2022,0031140,"Louisville/Jefferson County, KY-IN",4,KY,True,39-9011,Childcare Workers,3180.0,3.5,27000,27000,12.98,1.3,27140,MSA_M2022_dl.xlsx
+2022,0031180,"Lubbock, TX",4,TX,True,39-9011,Childcare Workers,710.0,6.7,23540,23540,11.32,1.7,22090,MSA_M2022_dl.xlsx
+2022,0031340,"Lynchburg, VA",4,VA,True,39-9011,Childcare Workers,220.0,9.9,24910,24910,11.98,1.6,23070,MSA_M2022_dl.xlsx
+2022,0031420,"Macon, GA",4,GA,True,39-9011,Childcare Workers,340.0,9.3,24650,24650,11.85,1.5,22490,MSA_M2022_dl.xlsx
+2022,0031540,"Madison, WI",4,WI,True,39-9011,Childcare Workers,410.0,9.4,26860,26860,12.91,1.7,24380,MSA_M2022_dl.xlsx
+2022,0031740,"Manhattan, KS",4,KS,True,39-9011,Childcare Workers,280.0,5.2,22920,22920,11.02,1.5,21270,MSA_M2022_dl.xlsx
+2022,0031860,"Mankato-North Mankato, MN",4,MN,True,39-9011,Childcare Workers,430.0,3.2,27460,27460,13.2,1.9,26780,MSA_M2022_dl.xlsx
+2022,0031900,"Mansfield, OH",4,OH,True,39-9011,Childcare Workers,100.0,8.0,25980,25980,12.49,2.1,25440,MSA_M2022_dl.xlsx
+2022,0032580,"McAllen-Edinburg-Mission, TX",4,TX,True,39-9011,Childcare Workers,1300.0,4.7,22760,22760,10.94,1.3,22120,MSA_M2022_dl.xlsx
+2022,0032780,"Medford, OR",4,OR,True,39-9011,Childcare Workers,120.0,18.9,31260,31260,15.03,2.3,29520,MSA_M2022_dl.xlsx
+2022,0032820,"Memphis, TN-MS-AR",4,TN,True,39-9011,Childcare Workers,2290.0,8.8,25180,25180,12.11,1.3,23510,MSA_M2022_dl.xlsx
+2022,0032900,"Merced, CA",4,CA,True,39-9011,Childcare Workers,160.0,23.9,36470,36470,17.53,3.0,33430,MSA_M2022_dl.xlsx
+2022,0033100,"Miami-Fort Lauderdale-West Palm Beach, FL",4,FL,True,39-9011,Childcare Workers,9690.0,7.4,29960,29960,14.4,1.0,28840,MSA_M2022_dl.xlsx
+2022,0033140,"Michigan City-La Porte, IN",4,IN,True,39-9011,Childcare Workers,100.0,13.5,25910,25910,12.46,3.7,26670,MSA_M2022_dl.xlsx
+2022,0033220,"Midland, MI",4,MI,True,39-9011,Childcare Workers,170.0,10.9,26100,26100,12.55,1.7,25780,MSA_M2022_dl.xlsx
+2022,0033260,"Midland, TX",4,TX,True,39-9011,Childcare Workers,260.0,7.4,26210,26210,12.6,1.4,25820,MSA_M2022_dl.xlsx
+2022,0033340,"Milwaukee-Waukesha-West Allis, WI",4,WI,True,39-9011,Childcare Workers,1300.0,9.8,27960,27960,13.44,2.2,28300,MSA_M2022_dl.xlsx
+2022,0033460,"Minneapolis-St. Paul-Bloomington, MN-WI",4,MN,True,39-9011,Childcare Workers,6710.0,8.4,31750,31750,15.27,1.5,30560,MSA_M2022_dl.xlsx
+2022,0033540,"Missoula, MT",4,MT,True,39-9011,Childcare Workers,300.0,8.2,26200,26200,12.6,1.9,26310,MSA_M2022_dl.xlsx
+2022,0033660,"Mobile, AL",4,AL,True,39-9011,Childcare Workers,470.0,11.3,21700,21700,10.43,2.7,21020,MSA_M2022_dl.xlsx
+2022,0033700,"Modesto, CA",4,CA,True,39-9011,Childcare Workers,420.0,10.3,36170,36170,17.39,1.4,35020,MSA_M2022_dl.xlsx
+2022,0033740,"Monroe, LA",4,LA,True,39-9011,Childcare Workers,400.0,2.7,20150,20150,9.69,1.9,19280,MSA_M2022_dl.xlsx
+2022,0033780,"Monroe, MI",4,MI,True,39-9011,Childcare Workers,120.0,8.0,26480,26480,12.73,2.3,26420,MSA_M2022_dl.xlsx
+2022,0033860,"Montgomery, AL",4,AL,True,39-9011,Childcare Workers,460.0,6.7,21770,21770,10.46,1.9,20600,MSA_M2022_dl.xlsx
+2022,0034060,"Morgantown, WV",4,WV,True,39-9011,Childcare Workers,130.0,17.8,22750,22750,10.94,1.2,22260,MSA_M2022_dl.xlsx
+2022,0034100,"Morristown, TN",4,TN,True,39-9011,Childcare Workers,100.0,31.8,20220,20220,9.72,11.7,18140,MSA_M2022_dl.xlsx
+2022,0034580,"Mount Vernon-Anacortes, WA",4,WA,True,39-9011,Childcare Workers,60.0,38.9,35990,35990,17.3,1.9,34210,MSA_M2022_dl.xlsx
+2022,0034620,"Muncie, IN",4,IN,True,39-9011,Childcare Workers,320.0,4.6,27770,27770,13.35,1.1,27230,MSA_M2022_dl.xlsx
+2022,0034740,"Muskegon, MI",4,MI,True,39-9011,Childcare Workers,200.0,11.7,26880,26880,12.92,2.3,25540,MSA_M2022_dl.xlsx
+2022,0034820,"Myrtle Beach-Conway-North Myrtle Beach, SC-NC",4,SC,True,39-9011,Childcare Workers,360.0,7.9,24760,24760,11.9,1.4,24350,MSA_M2022_dl.xlsx
+2022,0034900,"Napa, CA",4,CA,True,39-9011,Childcare Workers,80.0,13.3,39410,39410,18.95,2.2,36660,MSA_M2022_dl.xlsx
+2022,0034940,"Naples-Immokalee-Marco Island, FL",4,FL,True,39-9011,Childcare Workers,440.0,8.9,32880,32880,15.81,7.2,29410,MSA_M2022_dl.xlsx
+2022,0034980,"Nashville-Davidson--Murfreesboro--Franklin, TN",4,TN,True,39-9011,Childcare Workers,3710.0,7.4,26680,26680,12.83,1.4,26210,MSA_M2022_dl.xlsx
+2022,0035100,"New Bern, NC",4,NC,True,39-9011,Childcare Workers,130.0,10.1,23050,23050,11.08,2.5,21790,MSA_M2022_dl.xlsx
+2022,0035380,"New Orleans-Metairie, LA",4,LA,True,39-9011,Childcare Workers,2530.0,3.6,23030,23030,11.07,1.4,21520,MSA_M2022_dl.xlsx
+2022,0035620,"New York-Newark-Jersey City, NY-NJ-PA",4,NY,True,39-9011,Childcare Workers,37900.0,4.8,35670,35670,17.15,1.1,34910,MSA_M2022_dl.xlsx
+2022,0035660,"Niles-Benton Harbor, MI",4,MI,True,39-9011,Childcare Workers,170.0,11.1,25910,25910,12.46,1.5,25770,MSA_M2022_dl.xlsx
+2022,0035840,"North Port-Sarasota-Bradenton, FL",4,FL,True,39-9011,Childcare Workers,1310.0,3.5,29150,29150,14.02,0.8,28360,MSA_M2022_dl.xlsx
+2022,0036100,"Ocala, FL",4,FL,True,39-9011,Childcare Workers,330.0,5.4,26980,26980,12.97,1.6,26850,MSA_M2022_dl.xlsx
+2022,0036140,"Ocean City, NJ",4,NJ,True,39-9011,Childcare Workers,80.0,10.5,31190,31190,15.0,1.9,28710,MSA_M2022_dl.xlsx
+2022,0036220,"Odessa, TX",4,TX,True,39-9011,Childcare Workers,270.0,7.5,25830,25830,12.42,1.1,23700,MSA_M2022_dl.xlsx
+2022,0036260,"Ogden-Clearfield, UT",4,UT,True,39-9011,Childcare Workers,680.0,10.8,25870,25870,12.44,1.5,25530,MSA_M2022_dl.xlsx
+2022,0036420,"Oklahoma City, OK",4,OK,True,39-9011,Childcare Workers,2490.0,9.6,24330,24330,11.7,1.6,23050,MSA_M2022_dl.xlsx
+2022,0036500,"Olympia-Tumwater, WA",4,WA,True,39-9011,Childcare Workers,140.0,9.5,34650,34650,16.66,1.4,33940,MSA_M2022_dl.xlsx
+2022,0036540,"Omaha-Council Bluffs, NE-IA",4,NE,True,39-9011,Childcare Workers,4390.0,4.2,28330,28330,13.62,2.1,28490,MSA_M2022_dl.xlsx
+2022,0036740,"Orlando-Kissimmee-Sanford, FL",4,FL,True,39-9011,Childcare Workers,3580.0,8.1,27190,27190,13.07,2.1,27310,MSA_M2022_dl.xlsx
+2022,0036780,"Oshkosh-Neenah, WI",4,WI,True,39-9011,Childcare Workers,120.0,9.2,23780,23780,11.44,2.7,22190,MSA_M2022_dl.xlsx
+2022,0036980,"Owensboro, KY",4,KY,True,39-9011,Childcare Workers,340.0,3.4,25040,25040,12.04,1.4,24640,MSA_M2022_dl.xlsx
+2022,0037100,"Oxnard-Thousand Oaks-Ventura, CA",4,CA,True,39-9011,Childcare Workers,730.0,10.4,37620,37620,18.09,1.9,36170,MSA_M2022_dl.xlsx
+2022,0037340,"Palm Bay-Melbourne-Titusville, FL",4,FL,True,39-9011,Childcare Workers,630.0,11.3,28840,28840,13.86,0.8,28930,MSA_M2022_dl.xlsx
+2022,0037460,"Panama City, FL",4,FL,True,39-9011,Childcare Workers,280.0,11.4,26240,26240,12.62,1.1,26680,MSA_M2022_dl.xlsx
+2022,0037620,"Parkersburg-Vienna, WV",4,WV,True,39-9011,Childcare Workers,100.0,20.6,21010,21010,10.1,1.8,20320,MSA_M2022_dl.xlsx
+2022,0037860,"Pensacola-Ferry Pass-Brent, FL",4,FL,True,39-9011,Childcare Workers,580.0,19.2,28080,28080,13.5,4.3,27750,MSA_M2022_dl.xlsx
+2022,0037900,"Peoria, IL",4,IL,True,39-9011,Childcare Workers,610.0,6.0,29000,29000,13.94,1.0,27380,MSA_M2022_dl.xlsx
+2022,0037980,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",4,PA,True,39-9011,Childcare Workers,7870.0,19.6,29920,29920,14.39,3.3,28940,MSA_M2022_dl.xlsx
+2022,0038060,"Phoenix-Mesa-Scottsdale, AZ",4,AZ,True,39-9011,Childcare Workers,4040.0,7.5,33150,33150,15.94,1.1,32520,MSA_M2022_dl.xlsx
+2022,0038300,"Pittsburgh, PA",4,PA,True,39-9011,Childcare Workers,3280.0,8.1,27600,27600,13.27,2.4,26280,MSA_M2022_dl.xlsx
+2022,0038540,"Pocatello, ID",4,ID,True,39-9011,Childcare Workers,130.0,11.4,22360,22360,10.75,3.3,19370,MSA_M2022_dl.xlsx
+2022,0038660,"Ponce, PR",4,PR,True,39-9011,Childcare Workers,40.0,12.9,20410,20410,9.81,3.4,18160,MSA_M2022_dl.xlsx
+2022,0038900,"Portland-Vancouver-Hillsboro, OR-WA",4,OR,True,39-9011,Childcare Workers,1780.0,16.6,36280,36280,17.44,2.1,34910,MSA_M2022_dl.xlsx
+2022,0038940,"Port St. Lucie, FL",4,FL,True,39-9011,Childcare Workers,570.0,5.7,27090,27090,13.02,0.9,27390,MSA_M2022_dl.xlsx
+2022,0039140,"Prescott, AZ",4,AZ,True,39-9011,Childcare Workers,80.0,18.6,32260,32260,15.51,1.4,30800,MSA_M2022_dl.xlsx
+2022,0039340,"Provo-Orem, UT",4,UT,True,39-9011,Childcare Workers,460.0,15.6,26880,26880,12.92,2.0,26400,MSA_M2022_dl.xlsx
+2022,0039380,"Pueblo, CO",4,CO,True,39-9011,Childcare Workers,90.0,8.4,36150,36150,17.38,2.2,33290,MSA_M2022_dl.xlsx
+2022,0039460,"Punta Gorda, FL",4,FL,True,39-9011,Childcare Workers,110.0,12.7,29300,29300,14.09,1.8,30040,MSA_M2022_dl.xlsx
+2022,0039540,"Racine, WI",4,WI,True,39-9011,Childcare Workers,50.0,15.1,28220,28220,13.57,2.8,27300,MSA_M2022_dl.xlsx
+2022,0039580,"Raleigh, NC",4,NC,True,39-9011,Childcare Workers,1580.0,9.5,27180,27180,13.07,1.7,25730,MSA_M2022_dl.xlsx
+2022,0039660,"Rapid City, SD",4,SD,True,39-9011,Childcare Workers,400.0,6.8,24950,24950,12.0,1.3,23360,MSA_M2022_dl.xlsx
+2022,0039740,"Reading, PA",4,PA,True,39-9011,Childcare Workers,370.0,7.2,24900,24900,11.97,3.4,23680,MSA_M2022_dl.xlsx
+2022,0039820,"Redding, CA",4,CA,True,39-9011,Childcare Workers,180.0,7.8,34520,34520,16.6,1.2,33660,MSA_M2022_dl.xlsx
+2022,0039900,"Reno, NV",4,NV,True,39-9011,Childcare Workers,460.0,13.9,31500,31500,15.14,3.5,29200,MSA_M2022_dl.xlsx
+2022,0040060,"Richmond, VA",4,VA,True,39-9011,Childcare Workers,1790.0,10.7,26680,26680,12.83,1.1,25590,MSA_M2022_dl.xlsx
+2022,0040140,"Riverside-San Bernardino-Ontario, CA",4,CA,True,39-9011,Childcare Workers,3140.0,8.9,39840,39840,19.16,1.4,37270,MSA_M2022_dl.xlsx
+2022,0040220,"Roanoke, VA",4,VA,True,39-9011,Childcare Workers,390.0,9.9,24910,24910,11.98,1.2,23800,MSA_M2022_dl.xlsx
+2022,0040340,"Rochester, MN",4,MN,True,39-9011,Childcare Workers,370.0,10.0,29140,29140,14.01,1.0,27460,MSA_M2022_dl.xlsx
+2022,0040380,"Rochester, NY",4,NY,True,39-9011,Childcare Workers,1600.0,6.4,30580,30580,14.7,0.8,29210,MSA_M2022_dl.xlsx
+2022,0040420,"Rockford, IL",4,IL,True,39-9011,Childcare Workers,460.0,8.0,27740,27740,13.34,1.7,25900,MSA_M2022_dl.xlsx
+2022,0040580,"Rocky Mount, NC",4,NC,True,39-9011,Childcare Workers,130.0,10.1,25100,25100,12.07,1.2,24580,MSA_M2022_dl.xlsx
+2022,0040660,"Rome, GA",4,GA,True,39-9011,Childcare Workers,100.0,10.5,22160,22160,10.65,2.6,20470,MSA_M2022_dl.xlsx
+2022,0040900,"Sacramento--Roseville--Arden-Arcade, CA",4,CA,True,39-9011,Childcare Workers,1910.0,12.7,35910,35910,17.27,1.5,35720,MSA_M2022_dl.xlsx
+2022,0040980,"Saginaw, MI",4,MI,True,39-9011,Childcare Workers,320.0,8.0,25280,25280,12.16,2.2,23410,MSA_M2022_dl.xlsx
+2022,0041060,"St. Cloud, MN",4,MN,True,39-9011,Childcare Workers,220.0,7.9,27810,27810,13.37,3.8,27200,MSA_M2022_dl.xlsx
+2022,0041100,"St. George, UT",4,UT,True,39-9011,Childcare Workers,190.0,9.2,27600,27600,13.27,3.0,26860,MSA_M2022_dl.xlsx
+2022,0041140,"St. Joseph, MO-KS",4,MO,True,39-9011,Childcare Workers,200.0,6.9,27920,27920,13.43,1.2,27100,MSA_M2022_dl.xlsx
+2022,0041180,"St. Louis, MO-IL",4,MO,True,39-9011,Childcare Workers,5550.0,10.4,29870,29870,14.36,3.3,28630,MSA_M2022_dl.xlsx
+2022,0041420,"Salem, OR",4,OR,True,39-9011,Childcare Workers,310.0,10.4,31560,31560,15.17,1.5,30060,MSA_M2022_dl.xlsx
+2022,0041500,"Salinas, CA",4,CA,True,39-9011,Childcare Workers,320.0,10.2,37860,37860,18.2,1.6,36130,MSA_M2022_dl.xlsx
+2022,0041540,"Salisbury, MD-DE",4,MD,True,39-9011,Childcare Workers,590.0,5.4,28890,28890,13.89,1.4,29360,MSA_M2022_dl.xlsx
+2022,0041620,"Salt Lake City, UT",4,UT,True,39-9011,Childcare Workers,1700.0,11.9,28100,28100,13.51,1.7,27590,MSA_M2022_dl.xlsx
+2022,0041660,"San Angelo, TX",4,TX,True,39-9011,Childcare Workers,220.0,13.6,22590,22590,10.86,1.6,21900,MSA_M2022_dl.xlsx
+2022,0041700,"San Antonio-New Braunfels, TX",4,TX,True,39-9011,Childcare Workers,3660.0,11.8,26320,26320,12.65,1.1,23610,MSA_M2022_dl.xlsx
+2022,0041740,"San Diego-Carlsbad, CA",4,CA,True,39-9011,Childcare Workers,3010.0,8.5,35470,35470,17.05,2.0,33980,MSA_M2022_dl.xlsx
+2022,0041860,"San Francisco-Oakland-Hayward, CA",4,CA,True,39-9011,Childcare Workers,4520.0,12.9,40210,40210,19.33,2.2,40190,MSA_M2022_dl.xlsx
+2022,0041900,"San German, PR",4,PR,True,39-9011,Childcare Workers,50.0,9.2,24140,24140,11.61,3.7,25280,MSA_M2022_dl.xlsx
+2022,0041940,"San Jose-Sunnyvale-Santa Clara, CA",4,CA,True,39-9011,Childcare Workers,1200.0,45.5,41700,41700,20.05,1.8,38570,MSA_M2022_dl.xlsx
+2022,0041980,"San Juan-Carolina-Caguas, PR",4,PR,True,39-9011,Childcare Workers,740.0,8.7,20270,20270,9.75,1.6,18770,MSA_M2022_dl.xlsx
+2022,0042020,"San Luis Obispo-Paso Robles-Arroyo Grande, CA",4,CA,True,39-9011,Childcare Workers,210.0,10.2,35790,35790,17.21,1.3,35340,MSA_M2022_dl.xlsx
+2022,0042100,"Santa Cruz-Watsonville, CA",4,CA,True,39-9011,Childcare Workers,330.0,9.5,36620,36620,17.61,1.2,36170,MSA_M2022_dl.xlsx
+2022,0042140,"Santa Fe, NM",4,NM,True,39-9011,Childcare Workers,60.0,15.7,31040,31040,14.93,1.9,28280,MSA_M2022_dl.xlsx
+2022,0042200,"Santa Maria-Santa Barbara, CA",4,CA,True,39-9011,Childcare Workers,370.0,11.0,35160,35160,16.91,2.4,35150,MSA_M2022_dl.xlsx
+2022,0042220,"Santa Rosa, CA",4,CA,True,39-9011,Childcare Workers,470.0,12.3,39310,39310,18.9,1.1,38750,MSA_M2022_dl.xlsx
+2022,0042340,"Savannah, GA",4,GA,True,39-9011,Childcare Workers,790.0,8.1,25270,25270,12.15,1.7,23220,MSA_M2022_dl.xlsx
+2022,0042540,"Scranton--Wilkes-Barre--Hazleton, PA",4,PA,True,39-9011,Childcare Workers,750.0,5.5,24980,24980,12.01,1.1,23490,MSA_M2022_dl.xlsx
+2022,0042660,"Seattle-Tacoma-Bellevue, WA",4,WA,True,39-9011,Childcare Workers,1830.0,25.1,39390,39390,18.94,1.3,38710,MSA_M2022_dl.xlsx
+2022,0042680,"Sebastian-Vero Beach, FL",4,FL,True,39-9011,Childcare Workers,140.0,12.3,27040,27040,13.0,2.4,25730,MSA_M2022_dl.xlsx
+2022,0042700,"Sebring, FL",4,FL,True,39-9011,Childcare Workers,110.0,15.2,27530,27530,13.23,1.3,27500,MSA_M2022_dl.xlsx
+2022,0043100,"Sheboygan, WI",4,WI,True,39-9011,Childcare Workers,140.0,7.6,27010,27010,12.99,1.5,25920,MSA_M2022_dl.xlsx
+2022,0043300,"Sherman-Denison, TX",4,TX,True,39-9011,Childcare Workers,170.0,9.1,24030,24030,11.56,1.6,22360,MSA_M2022_dl.xlsx
+2022,0043340,"Shreveport-Bossier City, LA",4,LA,True,39-9011,Childcare Workers,820.0,3.1,22650,22650,10.89,1.4,20610,MSA_M2022_dl.xlsx
+2022,0043420,"Sierra Vista-Douglas, AZ",4,AZ,True,39-9011,Childcare Workers,30.0,23.2,30070,30070,14.46,2.0,31250,MSA_M2022_dl.xlsx
+2022,0043580,"Sioux City, IA-NE-SD",4,IA,True,39-9011,Childcare Workers,340.0,6.8,24940,24940,11.99,1.4,24540,MSA_M2022_dl.xlsx
+2022,0043620,"Sioux Falls, SD",4,SD,True,39-9011,Childcare Workers,1290.0,4.2,25670,25670,12.34,1.6,25000,MSA_M2022_dl.xlsx
+2022,0043780,"South Bend-Mishawaka, IN-MI",4,IN,True,39-9011,Childcare Workers,460.0,7.5,26420,26420,12.7,1.2,25680,MSA_M2022_dl.xlsx
+2022,0043900,"Spartanburg, SC",4,SC,True,39-9011,Childcare Workers,360.0,14.8,24910,24910,11.98,2.2,22510,MSA_M2022_dl.xlsx
+2022,0044060,"Spokane-Spokane Valley, WA",4,WA,True,39-9011,Childcare Workers,350.0,15.1,34400,34400,16.54,0.9,32610,MSA_M2022_dl.xlsx
+2022,0044100,"Springfield, IL",4,IL,True,39-9011,Childcare Workers,410.0,5.8,29270,29270,14.07,1.3,27500,MSA_M2022_dl.xlsx
+2022,0044180,"Springfield, MO",4,MO,True,39-9011,Childcare Workers,980.0,7.0,26890,26890,12.93,1.2,26390,MSA_M2022_dl.xlsx
+2022,0044220,"Springfield, OH",4,OH,True,39-9011,Childcare Workers,70.0,11.4,27350,27350,13.15,2.7,26430,MSA_M2022_dl.xlsx
+2022,0044300,"State College, PA",4,PA,True,39-9011,Childcare Workers,170.0,9.0,24850,24850,11.95,1.4,24120,MSA_M2022_dl.xlsx
+2022,0044420,"Staunton-Waynesboro, VA",4,VA,True,39-9011,Childcare Workers,130.0,12.7,25960,25960,12.48,1.8,24300,MSA_M2022_dl.xlsx
+2022,0044700,"Stockton-Lodi, CA",4,CA,True,39-9011,Childcare Workers,570.0,9.9,36950,36950,17.77,1.7,34950,MSA_M2022_dl.xlsx
+2022,0044940,"Sumter, SC",4,SC,True,39-9011,Childcare Workers,300.0,8.4,27440,27440,13.19,3.0,26480,MSA_M2022_dl.xlsx
+2022,0045060,"Syracuse, NY",4,NY,True,39-9011,Childcare Workers,1010.0,8.8,31680,31680,15.23,0.9,30160,MSA_M2022_dl.xlsx
+2022,0045220,"Tallahassee, FL",4,FL,True,39-9011,Childcare Workers,480.0,7.3,26000,26000,12.5,1.1,24960,MSA_M2022_dl.xlsx
+2022,0045300,"Tampa-St. Petersburg-Clearwater, FL",4,FL,True,39-9011,Childcare Workers,3590.0,7.8,27870,27870,13.4,2.0,27410,MSA_M2022_dl.xlsx
+2022,0045460,"Terre Haute, IN",4,IN,True,39-9011,Childcare Workers,230.0,11.9,24610,24610,11.83,1.7,23620,MSA_M2022_dl.xlsx
+2022,0045500,"Texarkana, TX-AR",4,TX,True,39-9011,Childcare Workers,240.0,5.5,23360,23360,11.23,1.2,23120,MSA_M2022_dl.xlsx
+2022,0045540,"The Villages, FL",4,FL,True,39-9011,Childcare Workers,110.0,5.7,25540,25540,12.28,1.6,24040,MSA_M2022_dl.xlsx
+2022,0045780,"Toledo, OH",4,OH,True,39-9011,Childcare Workers,820.0,10.9,27330,27330,13.14,1.7,27180,MSA_M2022_dl.xlsx
+2022,0045820,"Topeka, KS",4,KS,True,39-9011,Childcare Workers,520.0,5.8,26450,26450,12.72,1.9,26530,MSA_M2022_dl.xlsx
+2022,0045940,"Trenton, NJ",4,NJ,True,39-9011,Childcare Workers,750.0,9.2,33500,33500,16.1,2.6,30320,MSA_M2022_dl.xlsx
+2022,0046060,"Tucson, AZ",4,AZ,True,39-9011,Childcare Workers,660.0,8.7,30520,30520,14.67,1.9,30100,MSA_M2022_dl.xlsx
+2022,0046140,"Tulsa, OK",4,OK,True,39-9011,Childcare Workers,1980.0,6.9,25480,25480,12.25,2.8,23000,MSA_M2022_dl.xlsx
+2022,0046220,"Tuscaloosa, AL",4,AL,True,39-9011,Childcare Workers,220.0,6.6,25310,25310,12.17,1.5,21770,MSA_M2022_dl.xlsx
+2022,0046300,"Twin Falls, ID",4,ID,True,39-9011,Childcare Workers,100.0,21.1,22980,22980,11.05,2.8,21470,MSA_M2022_dl.xlsx
+2022,0046340,"Tyler, TX",4,TX,True,39-9011,Childcare Workers,350.0,7.4,23630,23630,11.36,1.1,22290,MSA_M2022_dl.xlsx
+2022,0046520,"Urban Honolulu, HI",4,HI,True,39-9011,Childcare Workers,700.0,18.5,31490,31490,15.14,1.4,30460,MSA_M2022_dl.xlsx
+2022,0046540,"Utica-Rome, NY",4,NY,True,39-9011,Childcare Workers,460.0,11.0,32010,32010,15.39,1.3,31260,MSA_M2022_dl.xlsx
+2022,0046660,"Valdosta, GA",4,GA,True,39-9011,Childcare Workers,230.0,7.8,22020,22020,10.59,2.0,20990,MSA_M2022_dl.xlsx
+2022,0046700,"Vallejo-Fairfield, CA",4,CA,True,39-9011,Childcare Workers,290.0,7.4,38110,38110,18.32,1.1,36170,MSA_M2022_dl.xlsx
+2022,0047020,"Victoria, TX",4,TX,True,39-9011,Childcare Workers,140.0,9.9,22610,22610,10.87,2.5,21660,MSA_M2022_dl.xlsx
+2022,0047220,"Vineland-Bridgeton, NJ",4,NJ,True,39-9011,Childcare Workers,240.0,9.0,30060,30060,14.45,0.6,29080,MSA_M2022_dl.xlsx
+2022,0047260,"Virginia Beach-Norfolk-Newport News, VA-NC",4,VA,True,39-9011,Childcare Workers,2240.0,7.8,27160,27160,13.06,1.0,25690,MSA_M2022_dl.xlsx
+2022,0047300,"Visalia-Porterville, CA",4,CA,True,39-9011,Childcare Workers,290.0,18.7,36240,36240,17.42,2.2,36470,MSA_M2022_dl.xlsx
+2022,0047380,"Waco, TX",4,TX,True,39-9011,Childcare Workers,450.0,4.1,24340,24340,11.7,0.9,22440,MSA_M2022_dl.xlsx
+2022,0047460,"Walla Walla, WA",4,WA,True,39-9011,Childcare Workers,40.0,8.1,31570,31570,15.18,1.0,30500,MSA_M2022_dl.xlsx
+2022,0047580,"Warner Robins, GA",4,GA,True,39-9011,Childcare Workers,380.0,6.4,22590,22590,10.86,1.6,21610,MSA_M2022_dl.xlsx
+2022,0047900,"Washington-Arlington-Alexandria, DC-VA-MD-WV",4,DC,True,39-9011,Childcare Workers,8930.0,8.7,35510,35510,17.07,1.3,34250,MSA_M2022_dl.xlsx
+2022,0047940,"Waterloo-Cedar Falls, IA",4,IA,True,39-9011,Childcare Workers,410.0,8.8,24100,24100,11.59,2.1,22340,MSA_M2022_dl.xlsx
+2022,0048060,"Watertown-Fort Drum, NY",4,NY,True,39-9011,Childcare Workers,240.0,12.0,29640,29640,14.25,1.5,28160,MSA_M2022_dl.xlsx
+2022,0048140,"Wausau, WI",4,WI,True,39-9011,Childcare Workers,80.0,10.0,24800,24800,11.92,2.6,23480,MSA_M2022_dl.xlsx
+2022,0048260,"Weirton-Steubenville, WV-OH",4,WV,True,39-9011,Childcare Workers,60.0,14.5,24440,24440,11.75,2.5,21850,MSA_M2022_dl.xlsx
+2022,0048300,"Wenatchee, WA",4,WA,True,39-9011,Childcare Workers,60.0,9.6,33460,33460,16.09,1.3,32940,MSA_M2022_dl.xlsx
+2022,0048540,"Wheeling, WV-OH",4,WV,True,39-9011,Childcare Workers,110.0,11.8,24280,24280,11.67,2.4,22830,MSA_M2022_dl.xlsx
+2022,0048620,"Wichita, KS",4,KS,True,39-9011,Childcare Workers,1210.0,4.5,25060,25060,12.05,1.5,24490,MSA_M2022_dl.xlsx
+2022,0048660,"Wichita Falls, TX",4,TX,True,39-9011,Childcare Workers,230.0,8.1,22590,22590,10.86,1.9,21440,MSA_M2022_dl.xlsx
+2022,0048700,"Williamsport, PA",4,PA,True,39-9011,Childcare Workers,130.0,6.5,25990,25990,12.49,2.2,25020,MSA_M2022_dl.xlsx
+2022,0048900,"Wilmington, NC",4,NC,True,39-9011,Childcare Workers,410.0,7.7,25310,25310,12.17,1.7,22410,MSA_M2022_dl.xlsx
+2022,0049020,"Winchester, VA-WV",4,VA,True,39-9011,Childcare Workers,120.0,13.6,27310,27310,13.13,2.2,26850,MSA_M2022_dl.xlsx
+2022,0049180,"Winston-Salem, NC",4,NC,True,39-9011,Childcare Workers,630.0,10.3,27020,27020,12.99,2.5,25250,MSA_M2022_dl.xlsx
+2022,0049420,"Yakima, WA",4,WA,True,39-9011,Childcare Workers,160.0,12.1,34120,34120,16.41,1.3,32670,MSA_M2022_dl.xlsx
+2022,0049620,"York-Hanover, PA",4,PA,True,39-9011,Childcare Workers,620.0,6.8,26060,26060,12.53,1.4,26170,MSA_M2022_dl.xlsx
+2022,0049660,"Youngstown-Warren-Boardman, OH-PA",4,OH,True,39-9011,Childcare Workers,510.0,9.4,26070,26070,12.53,2.0,24160,MSA_M2022_dl.xlsx
+2022,0049700,"Yuba City, CA",4,CA,True,39-9011,Childcare Workers,150.0,8.0,35580,35580,17.11,1.4,34800,MSA_M2022_dl.xlsx
+2022,0070750,"Bangor, ME",4,ME,True,39-9011,Childcare Workers,500.0,5.7,31430,31430,15.11,1.6,30250,MSA_M2022_dl.xlsx
+2022,0070900,"Barnstable Town, MA",4,MA,True,39-9011,Childcare Workers,320.0,7.8,38110,38110,18.32,0.9,36230,MSA_M2022_dl.xlsx
+2022,0071650,"Boston-Cambridge-Nashua, MA-NH",4,MA,True,39-9011,Childcare Workers,11790.0,10.4,39080,39080,18.79,1.3,38720,MSA_M2022_dl.xlsx
+2022,0071950,"Bridgeport-Stamford-Norwalk, CT",4,CT,True,39-9011,Childcare Workers,1980.0,9.5,34030,34030,16.36,1.0,33210,MSA_M2022_dl.xlsx
+2022,0072400,"Burlington-South Burlington, VT",4,VT,True,39-9011,Childcare Workers,450.0,15.0,33850,33850,16.27,2.1,32160,MSA_M2022_dl.xlsx
+2022,0072850,"Danbury, CT",4,CT,True,39-9011,Childcare Workers,310.0,11.8,30830,30830,14.82,1.5,29050,MSA_M2022_dl.xlsx
+2022,0073050,"Dover-Durham, NH-ME",4,NH,True,39-9011,Childcare Workers,200.0,10.5,29000,29000,13.94,3.0,30030,MSA_M2022_dl.xlsx
+2022,0073450,"Hartford-West Hartford-East Hartford, CT",4,CT,True,39-9011,Childcare Workers,1950.0,10.6,31710,31710,15.25,1.1,29970,MSA_M2022_dl.xlsx
+2022,0074500,"Leominster-Gardner, MA",4,MA,True,39-9011,Childcare Workers,130.0,9.2,35120,35120,16.89,1.6,35350,MSA_M2022_dl.xlsx
+2022,0074650,"Lewiston-Auburn, ME",4,ME,True,39-9011,Childcare Workers,340.0,7.9,31330,31330,15.06,1.6,29750,MSA_M2022_dl.xlsx
+2022,0074950,"Manchester, NH",4,NH,True,39-9011,Childcare Workers,290.0,10.0,27650,27650,13.29,2.9,29020,MSA_M2022_dl.xlsx
+2022,0075550,"New Bedford, MA",4,MA,True,39-9011,Childcare Workers,320.0,11.3,36520,36520,17.56,1.5,35360,MSA_M2022_dl.xlsx
+2022,0075700,"New Haven, CT",4,CT,True,39-9011,Childcare Workers,970.0,9.6,32290,32290,15.52,1.1,30300,MSA_M2022_dl.xlsx
+2022,0076450,"Norwich-New London-Westerly, CT-RI",4,CT,True,39-9011,Childcare Workers,500.0,7.3,31540,31540,15.16,1.2,29830,MSA_M2022_dl.xlsx
+2022,0076600,"Pittsfield, MA",4,MA,True,39-9011,Childcare Workers,160.0,10.3,34520,34520,16.59,2.0,33370,MSA_M2022_dl.xlsx
+2022,0076750,"Portland-South Portland, ME",4,ME,True,39-9011,Childcare Workers,1700.0,5.3,33130,33130,15.93,1.5,31870,MSA_M2022_dl.xlsx
+2022,0076900,"Portsmouth, NH-ME",4,NH,True,39-9011,Childcare Workers,280.0,6.5,30020,30020,14.44,1.3,30650,MSA_M2022_dl.xlsx
+2022,0077200,"Providence-Warwick, RI-MA",4,RI,True,39-9011,Childcare Workers,2850.0,7.6,33030,33030,15.88,2.2,29640,MSA_M2022_dl.xlsx
+2022,0078100,"Springfield, MA-CT",4,MA,True,39-9011,Childcare Workers,1210.0,6.3,36510,36510,17.55,1.0,35450,MSA_M2022_dl.xlsx
+2022,0078700,"Waterbury, CT",4,CT,True,39-9011,Childcare Workers,350.0,9.8,34310,34310,16.49,1.7,28430,MSA_M2022_dl.xlsx
+2022,0079600,"Worcester, MA-CT",4,MA,True,39-9011,Childcare Workers,1100.0,6.9,36200,36200,17.4,1.0,35480,MSA_M2022_dl.xlsx

@@ -1,0 +1,30 @@
+# --- secrets / private notes (CLAUDE.md contains the Census API key) ---
+CLAUDE.md
+.env
+.claude/
+
+# --- large raw downloads: re-download from the sources listed in README.md ---
+NDCP2022.xlsx
+NDCP2015_2022.xlsx
+NDCP2015_2022.csv
+oesm*ma.zip
+oesm*ma/
+oews_cache/
+oxcgrt_raw/
+National-Database-of-Childcare-Prices-Technical-Report.pdf
+
+# --- course materials (distributed on Canvas, not ours to publish) ---
+HW_*.pdf
+Project_export/
+Project_export.zip
+
+# --- build by-products ---
+PS4_Q2_writeup.html
+*.pyc
+__pycache__/
+.DS_Store
+~$*
+
+# duplicates / old build path (not needed to reproduce)
+NDCP2015_2022_center_median.xlsx
+ps4_style.css
