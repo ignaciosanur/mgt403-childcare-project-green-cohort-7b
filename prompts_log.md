@@ -93,5 +93,15 @@ confirmed the area-level check uses exactly the metro-sample counties, added sta
 p = 0.15), and built `PS4_Q2_writeup.docx` with pandoc (native Word equations and footnotes), checked by exporting
 it to PDF from Microsoft Word.
 
+**Prompts 20–22 (formatting and GitHub):** asked for dark-grey, smaller footnotes, a more descriptive H0 in Q4(a),
+and a separate documentation file, with the data-handling decisions kept in the write-up. Then asked for a public
+GitHub repo (`mgt403-childcare-project-green-cohort-7b`) holding only clean, essential, replicable files, with no
+personal data, and teammates beckjamilov, claups1 and garychen836 as collaborators. AI: restyled the footnotes,
+expanded the hypotheses, wrote `README.md`, `.gitignore` and `requirements.txt`, and audited all files. It kept
+out `CLAUDE.md` (API key), the raw downloads and the course PDFs, used GitHub's no-reply commit email instead of
+the Yale address, and replaced the Word-stamped PDF author with the team name. It tested replication from a fresh
+clone (`results.json` and all figures byte-identical; `covid_check.py` reproduces), pushed, and invited the
+teammates.
+
 ## How to reproduce
 See `README.md` ("Reproducing Problem Set 4, Q2").
