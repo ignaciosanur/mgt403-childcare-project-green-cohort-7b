@@ -165,8 +165,9 @@ two_sample = {"n2022": n22, "n2019": n19, "mean2022": m22, "mean2019": m19, "sd2
               "diff": m22 - m19, "pct_diff": 100 * (m22 / m19 - 1), "se_diff": se_diff, "t": t_two,
               "df_welch": df_welch, "p_t": float(2 * stats.t.sf(abs(t_two), df_welch)),
               "p_z": float(2 * stats.norm.sf(abs(t_two))), "t_scipy": float(welch.statistic),
-              "p_scipy": float(welch.pvalue), "ci_lo": (m22 - m19) - 1.96 * se_diff,
-              "ci_hi": (m22 - m19) + 1.96 * se_diff}
+              "p_scipy": float(welch.pvalue), "t_crit": float(stats.t.ppf(0.975, df_welch)),
+              "ci_lo": (m22 - m19) - stats.t.ppf(0.975, df_welch) * se_diff,
+              "ci_hi": (m22 - m19) + stats.t.ppf(0.975, df_welch) * se_diff}
 
 # robustness 1: paired (same county both years)
 pair = w22.merge(w19, on="county_fips", suffixes=("_22", "_19"))

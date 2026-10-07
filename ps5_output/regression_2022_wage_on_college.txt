@@ -4,7 +4,7 @@ Dep. Variable:         wage_childcare   R-squared:                       0.168
 Model:                            OLS   Adj. R-squared:                  0.167
 Method:                 Least Squares   F-statistic:                     243.1
 Date:                Wed, 07 Oct 2026   Prob (F-statistic):           4.48e-50
-Time:                        16:27:38   Log-Likelihood:                -11717.
+Time:                        16:56:08   Log-Likelihood:                -11717.
 No. Observations:                1208   AIC:                         2.344e+04
 Df Residuals:                    1206   BIC:                         2.345e+04
 Df Model:                           1                                         

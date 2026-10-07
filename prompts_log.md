@@ -129,5 +129,14 @@ lose their wage. AI: confirmed that the code already reads aMSA (11 areas per ye
 114 metro counties = 9.2%), adopted Claudia's wording in section 2, added aMSA counts to the table, and updated
 `extract_oews.py`'s docstring and `data_decisions.md`.
 
+**Prompt 27 (team review by Gary):** re-checked every number (all footnotes correct) and asked for: the Q6 CI with
+the Welch t critical value ([\$157, \$812], not \$158); the aMSA mention in section 2 (already added after
+Claudia's review); Q6 wording that does not call the years "independent samples" while a footnote says the same
+counties appear in both; softer variance wording that matches footnote 2 (Bartlett rejects, Levene does not); the
+paired-test footnote marker placed next to the test; and a note that the wage panel's balanced and full-sample lines
+coincide. AI: confirmed the CI difference (1.9609 vs 1.96), switched `ps5_analysis.py` to the t critical value, and
+applied all wording fixes. The title stays "Question 3" because the document covers only PS5 Question 3 (Q1–Q2 are
+individual).
+
 ## How to reproduce
 See `README.md` ("Reproducing Problem Set 4, Q2").

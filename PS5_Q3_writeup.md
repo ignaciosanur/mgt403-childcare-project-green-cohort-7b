@@ -112,7 +112,8 @@ real terms each rose about 6%. Their paths differ:
 * **Rents** rose steadily every year (+4.7% real, 2015–2020, and +1.1% more by 2022), without the 2022 reversal.
 
 Unlike the NDCP prices in PS4, the set of counties is nearly the same each year, so the balanced panel (1,180
-counties with both variables in every year, dashed lines) tracks the full sample almost exactly.
+counties with both variables in every year, dashed lines) tracks the full sample almost exactly (in the wage panel
+the two lines coincide).
 
 # 6. Did real childcare-worker wages rise between 2019 and 2022?
 
@@ -125,12 +126,13 @@ $$H_0:\ \mu_{2022} = \mu_{2019} \qquad \text{(average real childcare wage was th
 
 $$H_1:\ \mu_{2022} \neq \mu_{2019} \qquad \text{(average real childcare wage changed between 2019 and 2022)}$$
 
-**Test: two-sample *t*-test with unequal variances (Welch).** The two years are independent samples: OEWS pools
-three years of survey panels into each May estimate, and the May 2019 estimate (panels Nov 2016–May 2019) shares no
-survey data with May 2022 (panels Nov 2019–May 2022). We use Welch's version rather than a one-way ANOVA (which with
-two groups is the pooled-variance *t*-test) **because the spread of wages differs between the two years**: the 2022
-SD (\$4,337) is 11% larger than the 2019 SD (\$3,897), and a Bartlett test rejects equal variances (p = 0.0002).
-Welch's test does not assume the two variances are equal.[^anova]
+**Test: two-sample *t*-test with unequal variances (Welch).** We compare the two years as separate samples. OEWS
+pools three years of survey panels into each May estimate, and the May 2019 estimate (panels Nov 2016–May 2019)
+shares no survey data with May 2022 (panels Nov 2019–May 2022), though the same counties appear in both years (see
+footnote 3 for the paired test). We use Welch's version rather than a one-way ANOVA (which with two groups is the
+pooled-variance *t*-test) **because Welch does not require equal variances, and the spread of wages differs between
+the years**: the 2022 SD (\$4,337) is 11% larger than the 2019 SD (\$3,897). A Bartlett test rejects equal variances
+(p = 0.0002), though the more robust Levene test does not.[^anova]
 
 $$t = \frac{\bar X_{2022} - \bar X_{2019}}{\sqrt{\dfrac{s_{2022}^2}{n_{2022}} + \dfrac{s_{2019}^2}{n_{2019}}}}, \qquad
 \nu = \frac{\left(\dfrac{s_{2022}^2}{n_{2022}} + \dfrac{s_{2019}^2}{n_{2019}}\right)^2}
@@ -149,8 +151,8 @@ $$t = \frac{27{,}373.48 - 26{,}888.87}{166.85} = \frac{484.61}{166.85} = \mathbf
 
 $$p = 2\left[1 - F_{t,\,\nu}(2.90)\right] = \mathbf{0.0037}.$$
 
-`scipy.stats.ttest_ind(..., equal_var=False)` returns the same $t = 2.904$ and $p = 0.0037$. The 95% CI for the
-change is [\$158, \$812] per year.
+`scipy.stats.ttest_ind(..., equal_var=False)` returns the same $t = 2.904$ and $p = 0.0037$.[^paired] The 95% CI for
+the change, using the Welch critical value $t_{0.975,\,2408.5} = 1.961$, is [\$157, \$812] per year.
 
 **Interpretation.** Since $|t| = 2.90 > 1.96$ and $p = 0.004 < 0.05$, **we reject $H_0$**: average real
 childcare-worker wages were higher in 2022 than in 2019, by about **\$485 a year (+1.8%)**. The increase is
@@ -164,7 +166,7 @@ statistically significant but economically small:
 pressure. They are not a dramatic post-Covid shock, though: real wages rose less than 2% over three years. The
 claim gains weight relative to prices. In the same metro counties, real center-based preschool (36–54 months)
 prices *fell* 3.9% between 2019 and 2022 (PS4 data, 991 counties). The wage bill therefore rose about 6% relative
-to what centers charge, a margin squeeze consistent with providers' complaints, even though wages did not surge.[^paired]
+to what centers charge, a margin squeeze consistent with providers' complaints, even though wages did not surge.
 
 # 7. Regression: wages on female college share, 2022
 
