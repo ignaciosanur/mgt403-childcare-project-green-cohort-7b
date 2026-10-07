@@ -7,7 +7,7 @@ pandoc writes LaTeX math as native Word equations and footnotes as Word footnote
 inside the footnotes (including table cells, which pandoc styles "Compact") is switched to the "Footnote Text"
 style, which is dark grey and 8.5 pt.
 
-Run:  python3 build_docx.py            (use --no-pdf to skip the Word export)
+Run:  python3 build_docx.py [WRITEUP.md]   (default PS4_Q2_writeup.md; --no-pdf skips the Word export)
 """
 import os
 import re
@@ -16,9 +16,10 @@ import sys
 import zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-MD = os.path.join(HERE, "PS4_Q2_writeup.md")
-DOCX = os.path.join(HERE, "PS4_Q2_writeup.docx")
-PDF = os.path.join(HERE, "PS4_Q2_writeup.pdf")
+ARGS = [a for a in sys.argv[1:] if not a.startswith("--")]
+MD = os.path.join(HERE, ARGS[0] if ARGS else "PS4_Q2_writeup.md")
+DOCX = os.path.splitext(MD)[0] + ".docx"
+PDF = os.path.splitext(MD)[0] + ".pdf"
 REF = os.path.join(HERE, "reference_ps4.docx")
 
 subprocess.run(["pandoc", MD, "--reference-doc", REF, "--resource-path", HERE, "-o", DOCX], check=True)
@@ -52,7 +53,8 @@ end timeout'''
         r, w = pypdf.PdfReader(PDF), pypdf.PdfWriter()
         for page in r.pages:
             w.add_page(page)
-        w.add_metadata({"/Title": "MGT 403 — Problem Set 4, Question 2: The Distribution of Childcare Prices",
+        title = re.search(r'^title: "(.*)"', open(MD, encoding="utf8").read(), re.M)
+        w.add_metadata({"/Title": title.group(1) if title else os.path.basename(MD),
                         "/Author": "MGT 403 Green Cohort Team 7B", "/Creator": "Microsoft Word"})
         with open(PDF, "wb") as f:
             w.write(f)

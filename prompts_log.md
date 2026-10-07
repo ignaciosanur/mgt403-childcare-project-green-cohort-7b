@@ -103,5 +103,25 @@ the Yale address, and replaced the Word-stamped PDF author with the team name. I
 clone (`results.json` and all figures byte-identical; `covid_check.py` reproduces), pushed, and invited the
 teammates.
 
+## Session 3 — Claude Code, 2026-10-07 (Problem Set 5, Question 3)
+
+**Prompt 23:** clarified that the team is doing PS5 Question 3 (Cost Drivers in Childcare), building on the PS4 work.
+AI: ran `extract_oews.py` for 2015–2022 and checked that older-year headers parse (all codes 7 characters,
+plausible wage ranges). Wrote `ps5_analysis.py`: a year × county metro panel with OEWS wages and ACS covariates
+(0.4–1.6% of metro counties missing a wage each year, in line with the expected ~1%), a 2022 descriptive table, real
+wage and rent trends, the 2019-vs-2022 real wage test (Welch, with paired and metro-area checks), and the 2022
+regression of wages on female college share.
+
+**Prompt 24:** asked how Welch differs from ANOVA, whether Welch is non-parametric, and whether a residual test ruled
+out ANOVA; decided the county stays the unit of analysis even though OEWS wages are per metro area. AI: showed that
+with two groups ANOVA F = pooled t² (8.45 = 2.906², same p = 0.0037), explained that Welch is parametric (Mann–Whitney
+is the non-parametric analogue; p = 0.008), and said no residual test drove the choice: Welch was chosen because the
+SDs differ (Bartlett p = 0.0002; Levene p = 0.12). Recorded the county-unit decision (`data_decisions.md` §8–9) and
+dropped metro-area tests from the write-up.
+
+**Prompt 25:** asked to state why ANOVA was not used (different spreads) and to footnote that ANOVA gives the same
+conclusion. AI: wrote `PS5_Q3_writeup.md` (built to `.docx`/`.pdf` with `build_docx.py`, now usable for any write-up),
+with the Welch-vs-ANOVA sentence in step 6 and the ANOVA result in a footnote.
+
 ## How to reproduce
 See `README.md` ("Reproducing Problem Set 4, Q2").

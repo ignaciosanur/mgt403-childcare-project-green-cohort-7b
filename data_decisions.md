@@ -78,3 +78,18 @@ CPI-U, CUUR0000SA0, annual average (the mean of the 12 monthly values from the B
 ## 7. OEWS wages (to be completed in PS5)
 - 2022: 20 of 1,237 metro counties (1.6%) have no SOC 39-9011 wage because BLS publishes no row for 11 metro
   areas. This is within the roughly 1% the assignment expects. 2015–2021 not yet processed.
+
+## 8. Unit of analysis: the county (team decision, 2026-10-07)
+- All analyses are run at the **county** level (year × county), because the deliverable is a ranked list of
+  counties. This holds even for variables measured at a coarser level: the OEWS childcare wage is published per
+  metro area, so every county in the same metro area gets the same wage.
+- Consequence to keep in mind: counties in one metro area are not independent observations for the wage variable
+  (2022: 1,215 counties share about 380 distinct area wages), so textbook standard errors are optimistic. The team
+  chose not to switch to metro-area-level tests; where it matters it can be noted as a caveat.
+
+## 9. PS5 step 6 test choice
+- Main test: Welch two-sample *t* on real county wages, 2022 vs. 2019 (OEWS 2019 and 2022 estimates come from
+  non-overlapping survey panels). With two groups, one-way ANOVA is identical to the pooled-variance *t*
+  (F = t² = 8.45, p = 0.0037); Welch gives t = 2.90, p = 0.0037. Variance checks are mixed (Bartlett p = 0.0002,
+  Levene p = 0.12), so Welch is the safe default and ANOVA gives the same answer. Mann–Whitney (non-parametric)
+  also rejects (p = 0.008). Paired test on the same counties: t = 8.58.
