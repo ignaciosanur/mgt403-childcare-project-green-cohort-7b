@@ -79,6 +79,13 @@ CPI-U, CUUR0000SA0, annual average (the mean of the 12 monthly values from the B
 - 2022: 20 of 1,237 metro counties (1.6%) have no SOC 39-9011 wage because BLS publishes no row for 11 metro
   areas. This is within the roughly 1% the assignment expects. 2015–2021 not yet processed.
 
+## 7b. OEWS aggregate-MSA files, 2015–2017 (thanks to Claudia's review)
+- For 2015–2017 the OEWS zips include `aMSA_M20YY_dl.xlsx`. In those years the MSA file reports the 11 largest metro
+  areas (New York, Los Angeles, Chicago, Dallas, Washington, Miami, Philadelphia, Boston, San Francisco, Detroit,
+  Seattle) only by metropolitan division, while the crosswalk maps counties to the whole metro area. The aMSA file
+  has the whole-area wage, so `extract_oews.py` reads it. These areas cover 114 metro counties (9.2%) per year; no
+  area appears in both files.
+
 ## 8. Unit of analysis: the county (team decision, 2026-10-07)
 - All analyses are run at the **county** level (year × county), because the deliverable is a ranked list of
   counties. This holds even for variables measured at a coarser level: the OEWS childcare wage is published per

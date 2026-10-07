@@ -3,9 +3,11 @@ Extract BLS OEWS childcare-worker wages (SOC 39-9011) at the
 metropolitan / nonmetropolitan area level from the oesmYYma.zip files.
 
 Source files: https://www.bls.gov/oes/special-requests/oesmYYma.zip  (YY = 15..22)
-Each zip holds two workbooks (layout per their "Field Descriptions" sheet):
-  MSA_M20YY_dl.xlsx  metropolitan areas   (AREA_TYPE 4, 5-digit MSA/NECTA code)
-  BOS_M20YY_dl.xlsx  nonmetropolitan areas (AREA_TYPE 6, 7-digit OEWS code)
+Each zip holds these workbooks (layout per their "Field Descriptions" sheet):
+  MSA_M20YY_dl.xlsx   metropolitan areas   (AREA_TYPE 4, 5-digit MSA/NECTA code)
+  BOS_M20YY_dl.xlsx   nonmetropolitan areas (AREA_TYPE 6, 7-digit OEWS code)
+  aMSA_M20YY_dl.xlsx  2015-2017 only: the 11 largest metro areas as a whole. In those years the MSA file reports
+                      them only by metropolitan division, so without aMSA ~9% of metro counties lose their wage.
 
 Rules applied
 - Keep OCC_CODE == "39-9011" (Childcare Workers); cross-industry, all ownerships.

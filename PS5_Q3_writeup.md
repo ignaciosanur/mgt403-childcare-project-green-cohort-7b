@@ -39,13 +39,18 @@ are rare (median gross rent is missing for 38 county-years, mostly very small ru
 # 2. OEWS childcare-worker wages, 2015–2022
 
 From each `oesmYYma.zip` file we read the metropolitan (`MSA_M20YY_dl.xlsx`) and nonmetropolitan
-(`BOS_M20YY_dl.xlsx`) workbooks and kept occupation **39-9011 Childcare Workers**, variable `A_MEAN` (mean annual
-wage, nominal \$). The area code was zero-padded to 7 characters (e.g. `10180` → `0010180`), so metro areas begin
+(`BOS_M20YY_dl.xlsx`) workbooks and, for 2015–2017, the aggregate-MSA workbook (`aMSA_M20YY_dl.xlsx`), since in
+those years BLS reports the 11 largest metro areas in the MSA file only by metropolitan division. Those 11 areas (New
+York, Los Angeles, Chicago, Dallas, Washington, Miami, Philadelphia, Boston, San Francisco, Detroit and Seattle) cover
+114 metro counties (9.2%); without the aMSA file, they would have no wage in 2015–2017. From 2018 BLS publishes these
+areas in the MSA file and no aMSA file exists. We kept occupation **39-9011 Childcare Workers**, variable `A_MEAN`
+(mean annual wage, nominal \$). The area code was zero-padded to 7 characters (e.g. `10180` → `0010180`), so metro areas begin
 with `00`. Cells that BLS suppresses (`*`) are set to missing.
 
 | Year | 2015 | 2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 |
 |---|---|---|---|---|---|---|---|---|
 | Metro areas with a 39-9011 row | 426 | 426 | 428 | 392 | 392 | 384 | 389 | 384 |
+| … of which from the aMSA file | 11 | 11 | 11 | – | – | – | – | – |
 | Nonmetro areas with a 39-9011 row | 157 | 157 | 158 | 133 | 132 | 133 | 135 | 135 |
 | Suppressed metro wages (`*`) | 1 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 
@@ -194,6 +199,8 @@ other local factors matter a lot.[^cluster]
 * **Connecticut 2022:** the 2022 ACS reports Connecticut by 9 planning regions instead of its 8 counties, so its 7
   metro counties have no 2022 ACS values. They are kept in the panel but drop out of analyses that need ACS
   variables (1.2% of the metro population; not influential).
+* **OEWS files for 2015–2017** include the aggregate-MSA workbook (`aMSA_`), which holds the 11 largest metro
+  areas that the MSA file reports only by metropolitan division (114 metro counties).
 * **Suppressed or missing OEWS wages** stay missing (not imputed); N is reported for every statistic.
 * **ACS vintages** are matched to the data year by their final survey year.
 * **CPI-U** values were verified against the BLS API; real \$ = nominal × CPI₂₀₂₂ / CPI_year.

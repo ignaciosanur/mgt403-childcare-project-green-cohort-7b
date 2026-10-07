@@ -123,5 +123,11 @@ dropped metro-area tests from the write-up.
 conclusion. AI: wrote `PS5_Q3_writeup.md` (built to `.docx`/`.pdf` with `build_docx.py`, now usable for any write-up),
 with the Welch-vs-ANOVA sentence in step 6 and the ANOVA result in a footnote.
 
+**Prompt 26 (team review by Claudia):** section 2 said only the MSA_ and BOS_ files were read, but the 426 metro
+areas in 2015–2017 only add up if the aggregate-MSA (aMSA_) files were read too; without them about 10% of counties
+lose their wage. AI: confirmed that the code already reads aMSA (11 areas per year, 415 + 11 = 426, no duplicates;
+114 metro counties = 9.2%), adopted Claudia's wording in section 2, added aMSA counts to the table, and updated
+`extract_oews.py`'s docstring and `data_decisions.md`.
+
 ## How to reproduce
 See `README.md` ("Reproducing Problem Set 4, Q2").
