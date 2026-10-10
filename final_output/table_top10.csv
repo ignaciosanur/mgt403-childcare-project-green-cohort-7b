@@ -1,11 +1,11 @@
-county_fips,rank,county_name,state,area_title,price,predicted,premium,premium_pct,premium_2019,avg_premium_2019_22,wage_childcare,median_gross_rent,kids_under6_allpar_lf,per_capita_income,female_college_share,rank_all,n_sharing_price
-51013,1,"Arlington County, Virginia",VA,"Washington-Arlington-Alexandria, DC-VA-MD-WV",496.30,295.57,200.73,67.92,137.01,159.35,35510.00,2227.00,11577.00,85221.00,0.76,1,0
-27145,2,"Stearns County, Minnesota",MN,"St. Cloud, MN",336.67,166.95,169.72,101.66,87.41,127.34,27810.00,975.00,9982.00,36087.00,0.31,2,0
-51510,3,"Alexandria city, Virginia",VA,"Washington-Arlington-Alexandria, DC-VA-MD-WV",424.29,281.14,143.15,50.92,103.32,119.38,35510.00,1983.00,8813.00,75884.00,0.66,3,0
-06075,4,"San Francisco County, California",CA,"San Francisco-Oakland-Hayward, CA",477.04,334.16,142.88,42.76,61.24,89.04,40210.00,2316.00,30027.00,86186.00,0.60,4,0
-55139,5,"Winnebago County, Wisconsin",WI,"Oshkosh-Neenah, WI",258.75,132.75,126.00,94.92,118.74,118.76,23780.00,880.00,8045.00,37983.00,0.31,5,8
-27109,6,"Olmsted County, Minnesota",MN,"Rochester, MN",309.00,189.27,119.73,63.26,121.26,121.42,29140.00,1193.00,9533.00,49799.00,0.48,7,7
-55063,7,"La Crosse County, Wisconsin",WI,"La Crosse-Onalaska, WI-MN",258.75,139.89,118.86,84.97,52.46,87.34,23920.00,984.00,5129.00,39498.00,0.38,8,8
-25021,8,"Norfolk County, Massachusetts",MA,"Boston-Cambridge-Nashua, MA-NH",420.00,303.51,116.49,38.38,104.95,113.99,39080.00,1933.00,32889.00,66685.00,0.57,9,0
-17113,9,"McLean County, Illinois",IL,"Bloomington, IL",279.00,167.71,111.29,66.36,78.94,95.37,28200.00,941.00,7742.00,40252.00,0.46,10,0
-55009,10,"Brown County, Wisconsin",WI,"Green Bay, WI",258.75,158.70,100.05,63.05,80.81,89.39,26980.00,935.00,13659.00,39091.00,0.33,14,8
+county_fips,rank,county_name,state,area_title,price,predicted,premium,premium_pct,premium_2019,avg_premium_2019_22,wage_childcare,median_gross_rent,kids_under6_allpar_lf,per_capita_income,female_college_share,rank_all,n_sharing_price,growth_2018_22_pct,confidence
+51013,1,"Arlington County, Virginia",VA,"Washington-Arlington-Alexandria, DC-VA-MD-WV",496.30,295.57,200.73,67.92,137.01,159.35,35510.00,2227.00,11577.00,85221.00,0.76,1,0,28.91,High
+27145,2,"Stearns County, Minnesota",MN,"St. Cloud, MN",336.67,166.95,169.72,101.66,87.41,127.34,27810.00,975.00,9982.00,36087.00,0.31,2,0,77.19,Verify: extreme price trend
+51510,3,"Alexandria city, Virginia",VA,"Washington-Arlington-Alexandria, DC-VA-MD-WV",424.29,281.14,143.15,50.92,103.32,119.38,35510.00,1983.00,8813.00,75884.00,0.66,3,0,26.65,High
+06075,4,"San Francisco County, California",CA,"San Francisco-Oakland-Hayward, CA",477.04,334.16,142.88,42.76,61.24,89.04,40210.00,2316.00,30027.00,86186.00,0.60,4,0,33.81,High
+55139,5,"Winnebago County, Wisconsin",WI,"Oshkosh-Neenah, WI",258.75,132.75,126.00,94.92,118.74,118.76,23780.00,880.00,8045.00,37983.00,0.31,5,8,12.50,Verify: regional price
+27109,6,"Olmsted County, Minnesota",MN,"Rochester, MN",309.00,189.27,119.73,63.26,121.26,121.42,29140.00,1193.00,9533.00,49799.00,0.48,7,7,13.19,Verify: regional price
+55063,7,"La Crosse County, Wisconsin",WI,"La Crosse-Onalaska, WI-MN",258.75,139.89,118.86,84.97,52.46,87.34,23920.00,984.00,5129.00,39498.00,0.38,8,8,47.86,Verify: regional price
+25021,8,"Norfolk County, Massachusetts",MA,"Boston-Cambridge-Nashua, MA-NH",420.00,303.51,116.49,38.38,104.95,113.99,39080.00,1933.00,32889.00,66685.00,0.57,9,0,27.27,High
+17113,9,"McLean County, Illinois",IL,"Bloomington, IL",279.00,167.71,111.29,66.36,78.94,95.37,28200.00,941.00,7742.00,40252.00,0.46,10,0,59.43,Verify: extreme price trend
+55009,10,"Brown County, Wisconsin",WI,"Green Bay, WI",258.75,158.70,100.05,63.05,80.81,89.39,26980.00,935.00,13659.00,39091.00,0.33,14,8,23.21,Verify: regional price

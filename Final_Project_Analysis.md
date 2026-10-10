@@ -21,24 +21,25 @@ predict**. We estimate a cost model of prices on childcare wages and rent, measu
 price minus cost-predicted price), keep counties with a large enough market and a premium that has been positive
 since 2019, and rank them by their 2022 premium.
 
-| # | County | Metro area | Price (\$/wk) | Cost-predicted (\$/wk) | Premium (\$/wk) |
-|---|---|---|---|---|---|
-| 1 | Arlington County, VA | Washington-Arlington-Alexandria | 496 | 296 | **+201** (+68%) |
-| 2 | Stearns County, MN | St. Cloud | 337 | 167 | **+170** (+102%) |
-| 3 | Alexandria city, VA | Washington-Arlington-Alexandria | 424 | 281 | **+143** (+51%) |
-| 4 | San Francisco County, CA | San Francisco-Oakland-Hayward | 477 | 334 | **+143** (+43%) |
-| 5 | Winnebago County, WI | Oshkosh-Neenah | 259 | 133 | **+126** (+95%) |
-| 6 | Olmsted County, MN | Rochester | 309 | 189 | **+120** (+63%) |
-| 7 | La Crosse County, WI | La Crosse-Onalaska | 259 | 140 | **+119** (+85%) |
-| 8 | Norfolk County, MA | Boston-Cambridge-Nashua | 420 | 304 | **+116** (+38%) |
-| 9 | McLean County, IL | Bloomington | 279 | 168 | **+111** (+66%) |
-| 10 | Brown County, WI | Green Bay | 259 | 159 | **+100** (+63%) |
+| # | County | Metro area | Price (\$/wk) | Cost-predicted (\$/wk) | Premium (\$/wk) | Confidence |
+|---|---|---|---|---|---|---|
+| 1 | Arlington County, VA | Washington-Arlington-Alexandria | 496 | 296 | **+201** (+68%) | High |
+| 2 | Stearns County, MN | St. Cloud | 337 | 167 | **+170** (+102%) | Verify: price trend |
+| 3 | Alexandria city, VA | Washington-Arlington-Alexandria | 424 | 281 | **+143** (+51%) | High |
+| 4 | San Francisco County, CA | San Francisco-Oakland-Hayward | 477 | 334 | **+143** (+43%) | High |
+| 5 | Winnebago County, WI | Oshkosh-Neenah | 259 | 133 | **+126** (+95%) | Verify: regional price |
+| 6 | Olmsted County, MN | Rochester | 309 | 189 | **+120** (+63%) | Verify: regional price |
+| 7 | La Crosse County, WI | La Crosse-Onalaska | 259 | 140 | **+119** (+85%) | Verify: regional price |
+| 8 | Norfolk County, MA | Boston-Cambridge-Nashua | 420 | 304 | **+116** (+38%) | High |
+| 9 | McLean County, IL | Bloomington | 279 | 168 | **+111** (+66%) | Verify: price trend |
+| 10 | Brown County, WI | Green Bay | 259 | 159 | **+100** (+63%) | Verify: regional price |
 
 The top 10 charge on average \$352 a week against a cost prediction of \$217, a premium of about **\$135 a week per
-preschooler**. **Reliability caveat:** four of the ten (the three Wisconsin counties and Olmsted, MN) report a
-*regional* price shared with 7–8 other counties in their state, so their premium is less certain. Section (b)
-gives a robustness list using only county-specific prices, which replaces them with Howard County MD, Burlington
-County NJ, DuPage County IL and Gloucester County NJ.
+preschooler**. **Confidence:** four picks (Arlington, Alexandria, San Francisco, Norfolk) pass every data check.
+Four (the three Wisconsin counties and Olmsted, MN) report a *regional* price shared with 7–8 other counties in their
+state. Two (Stearns, MN and McLean, IL) rest on a 2018–2022 price rise above the 99th percentile of metro counties
+(+77% and +59% vs. a median of +11%), which NDCP partly extends by straight-line interpolation between surveys.
+These six should be confirmed with local price data; section (b) gives a fully high-confidence alternative list.
 
 # Part A. Pre-analysis: prices and costs
 
@@ -168,6 +169,7 @@ more than costs alone would predict, which is the margin opportunity for a new c
 | Functional form | a log-log model ranks counties almost identically (Spearman 0.98); 8 of our top 10 are in its top 12 | Not sensitive to linear vs. percentage premiums |
 | Residual spread | larger residuals at higher predicted prices (Breusch–Pagan $p < 0.001$) | Coefficients stay valid; very high-price counties are less predictable |
 | Regional prices | 43% of the variation in premiums is between states; 60% of counties share an exact price with another county in their state | Part of a premium can reflect a state's regional survey rate rather than the county itself |
+| Price trends | NDCP fills years between surveys with straight lines (77% of metro counties have exactly linear 2019–2022 prices); 2018–2022 growth median +10.6%, 99th percentile +55.5% | Stearns MN (+77%) and McLean IL (+59%) are extreme; their 2022 premium may partly be an extrapolated trend |
 
 **Robustness list: county-specific prices only.** Several states' price surveys publish regional rates, e.g.
 Wisconsin reports 4 distinct prices across its 26 metro counties, Minnesota 7 across 27, Ohio 3 across 38. For a
@@ -187,8 +189,12 @@ Restricting the ranking to counties whose price is shared with at most two other
 | 9 | DuPage County, IL | +86 | new |
 | 10 | Gloucester County, NJ | +85 | new |
 
-**Six of our ten picks survive every check**, so we consider them high-confidence. Winnebago, La Crosse and Brown
-(WI) and Olmsted (MN) are promising but should be confirmed with local price data before committing capital.
+Six of the ten survive this check. Adding the price-trend check removes Stearns and McLean as well. **High-confidence
+list** (county-specific price and a normal 2018–2022 price trend), ranked by premium: Arlington VA (+\$201),
+Alexandria VA (+\$143), San Francisco CA (+\$143), Norfolk MA (+\$116), Howard MD (+\$89), Burlington NJ (+\$88),
+DuPage IL (+\$86), Gloucester NJ (+\$85), King WA (+\$83) and Cumberland NJ (+\$80). **Our recommendation:** lead with
+the four counties that are in both lists, and treat the other six main picks as candidates to confirm with local
+price data before committing capital.
 
 ## (c) Market characteristics used to predict promising locations
 
@@ -284,6 +290,9 @@ earlier vs. 2022) is the more honest test, and premiums still persist there.
   2019–2022 counted on observed years (at least 3 of 4); ranking on the 2022 premium in real dollars.
 * **Regional prices:** flagged with the number of other metro counties in the same state reporting an identical
   2022 price; a county-specific-price ranking is reported as a robustness check.
+* **Price-trend check:** counties whose nominal 2018–2022 price growth exceeds the 99th percentile of metro counties
+  (+55.5%) are flagged, because NDCP interpolates linearly between state surveys and an extreme trend may be
+  extrapolated. The ranking itself is unchanged; the flag sets the confidence tier.
 * **Unweighted:** every county counts equally in the cost model, since counties are the units we choose among.
 
 [^persist]: Some states have no NDCP price in a given year (e.g. Virginia, California, North Carolina and

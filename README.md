@@ -13,7 +13,7 @@ data-handling decisions, and the full AI prompt history.
 |---|---|---|
 | Problem Set 4, Q2: The Distribution of Childcare Prices | done | `PS4_Q2_writeup.docx` / `.pdf`, `ps4_analysis.py`, `ps4_output/` |
 | Problem Set 5, Q3: Cost Drivers in Childcare | done | `PS5_Q3_writeup.docx` / `.pdf`, `ps5_analysis.py`, `ps5_output/` |
-| Pre-analysis + final project analysis (slides to follow) | analysis done | `Final_Project_Analysis.docx` / `.pdf`, `final_analysis.py`, `final_output/` |
+| Pre-analysis + final project (slides + appendix) | done | `Final_Project_Slides.pptx` / `.pdf` (6 slides), `Final_Project_Analysis.docx` / `.pdf` (analysis + data-handling appendix), `final_analysis.py`, `build_slides.js` |
 
 ## How the work was done
 
@@ -81,6 +81,7 @@ to the code that produced it.
 python3 ps4_analysis.py && python3 ps5_analysis.py   # inputs: NDCP metro panel and wage/ACS panel
 python3 final_analysis.py                            # -> final_output/ (cost model, premiums, top 10, checks, figures)
 python3 build_docx.py Final_Project_Analysis.md      # -> Final_Project_Analysis.docx (+ .pdf)
+npm install pptxgenjs && node build_slides.js       # -> Final_Project_Slides.pptx (numbers read from results.json)
 ```
 
 ## Files

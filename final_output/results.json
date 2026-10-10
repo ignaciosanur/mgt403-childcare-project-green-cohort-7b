@@ -278,7 +278,9 @@
       "per_capita_income": 85221.0,
       "female_college_share": 0.763371734808942,
       "rank_all": 1,
-      "n_sharing_price": 0
+      "n_sharing_price": 0,
+      "growth_2018_22_pct": 28.909090909090907,
+      "confidence": "High"
     },
     {
       "county_fips": "27145",
@@ -298,7 +300,9 @@
       "per_capita_income": 36087.0,
       "female_college_share": 0.3122732831706154,
       "rank_all": 2,
-      "n_sharing_price": 0
+      "n_sharing_price": 0,
+      "growth_2018_22_pct": 77.19473684210527,
+      "confidence": "Verify: extreme price trend"
     },
     {
       "county_fips": "51510",
@@ -318,7 +322,9 @@
       "per_capita_income": 75884.0,
       "female_college_share": 0.6630156403524314,
       "rank_all": 3,
-      "n_sharing_price": 0
+      "n_sharing_price": 0,
+      "growth_2018_22_pct": 26.653731343283592,
+      "confidence": "High"
     },
     {
       "county_fips": "06075",
@@ -338,7 +344,9 @@
       "per_capita_income": 86186.0,
       "female_college_share": 0.5951088115740656,
       "rank_all": 4,
-      "n_sharing_price": 0
+      "n_sharing_price": 0,
+      "growth_2018_22_pct": 33.8083083223472,
+      "confidence": "High"
     },
     {
       "county_fips": "55139",
@@ -358,7 +366,9 @@
       "per_capita_income": 37983.0,
       "female_college_share": 0.3116892211270811,
       "rank_all": 5,
-      "n_sharing_price": 8
+      "n_sharing_price": 8,
+      "growth_2018_22_pct": 12.5,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "27109",
@@ -378,7 +388,9 @@
       "per_capita_income": 49799.0,
       "female_college_share": 0.4804030564526091,
       "rank_all": 7,
-      "n_sharing_price": 7
+      "n_sharing_price": 7,
+      "growth_2018_22_pct": 13.186813186813184,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "55063",
@@ -398,7 +410,9 @@
       "per_capita_income": 39498.0,
       "female_college_share": 0.3790562705021449,
       "rank_all": 8,
-      "n_sharing_price": 8
+      "n_sharing_price": 8,
+      "growth_2018_22_pct": 47.85714285714286,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "25021",
@@ -418,7 +432,9 @@
       "per_capita_income": 66685.0,
       "female_college_share": 0.5695375435854274,
       "rank_all": 9,
-      "n_sharing_price": 0
+      "n_sharing_price": 0,
+      "growth_2018_22_pct": 27.27272727272727,
+      "confidence": "High"
     },
     {
       "county_fips": "17113",
@@ -438,7 +454,9 @@
       "per_capita_income": 40252.0,
       "female_college_share": 0.4630613945735717,
       "rank_all": 10,
-      "n_sharing_price": 0
+      "n_sharing_price": 0,
+      "growth_2018_22_pct": 59.42857142857143,
+      "confidence": "Verify: extreme price trend"
     },
     {
       "county_fips": "55009",
@@ -458,7 +476,9 @@
       "per_capita_income": 39091.0,
       "female_college_share": 0.33184852784285257,
       "rank_all": 14,
-      "n_sharing_price": 8
+      "n_sharing_price": 8,
+      "growth_2018_22_pct": 23.214285714285722,
+      "confidence": "Verify: regional price"
     }
   ],
   "next10": [
@@ -479,7 +499,9 @@
       "per_capita_income": 43203.0,
       "female_college_share": 0.4597311186855629,
       "rank_all": 15,
-      "n_sharing_price": 7
+      "n_sharing_price": 7,
+      "growth_2018_22_pct": 13.186813186813184,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "27003",
@@ -498,7 +520,9 @@
       "per_capita_income": 43106.0,
       "female_college_share": 0.33796482210264234,
       "rank_all": 17,
-      "n_sharing_price": 7
+      "n_sharing_price": 7,
+      "growth_2018_22_pct": 13.186813186813184,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "27053",
@@ -517,7 +541,9 @@
       "per_capita_income": 55199.0,
       "female_college_share": 0.5315360013945972,
       "rank_all": 18,
-      "n_sharing_price": 7
+      "n_sharing_price": 7,
+      "growth_2018_22_pct": 13.186813186813184,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "39155",
@@ -536,7 +562,9 @@
       "per_capita_income": 30294.0,
       "female_college_share": 0.2067199399334978,
       "rank_all": 19,
-      "n_sharing_price": 21
+      "n_sharing_price": 21,
+      "growth_2018_22_pct": 22.10526315789474,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "27019",
@@ -555,7 +583,9 @@
       "per_capita_income": 55216.0,
       "female_college_share": 0.5050378185268917,
       "rank_all": 20,
-      "n_sharing_price": 7
+      "n_sharing_price": 7,
+      "growth_2018_22_pct": 13.186813186813184,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "24027",
@@ -574,7 +604,9 @@
       "per_capita_income": 63441.0,
       "female_college_share": 0.6313041832943443,
       "rank_all": 22,
-      "n_sharing_price": 1
+      "n_sharing_price": 1,
+      "growth_2018_22_pct": 21.493196294151694,
+      "confidence": "High"
     },
     {
       "county_fips": "55079",
@@ -593,7 +625,9 @@
       "per_capita_income": 35039.0,
       "female_college_share": 0.34581537826540953,
       "rank_all": 23,
-      "n_sharing_price": 8
+      "n_sharing_price": 8,
+      "growth_2018_22_pct": -7.58928571428571,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "27037",
@@ -612,7 +646,9 @@
       "per_capita_income": 48894.0,
       "female_college_share": 0.44182068423122295,
       "rank_all": 24,
-      "n_sharing_price": 7
+      "n_sharing_price": 7,
+      "growth_2018_22_pct": 13.186813186813184,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "55101",
@@ -631,7 +667,9 @@
       "per_capita_income": 38288.0,
       "female_college_share": 0.3069425939871401,
       "rank_all": 25,
-      "n_sharing_price": 8
+      "n_sharing_price": 8,
+      "growth_2018_22_pct": 27.463054187192128,
+      "confidence": "Verify: regional price"
     },
     {
       "county_fips": "34005",
@@ -650,7 +688,9 @@
       "per_capita_income": 51549.0,
       "female_college_share": 0.4218177513391933,
       "rank_all": 26,
-      "n_sharing_price": 0
+      "n_sharing_price": 0,
+      "growth_2018_22_pct": 45.62130741376025,
+      "confidence": "High"
     }
   ],
   "unscreened_top15": [
@@ -1169,5 +1209,71 @@
       "metro_counties": 1,
       "distinct_prices": 1
     }
-  }
+  },
+  "growth_2018_22": {
+    "median": 10.572623683830962,
+    "p99": 55.51765184006894
+  },
+  "high_confidence_list": [
+    {
+      "county_fips": "51013",
+      "county_name": "Arlington County, Virginia",
+      "state": "VA",
+      "premium": 200.73443469926082
+    },
+    {
+      "county_fips": "51510",
+      "county_name": "Alexandria city, Virginia",
+      "state": "VA",
+      "premium": 143.14576049622286
+    },
+    {
+      "county_fips": "06075",
+      "county_name": "San Francisco County, California",
+      "state": "CA",
+      "premium": 142.87513965757415
+    },
+    {
+      "county_fips": "25021",
+      "county_name": "Norfolk County, Massachusetts",
+      "state": "MA",
+      "premium": 116.48745345300915
+    },
+    {
+      "county_fips": "24027",
+      "county_name": "Howard County, Maryland",
+      "state": "MD",
+      "premium": 88.93285863330465
+    },
+    {
+      "county_fips": "34005",
+      "county_name": "Burlington County, New Jersey",
+      "state": "NJ",
+      "premium": 88.25230655139086
+    },
+    {
+      "county_fips": "17043",
+      "county_name": "DuPage County, Illinois",
+      "state": "IL",
+      "premium": 86.32237217826156
+    },
+    {
+      "county_fips": "34015",
+      "county_name": "Gloucester County, New Jersey",
+      "state": "NJ",
+      "premium": 85.17683774636907
+    },
+    {
+      "county_fips": "53033",
+      "county_name": "King County, Washington",
+      "state": "WA",
+      "premium": 82.9837298487256
+    },
+    {
+      "county_fips": "34011",
+      "county_name": "Cumberland County, New Jersey",
+      "state": "NJ",
+      "premium": 80.44494350243758
+    }
+  ]
 }

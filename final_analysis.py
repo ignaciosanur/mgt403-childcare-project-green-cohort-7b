@@ -142,6 +142,14 @@ x["eligible"] = x.big_market & x.persistent
 # (several states' surveys publish regional rates, e.g. WI has 4 distinct prices across 26 metro counties)
 x["n_sharing_price"] = x.groupby(["state", "price"]).price.transform("size") - 1
 x["county_specific_price"] = x.n_sharing_price <= 2
+# price-trend check: NDCP interpolates linearly between state surveys; flag counties whose 2018-2022 nominal price
+# growth is above the 99th percentile of metro counties (an extreme trend, possibly an extrapolation artifact)
+nom = d.pivot(index="county_fips", columns="year", values="MCPRESCHOOL")
+x["growth_2018_22_pct"] = (100 * (nom[2022] / nom[2018] - 1)).reindex(x.index)
+GROWTH_P99 = float(x.growth_2018_22_pct.quantile(0.99))
+x["extreme_growth"] = x.growth_2018_22_pct > GROWTH_P99
+x["confidence"] = np.where(x.county_specific_price & ~x.extreme_growth, "High",
+                           np.where(~x.county_specific_price, "Verify: regional price", "Verify: extreme price trend"))
 elig = x[x.eligible].sort_values("premium", ascending=False)
 top10 = elig.head(10).copy()
 top10["rank"] = range(1, 11)
@@ -151,7 +159,7 @@ top10_specific = elig_specific.head(10)
 in_specific = top10.index.isin(top10_specific.index)
 cols = ["rank", "county_name", "state", "area_title", "price", "predicted", "premium", "premium_pct",
         "premium_2019", "avg_premium_2019_22", "wage_childcare", "median_gross_rent", "kids_under6_allpar_lf",
-        "per_capita_income", "female_college_share", "rank_all", "n_sharing_price"]
+        "per_capita_income", "female_college_share", "rank_all", "n_sharing_price", "growth_2018_22_pct", "confidence"]
 top10[cols].to_csv(os.path.join(OUT, "table_top10.csv"), float_format="%.2f")
 next10[[c for c in cols if c != "rank"]].to_csv(os.path.join(OUT, "table_next10.csv"), float_format="%.2f")
 unscreened = x.sort_values("premium", ascending=False).head(15)
@@ -318,6 +326,9 @@ results = {
         .reset_index().to_dict(orient="records"),
     "top10_also_in_specific_list": dict(zip(top10.index, in_specific.tolist())),
     "price_granularity_by_state": granularity.to_dict(orient="index"),
+    "growth_2018_22": {"median": float(x.growth_2018_22_pct.median()), "p99": GROWTH_P99},
+    "high_confidence_list": elig[(elig.county_specific_price) & (elig.growth_2018_22_pct <= GROWTH_P99)]
+        .head(10)[["county_name", "state", "premium"]].reset_index().to_dict(orient="records"),
 }
 with open(os.path.join(OUT, "results.json"), "w") as f:
     json.dump(results, f, indent=2, default=float)
@@ -336,5 +347,8 @@ print(unscreened[["county_name", "state", "premium", "kids_under6_allpar_lf", "y
 print(json.dumps(results["reliability"], indent=1, default=float))
 print(char.params.round(2).to_dict(), char.tvalues.round(1).to_dict(), "R2 %.3f" % char.rsquared)
 print(profile.round(3).to_string())
-print(top10[["county_name", "n_sharing_price"]].to_string())
+print(top10[["county_name", "n_sharing_price", "growth_2018_22_pct", "confidence"]].round(1).to_string())
+print("growth p99 %.1f" % GROWTH_P99)
+hc = elig[(elig.county_specific_price) & (elig.growth_2018_22_pct <= GROWTH_P99)].head(10)
+print(hc[["county_name", "state", "premium", "kids_under6_allpar_lf", "growth_2018_22_pct"]].round(1).to_string())
 print("county-specific-price top 10:"); print(top10_specific[["county_name", "state", "premium", "n_sharing_price"]].round(1).to_string())

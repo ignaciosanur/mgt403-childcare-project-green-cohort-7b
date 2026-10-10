@@ -150,5 +150,13 @@ coefficient stability, out-of-time prediction (2019 premium predicts 2022, slope
 robustness list. The persistence screen was revised so that states missing from NDCP in a year (e.g. VA 2021) are
 not penalized. Wrote `Final_Project_Analysis.md` → `.docx`/`.pdf`.
 
+**Prompt 29:** "check your data again and then create the necessary slides, please". AI: rebuilt the 2022 analysis
+set independently from the base inputs (same 998 counties, same coefficients, top-10 premiums match to $0.005) and
+spot-checked raw NDCP and OEWS values. It found that NDCP's straight-line interpolation between surveys gives Stearns MN
+(+77%) and McLean IL (+59%) 2018–2022 price growth above the metro 99th percentile, added a price-trend flag and
+confidence tiers (High: Arlington, Alexandria, San Francisco, Norfolk) to `final_analysis.py` and the Word
+document, then built a 6-slide deck with `build_slides.js` (native PowerPoint charts, speaker notes, all numbers
+read from `results.json`), validated it and checked every slide rendered through PowerPoint.
+
 ## How to reproduce
 See `README.md` ("Reproducing Problem Set 4, Q2").

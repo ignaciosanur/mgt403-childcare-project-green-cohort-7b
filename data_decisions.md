@@ -110,3 +110,7 @@ CPI-U, CUUR0000SA0, annual average (the mean of the 12 monthly values from the B
 - Regional prices flagged (number of other metro counties in the state with the identical 2022 price); robustness
   ranking uses counties sharing their price with at most two others. 4 of the top 10 (WI x3, Olmsted MN) have
   regional prices.
+- Data re-check (2026-10-10): an independent rebuild from base inputs reproduced the 998-county set, the 2022 cost
+  model and all top-10 premiums. New flag: 2018-2022 nominal price growth above the metro 99th percentile (+55.5%).
+  Stearns MN (+77%) and McLean IL (+59%) are flagged. Confidence tiers: High = county-specific price and normal
+  trend (Arlington, Alexandria, San Francisco, Norfolk); the other six top-10 picks are "verify".
