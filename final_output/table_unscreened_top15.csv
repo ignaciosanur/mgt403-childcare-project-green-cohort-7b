@@ -1,0 +1,16 @@
+county_fips,county_name,state,price,premium,kids_under6_allpar_lf,years_positive_2019_22,years_observed_2019_22,big_market,persistent
+51013,"Arlington County, Virginia",VA,496.30,200.73,11577.00,3,3,True,True
+27145,"Stearns County, Minnesota",MN,336.67,169.72,9982.00,4,4,True,True
+51510,"Alexandria city, Virginia",VA,424.29,143.15,8813.00,3,3,True,True
+06075,"San Francisco County, California",CA,477.04,142.88,30027.00,3,3,True,True
+55139,"Winnebago County, Wisconsin",WI,258.75,126.00,8045.00,3,3,True,True
+11001,"District of Columbia, District of Columbia",DC,392.50,121.17,36404.00,1,1,True,False
+27109,"Olmsted County, Minnesota",MN,309.00,119.73,9533.00,4,4,True,True
+55063,"La Crosse County, Wisconsin",WI,258.75,118.86,5129.00,3,3,True,True
+25021,"Norfolk County, Massachusetts",MA,420.00,116.49,32889.00,4,4,True,True
+17113,"McLean County, Illinois",IL,279.00,111.29,7742.00,4,4,True,True
+55035,"Eau Claire County, Wisconsin",WI,258.75,109.91,4768.00,4,4,False,True
+39013,"Belmont County, Ohio",OH,232.00,103.15,2028.00,4,4,False,True
+39081,"Jefferson County, Ohio",OH,232.00,101.66,2391.00,4,4,False,True
+55009,"Brown County, Wisconsin",WI,258.75,100.05,13659.00,4,4,True,True
+27123,"Ramsey County, Minnesota",MN,309.00,99.98,30041.00,4,4,True,True

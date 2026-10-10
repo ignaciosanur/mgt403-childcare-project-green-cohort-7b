@@ -13,7 +13,7 @@ data-handling decisions, and the full AI prompt history.
 |---|---|---|
 | Problem Set 4, Q2: The Distribution of Childcare Prices | done | `PS4_Q2_writeup.docx` / `.pdf`, `ps4_analysis.py`, `ps4_output/` |
 | Problem Set 5, Q3: Cost Drivers in Childcare | done | `PS5_Q3_writeup.docx` / `.pdf`, `ps5_analysis.py`, `ps5_output/` |
-| Final project (slides + appendix) | not started | |
+| Pre-analysis + final project analysis (slides to follow) | analysis done | `Final_Project_Analysis.docx` / `.pdf`, `final_analysis.py`, `final_output/` |
 
 ## How the work was done
 
@@ -75,6 +75,14 @@ Steps 1–2 can be skipped: their outputs (`NDCP2015_2022_center_median.csv`, `a
 committed. `ps4_output/results.json` contains every number quoted in the write-up, so any figure can be traced
 to the code that produced it.
 
+## Reproducing the pre-analysis and final project analysis
+
+```bash
+python3 ps4_analysis.py && python3 ps5_analysis.py   # inputs: NDCP metro panel and wage/ACS panel
+python3 final_analysis.py                            # -> final_output/ (cost model, premiums, top 10, checks, figures)
+python3 build_docx.py Final_Project_Analysis.md      # -> Final_Project_Analysis.docx (+ .pdf)
+```
+
 ## Files
 
 | File | Purpose |
@@ -86,6 +94,7 @@ to the code that produced it.
 | `pull_acs.py` | Census ACS 5-year pull and derived shares (PS5) |
 | `extract_oews.py` | BLS OEWS 39-9011 extraction for 2015–2022 and merge check (PS5) |
 | `ps5_analysis.py` | PS5 Q3: year × county metro panel (wages + ACS), 2022 descriptives, real wage/rent trends, Welch test 2022 vs 2019 (ANOVA, paired, Mann–Whitney checks), wage-on-college regression, figures |
+| `final_analysis.py` | pre-analysis regressions (price on wage, rent, both) and final ranking: yearly cost model, premiums, market-size and persistence screens, top 10, reliability checks |
 | `data_decisions.md` | every data-handling decision, sized in population terms, with reasons |
 | `prompts_log.md` | prompt history |
 | `ps4_output/` | figures, summary tables, cleaned metro panel `ndcp_metro_2015_2022.csv`, `results.json` |

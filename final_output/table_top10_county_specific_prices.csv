@@ -1,0 +1,11 @@
+county_fips,county_name,state,premium,n_sharing_price,kids_under6_allpar_lf
+51013,"Arlington County, Virginia",VA,200.73,0,11577.00
+27145,"Stearns County, Minnesota",MN,169.72,0,9982.00
+51510,"Alexandria city, Virginia",VA,143.15,0,8813.00
+06075,"San Francisco County, California",CA,142.88,0,30027.00
+25021,"Norfolk County, Massachusetts",MA,116.49,0,32889.00
+17113,"McLean County, Illinois",IL,111.29,0,7742.00
+24027,"Howard County, Maryland",MD,88.93,1,16287.00
+34005,"Burlington County, New Jersey",NJ,88.25,0,19547.00
+17043,"DuPage County, Illinois",IL,86.32,0,42574.00
+34015,"Gloucester County, New Jersey",NJ,85.18,0,13724.00

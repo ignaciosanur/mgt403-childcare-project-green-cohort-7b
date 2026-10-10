@@ -1,0 +1,1173 @@
+{
+  "sample_n_by_year": {
+    "2015": 994,
+    "2016": 1019,
+    "2017": 1057,
+    "2018": 1062,
+    "2019": 1061,
+    "2020": 1050,
+    "2021": 905,
+    "2022": 998
+  },
+  "dropped_2022": {
+    "metro_counties": 1235,
+    "no_price": 222,
+    "price_but_missing_predictor": 15
+  },
+  "descriptives_2022": {
+    "Median weekly price, center-based preschool (36-54 mo), $": {
+      "N": 998.0,
+      "mean": 174.47948897795575,
+      "sd": 59.75492647769245,
+      "min": 86.19,
+      "max": 496.3
+    },
+    "Childcare-worker mean annual wage, $": {
+      "N": 998.0,
+      "mean": 27780.470941883766,
+      "sd": 4350.794584810335,
+      "min": 19540.0,
+      "max": 41700.0
+    },
+    "Median gross rent, $/month": {
+      "N": 998.0,
+      "mean": 1105.9669338677354,
+      "sd": 336.4017811843,
+      "min": 430.0,
+      "max": 2805.0
+    },
+    "Per-capita income, $": {
+      "N": 998.0,
+      "mean": 37859.08817635271,
+      "sd": 9457.04816622477,
+      "min": 16368.0,
+      "max": 89702.0
+    },
+    "Total population": {
+      "N": 998.0,
+      "mean": 255802.99899799598,
+      "sd": 551110.382909366,
+      "min": 50.0,
+      "max": 9936690.0
+    },
+    "Own children under 6": {
+      "N": 998.0,
+      "mean": 17151.19238476954,
+      "sd": 37250.04387047238,
+      "min": 0.0,
+      "max": 616046.0
+    },
+    "Children under 6, all parents in labor force": {
+      "N": 998.0,
+      "mean": 11537.889779559118,
+      "sd": 24539.441990589447,
+      "min": 0.0,
+      "max": 406465.0
+    },
+    "Share of women 25+ with bachelor's+": {
+      "N": 998.0,
+      "mean": 0.30618799679159037,
+      "sd": 0.11056432803413713,
+      "min": 0.08117832246458287,
+      "max": 0.7761253222288321
+    },
+    "Share of women 16-64 full-time year-round": {
+      "N": 998.0,
+      "mean": 0.44621885334805833,
+      "sd": 0.05589828016573441,
+      "min": 0.2115844901866922,
+      "max": 0.7142857142857143
+    },
+    "Share of population under 6": {
+      "N": 998.0,
+      "mean": 0.06436232817640183,
+      "sd": 0.011446855824307822,
+      "min": 0.0,
+      "max": 0.10927536231884058
+    },
+    "Share of population under 6 with all parents working": {
+      "N": 998.0,
+      "mean": 0.04323196167563197,
+      "sd": 0.008951456274247267,
+      "min": 0.0,
+      "max": 0.06950746638066166
+    }
+  },
+  "regressions_2022": {
+    "(a) wage only": {
+      "params": {
+        "Intercept": -107.58683187844932,
+        "wage_k": 10.153403138718671
+      },
+      "se": {
+        "Intercept": 8.240368314996099,
+        "wage_k": 0.2930558282664989
+      },
+      "t": {
+        "Intercept": -13.056070768421746,
+        "wage_k": 34.64665145470295
+      },
+      "p": {
+        "Intercept": 4.462722865731168e-36,
+        "wage_k": 3.1284566936021844e-173
+      },
+      "r2": 0.546528716324109,
+      "n": 998
+    },
+    "(b) rent only": {
+      "params": {
+        "Intercept": 41.17314466765245,
+        "rent_100": 12.053375216572782
+      },
+      "se": {
+        "Intercept": 4.779012520419043,
+        "rent_100": 0.4134280085805111
+      },
+      "t": {
+        "Intercept": 8.615408411619358,
+        "rent_100": 29.15471367786032
+      },
+      "p": {
+        "Intercept": 2.69779963939967e-17,
+        "rent_100": 1.320316812763095e-135
+      },
+      "r2": 0.46045425743096446,
+      "n": 998
+    },
+    "(c) wage + rent": {
+      "params": {
+        "Intercept": -87.94580292366986,
+        "wage_k": 7.093416458180938,
+        "rent_100": 5.910379424984464
+      },
+      "se": {
+        "Intercept": 7.829971850865566,
+        "wage_k": 0.36722289501816296,
+        "rent_100": 0.4749414160170816
+      },
+      "t": {
+        "Intercept": -11.231943690059099,
+        "wage_k": 19.316378565748455,
+        "rent_100": 12.444438883746228
+      },
+      "p": {
+        "Intercept": 1.2076598503934609e-27,
+        "wage_k": 7.563237074744502e-71,
+        "rent_100": 3.8094417289446694e-33
+      },
+      "r2": 0.6076023737985259,
+      "n": 998
+    }
+  },
+  "corr_wage_rent_2022": 0.6695984919228554,
+  "aux_rent_on_wage": {
+    "slope": 0.5177310051538297,
+    "r2": 0.4483621403853617
+  },
+  "yearly_cost_model": {
+    "2015": {
+      "a": -115.96487148696434,
+      "b_wage": 8.097190554541367,
+      "c_rent": 7.858535272520616,
+      "se_wage": 0.45491710230040483,
+      "se_rent": 0.5400584576995504,
+      "r2": 0.5578184847516873,
+      "n": 994,
+      "resid_sd": 37.09671850889601
+    },
+    "2016": {
+      "a": -109.54133442434144,
+      "b_wage": 7.825149977584011,
+      "c_rent": 7.675370352446965,
+      "se_wage": 0.4317731912338289,
+      "se_rent": 0.5049964233534797,
+      "r2": 0.5760312805900587,
+      "n": 1019,
+      "resid_sd": 34.88994388728924
+    },
+    "2017": {
+      "a": -111.32427500250498,
+      "b_wage": 7.748249222936507,
+      "c_rent": 8.095736651924348,
+      "se_wage": 0.42001708416382433,
+      "se_rent": 0.5039138753675156,
+      "r2": 0.5993790697499852,
+      "n": 1057,
+      "resid_sd": 36.38015879972965
+    },
+    "2018": {
+      "a": -100.61260654582122,
+      "b_wage": 7.198490568597179,
+      "c_rent": 8.23637135130543,
+      "se_wage": 0.3653305694577765,
+      "se_rent": 0.44591103485239153,
+      "r2": 0.6376838108743993,
+      "n": 1062,
+      "resid_sd": 33.68955656182045
+    },
+    "2019": {
+      "a": -92.94441353109382,
+      "b_wage": 7.032579006096801,
+      "c_rent": 7.723915008980348,
+      "se_wage": 0.34759938448311506,
+      "se_rent": 0.4307530805734519,
+      "r2": 0.6400580166197429,
+      "n": 1061,
+      "resid_sd": 33.511722190117595
+    },
+    "2020": {
+      "a": -70.40631804343656,
+      "b_wage": 6.069030915972601,
+      "c_rent": 7.799483609319718,
+      "se_wage": 0.31584700368960755,
+      "se_rent": 0.4337044384154205,
+      "r2": 0.6224032103894762,
+      "n": 1050,
+      "resid_sd": 35.498382022085856
+    },
+    "2021": {
+      "a": -105.60450548849414,
+      "b_wage": 8.168468010333864,
+      "c_rent": 5.718114552392004,
+      "se_wage": 0.3501478415112715,
+      "se_rent": 0.49977843127592453,
+      "r2": 0.6717651812089809,
+      "n": 905,
+      "resid_sd": 33.62408093677775
+    },
+    "2022": {
+      "a": -87.94580292366986,
+      "b_wage": 7.093416458180938,
+      "c_rent": 5.910379424984464,
+      "se_wage": 0.36722289501816296,
+      "se_rent": 0.4749414160170816,
+      "r2": 0.6076023737985259,
+      "n": 998,
+      "resid_sd": 37.469072334686594
+    }
+  },
+  "screens": {
+    "min_kids_need_care": 5000,
+    "persist_years": [
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "counties_2022": 998,
+    "big_market": 461,
+    "persistent": 296,
+    "eligible": 155
+  },
+  "top10": [
+    {
+      "county_fips": "51013",
+      "rank": 1,
+      "county_name": "Arlington County, Virginia",
+      "state": "VA",
+      "area_title": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+      "price": 496.30000000000007,
+      "predicted": 295.56556530073925,
+      "premium": 200.73443469926082,
+      "premium_pct": 67.9153657480406,
+      "premium_2019": 137.01238650421408,
+      "avg_premium_2019_22": 159.34848810704568,
+      "wage_childcare": 35510.0,
+      "median_gross_rent": 2227.0,
+      "kids_under6_allpar_lf": 11577.0,
+      "per_capita_income": 85221.0,
+      "female_college_share": 0.763371734808942,
+      "rank_all": 1,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "27145",
+      "rank": 2,
+      "county_name": "Stearns County, Minnesota",
+      "state": "MN",
+      "area_title": "St. Cloud, MN",
+      "price": 336.67,
+      "predicted": 166.94830817194054,
+      "premium": 169.72169182805948,
+      "premium_pct": 101.66122297763127,
+      "premium_2019": 87.41014592744838,
+      "avg_premium_2019_22": 127.3372563617629,
+      "wage_childcare": 27810.0,
+      "median_gross_rent": 975.0,
+      "kids_under6_allpar_lf": 9982.0,
+      "per_capita_income": 36087.0,
+      "female_college_share": 0.3122732831706154,
+      "rank_all": 2,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "51510",
+      "rank": 3,
+      "county_name": "Alexandria city, Virginia",
+      "state": "VA",
+      "area_title": "Washington-Arlington-Alexandria, DC-VA-MD-WV",
+      "price": 424.29,
+      "predicted": 281.14423950377716,
+      "premium": 143.14576049622286,
+      "premium_pct": 50.91541649541772,
+      "premium_2019": 103.31686529300339,
+      "avg_premium_2019_22": 119.37554400688033,
+      "wage_childcare": 35510.0,
+      "median_gross_rent": 1983.0,
+      "kids_under6_allpar_lf": 8813.0,
+      "per_capita_income": 75884.0,
+      "female_college_share": 0.6630156403524314,
+      "rank_all": 3,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "06075",
+      "rank": 4,
+      "county_name": "San Francisco County, California",
+      "state": "CA",
+      "area_title": "San Francisco-Oakland-Hayward, CA",
+      "price": 477.04,
+      "predicted": 334.16486034242587,
+      "premium": 142.87513965757415,
+      "premium_pct": 42.755883880539365,
+      "premium_2019": 61.23840336077416,
+      "avg_premium_2019_22": 89.04192162750553,
+      "wage_childcare": 40210.0,
+      "median_gross_rent": 2316.0,
+      "kids_under6_allpar_lf": 30027.0,
+      "per_capita_income": 86186.0,
+      "female_college_share": 0.5951088115740656,
+      "rank_all": 4,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "55139",
+      "rank": 5,
+      "county_name": "Winnebago County, Wisconsin",
+      "state": "WI",
+      "area_title": "Oshkosh-Neenah, WI",
+      "price": 258.75,
+      "predicted": 132.74697939173615,
+      "premium": 126.00302060826385,
+      "premium_pct": 94.91968946158022,
+      "premium_2019": 118.74003398624262,
+      "avg_premium_2019_22": 118.75658587422924,
+      "wage_childcare": 23780.0,
+      "median_gross_rent": 880.0,
+      "kids_under6_allpar_lf": 8045.0,
+      "per_capita_income": 37983.0,
+      "female_college_share": 0.3116892211270811,
+      "rank_all": 5,
+      "n_sharing_price": 8
+    },
+    {
+      "county_fips": "27109",
+      "rank": 6,
+      "county_name": "Olmsted County, Minnesota",
+      "state": "MN",
+      "area_title": "Rochester, MN",
+      "price": 309.0,
+      "predicted": 189.26717920778734,
+      "premium": 119.73282079221266,
+      "premium_pct": 63.26126975283113,
+      "premium_2019": 121.26137499580733,
+      "avg_premium_2019_22": 121.41662115091563,
+      "wage_childcare": 29140.0,
+      "median_gross_rent": 1193.0,
+      "kids_under6_allpar_lf": 9533.0,
+      "per_capita_income": 49799.0,
+      "female_college_share": 0.4804030564526091,
+      "rank_all": 7,
+      "n_sharing_price": 7
+    },
+    {
+      "county_fips": "55063",
+      "rank": 7,
+      "county_name": "La Crosse County, Wisconsin",
+      "state": "WI",
+      "area_title": "La Crosse-Onalaska, WI-MN",
+      "price": 258.75,
+      "predicted": 139.88685229786532,
+      "premium": 118.86314770213468,
+      "premium_pct": 84.97092167678187,
+      "premium_2019": 52.45866395555788,
+      "avg_premium_2019_22": 87.33884644043378,
+      "wage_childcare": 23920.0,
+      "median_gross_rent": 984.0,
+      "kids_under6_allpar_lf": 5129.0,
+      "per_capita_income": 39498.0,
+      "female_college_share": 0.3790562705021449,
+      "rank_all": 8,
+      "n_sharing_price": 8
+    },
+    {
+      "county_fips": "25021",
+      "rank": 8,
+      "county_name": "Norfolk County, Massachusetts",
+      "state": "MA",
+      "area_title": "Boston-Cambridge-Nashua, MA-NH",
+      "price": 420.0,
+      "predicted": 303.51254654699085,
+      "premium": 116.48745345300915,
+      "premium_pct": 38.3797819161898,
+      "premium_2019": 104.95384583055073,
+      "avg_premium_2019_22": 113.98765329552354,
+      "wage_childcare": 39080.0,
+      "median_gross_rent": 1933.0,
+      "kids_under6_allpar_lf": 32889.0,
+      "per_capita_income": 66685.0,
+      "female_college_share": 0.5695375435854274,
+      "rank_all": 9,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "17113",
+      "rank": 9,
+      "county_name": "McLean County, Illinois",
+      "state": "IL",
+      "area_title": "Bloomington, IL",
+      "price": 279.0,
+      "predicted": 167.70521158613641,
+      "premium": 111.29478841386359,
+      "premium_pct": 66.36334515859728,
+      "premium_2019": 78.94160821878205,
+      "avg_premium_2019_22": 95.36868717105304,
+      "wage_childcare": 28200.0,
+      "median_gross_rent": 941.0,
+      "kids_under6_allpar_lf": 7742.0,
+      "per_capita_income": 40252.0,
+      "female_college_share": 0.4630613945735717,
+      "rank_all": 10,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "55009",
+      "rank": 10,
+      "county_name": "Brown County, Wisconsin",
+      "state": "WI",
+      "area_title": "Green Bay, WI",
+      "price": 258.75,
+      "predicted": 158.6966207416566,
+      "premium": 100.0533792583434,
+      "premium_pct": 63.04695008044376,
+      "premium_2019": 80.81146897522189,
+      "avg_premium_2019_22": 89.38560313957859,
+      "wage_childcare": 26980.0,
+      "median_gross_rent": 935.0,
+      "kids_under6_allpar_lf": 13659.0,
+      "per_capita_income": 39091.0,
+      "female_college_share": 0.33184852784285257,
+      "rank_all": 14,
+      "n_sharing_price": 8
+    }
+  ],
+  "next10": [
+    {
+      "county_fips": "27123",
+      "county_name": "Ramsey County, Minnesota",
+      "state": "MN",
+      "area_title": "Minneapolis-St. Paul-Bloomington, MN-WI",
+      "price": 309.0,
+      "predicted": 209.02217584288633,
+      "premium": 99.97782415711367,
+      "premium_pct": 47.83120439443853,
+      "premium_2019": 105.57663326357942,
+      "avg_premium_2019_22": 99.5361504758809,
+      "wage_childcare": 31750.0,
+      "median_gross_rent": 1214.0,
+      "kids_under6_allpar_lf": 30041.0,
+      "per_capita_income": 43203.0,
+      "female_college_share": 0.4597311186855629,
+      "rank_all": 15,
+      "n_sharing_price": 7
+    },
+    {
+      "county_fips": "27003",
+      "county_name": "Anoka County, Minnesota",
+      "state": "MN",
+      "area_title": "Minneapolis-St. Paul-Bloomington, MN-WI",
+      "price": 309.0,
+      "predicted": 217.41491462636424,
+      "premium": 91.58508537363576,
+      "premium_pct": 42.1245642374757,
+      "premium_2019": 95.7623469146119,
+      "avg_premium_2019_22": 91.114320585584,
+      "wage_childcare": 31750.0,
+      "median_gross_rent": 1356.0,
+      "kids_under6_allpar_lf": 18753.0,
+      "per_capita_income": 43106.0,
+      "female_college_share": 0.33796482210264234,
+      "rank_all": 17,
+      "n_sharing_price": 7
+    },
+    {
+      "county_fips": "27053",
+      "county_name": "Hennepin County, Minnesota",
+      "state": "MN",
+      "area_title": "Minneapolis-St. Paul-Bloomington, MN-WI",
+      "price": 309.0,
+      "predicted": 218.41967912861162,
+      "premium": 90.58032087138838,
+      "premium_pct": 41.47076913250667,
+      "premium_2019": 94.25925801431958,
+      "avg_premium_2019_22": 89.88533152167956,
+      "wage_childcare": 31750.0,
+      "median_gross_rent": 1373.0,
+      "kids_under6_allpar_lf": 68842.0,
+      "per_capita_income": 55199.0,
+      "female_college_share": 0.5315360013945972,
+      "rank_all": 18,
+      "n_sharing_price": 7
+    },
+    {
+      "county_fips": "39155",
+      "county_name": "Trumbull County, Ohio",
+      "state": "OH",
+      "area_title": "Youngstown-Warren-Boardman, OH-PA",
+      "price": 232.0,
+      "predicted": 141.42561741699035,
+      "premium": 90.57438258300965,
+      "premium_pct": 64.04383041578178,
+      "premium_2019": 80.1817940938173,
+      "avg_premium_2019_22": 86.34193391127866,
+      "wage_childcare": 26070.0,
+      "median_gross_rent": 752.0,
+      "kids_under6_allpar_lf": 7515.0,
+      "per_capita_income": 30294.0,
+      "female_college_share": 0.2067199399334978,
+      "rank_all": 19,
+      "n_sharing_price": 21
+    },
+    {
+      "county_fips": "27019",
+      "county_name": "Carver County, Minnesota",
+      "state": "MN",
+      "area_title": "Minneapolis-St. Paul-Bloomington, MN-WI",
+      "price": 309.0,
+      "predicted": 219.0698208653599,
+      "premium": 89.9301791346401,
+      "premium_pct": 41.05092101659731,
+      "premium_2019": 93.28667107883632,
+      "avg_premium_2019_22": 89.6428189612395,
+      "wage_childcare": 31750.0,
+      "median_gross_rent": 1384.0,
+      "kids_under6_allpar_lf": 6106.0,
+      "per_capita_income": 55216.0,
+      "female_college_share": 0.5050378185268917,
+      "rank_all": 20,
+      "n_sharing_price": 7
+    },
+    {
+      "county_fips": "24027",
+      "county_name": "Howard County, Maryland",
+      "state": "MD",
+      "area_title": "Baltimore-Columbia-Towson, MD",
+      "price": 335.71,
+      "predicted": 246.77714136669533,
+      "premium": 88.93285863330465,
+      "premium_pct": 36.03772137920829,
+      "premium_2019": 72.54579234622474,
+      "avg_premium_2019_22": 81.74858878832919,
+      "wage_childcare": 31190.0,
+      "median_gross_rent": 1920.0,
+      "kids_under6_allpar_lf": 16287.0,
+      "per_capita_income": 63441.0,
+      "female_college_share": 0.6313041832943443,
+      "rank_all": 22,
+      "n_sharing_price": 1
+    },
+    {
+      "county_fips": "55079",
+      "county_name": "Milwaukee County, Wisconsin",
+      "state": "WI",
+      "area_title": "Milwaukee-Waukesha-West Allis, WI",
+      "price": 258.75,
+      "predicted": 170.19916102791194,
+      "premium": 88.55083897208806,
+      "premium_pct": 52.027776422215204,
+      "premium_2019": 149.81632743600923,
+      "avg_premium_2019_22": 114.62133650956754,
+      "wage_childcare": 27960.0,
+      "median_gross_rent": 1012.0,
+      "kids_under6_allpar_lf": 51295.0,
+      "per_capita_income": 35039.0,
+      "female_college_share": 0.34581537826540953,
+      "rank_all": 23,
+      "n_sharing_price": 8
+    },
+    {
+      "county_fips": "27037",
+      "county_name": "Dakota County, Minnesota",
+      "state": "MN",
+      "area_title": "Minneapolis-St. Paul-Bloomington, MN-WI",
+      "price": 309.0,
+      "predicted": 220.60651951585587,
+      "premium": 88.39348048414413,
+      "premium_pct": 40.06838994519876,
+      "premium_2019": 90.81099524306069,
+      "avg_premium_2019_22": 86.41916846636553,
+      "wage_childcare": 31750.0,
+      "median_gross_rent": 1410.0,
+      "kids_under6_allpar_lf": 24192.0,
+      "per_capita_income": 48894.0,
+      "female_college_share": 0.44182068423122295,
+      "rank_all": 24,
+      "n_sharing_price": 7
+    },
+    {
+      "county_fips": "55101",
+      "county_name": "Racine County, Wisconsin",
+      "state": "WI",
+      "area_title": "Racine, WI",
+      "price": 258.75,
+      "predicted": 170.44764686229317,
+      "premium": 88.30235313770683,
+      "premium_pct": 51.806143858968866,
+      "premium_2019": 102.72865701372845,
+      "avg_premium_2019_22": 84.1563902526635,
+      "wage_childcare": 28220.0,
+      "median_gross_rent": 985.0,
+      "kids_under6_allpar_lf": 9658.0,
+      "per_capita_income": 38288.0,
+      "female_college_share": 0.3069425939871401,
+      "rank_all": 25,
+      "n_sharing_price": 8
+    },
+    {
+      "county_fips": "34005",
+      "county_name": "Burlington County, New Jersey",
+      "state": "NJ",
+      "area_title": "Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",
+      "price": 305.63,
+      "predicted": 217.37769344860914,
+      "premium": 88.25230655139086,
+      "premium_pct": 40.598602897704794,
+      "premium_2019": 40.48462843801903,
+      "avg_premium_2019_22": 67.45656871766559,
+      "wage_childcare": 29920.0,
+      "median_gross_rent": 1575.0,
+      "kids_under6_allpar_lf": 19547.0,
+      "per_capita_income": 51549.0,
+      "female_college_share": 0.4218177513391933,
+      "rank_all": 26,
+      "n_sharing_price": 0
+    }
+  ],
+  "unscreened_top15": [
+    {
+      "county_fips": "51013",
+      "county_name": "Arlington County, Virginia",
+      "state": "VA",
+      "price": 496.30000000000007,
+      "premium": 200.73443469926082,
+      "kids_under6_allpar_lf": 11577.0,
+      "years_positive_2019_22": 3
+    },
+    {
+      "county_fips": "27145",
+      "county_name": "Stearns County, Minnesota",
+      "state": "MN",
+      "price": 336.67,
+      "premium": 169.72169182805948,
+      "kids_under6_allpar_lf": 9982.0,
+      "years_positive_2019_22": 4
+    },
+    {
+      "county_fips": "51510",
+      "county_name": "Alexandria city, Virginia",
+      "state": "VA",
+      "price": 424.29,
+      "premium": 143.14576049622286,
+      "kids_under6_allpar_lf": 8813.0,
+      "years_positive_2019_22": 3
+    },
+    {
+      "county_fips": "06075",
+      "county_name": "San Francisco County, California",
+      "state": "CA",
+      "price": 477.04,
+      "premium": 142.87513965757415,
+      "kids_under6_allpar_lf": 30027.0,
+      "years_positive_2019_22": 3
+    },
+    {
+      "county_fips": "55139",
+      "county_name": "Winnebago County, Wisconsin",
+      "state": "WI",
+      "price": 258.75,
+      "premium": 126.00302060826385,
+      "kids_under6_allpar_lf": 8045.0,
+      "years_positive_2019_22": 3
+    },
+    {
+      "county_fips": "11001",
+      "county_name": "District of Columbia, District of Columbia",
+      "state": "DC",
+      "price": 392.5,
+      "premium": 121.16699034169704,
+      "kids_under6_allpar_lf": 36404.0,
+      "years_positive_2019_22": 1
+    },
+    {
+      "county_fips": "27109",
+      "county_name": "Olmsted County, Minnesota",
+      "state": "MN",
+      "price": 309.0,
+      "premium": 119.73282079221266,
+      "kids_under6_allpar_lf": 9533.0,
+      "years_positive_2019_22": 4
+    },
+    {
+      "county_fips": "55063",
+      "county_name": "La Crosse County, Wisconsin",
+      "state": "WI",
+      "price": 258.75,
+      "premium": 118.86314770213468,
+      "kids_under6_allpar_lf": 5129.0,
+      "years_positive_2019_22": 3
+    },
+    {
+      "county_fips": "25021",
+      "county_name": "Norfolk County, Massachusetts",
+      "state": "MA",
+      "price": 420.0,
+      "premium": 116.48745345300915,
+      "kids_under6_allpar_lf": 32889.0,
+      "years_positive_2019_22": 4
+    },
+    {
+      "county_fips": "17113",
+      "county_name": "McLean County, Illinois",
+      "state": "IL",
+      "price": 279.0,
+      "premium": 111.29478841386359,
+      "kids_under6_allpar_lf": 7742.0,
+      "years_positive_2019_22": 4
+    },
+    {
+      "county_fips": "55035",
+      "county_name": "Eau Claire County, Wisconsin",
+      "state": "WI",
+      "price": 258.75,
+      "premium": 109.91318007780492,
+      "kids_under6_allpar_lf": 4768.0,
+      "years_positive_2019_22": 4
+    },
+    {
+      "county_fips": "39013",
+      "county_name": "Belmont County, Ohio",
+      "state": "OH",
+      "price": 232.0,
+      "premium": 103.15339045465382,
+      "kids_under6_allpar_lf": 2028.0,
+      "years_positive_2019_22": 4
+    },
+    {
+      "county_fips": "39081",
+      "county_name": "Jefferson County, Ohio",
+      "state": "OH",
+      "price": 232.0,
+      "premium": 101.6638210558458,
+      "kids_under6_allpar_lf": 2391.0,
+      "years_positive_2019_22": 4
+    },
+    {
+      "county_fips": "55009",
+      "county_name": "Brown County, Wisconsin",
+      "state": "WI",
+      "price": 258.75,
+      "premium": 100.0533792583434,
+      "kids_under6_allpar_lf": 13659.0,
+      "years_positive_2019_22": 4
+    },
+    {
+      "county_fips": "27123",
+      "county_name": "Ramsey County, Minnesota",
+      "state": "MN",
+      "price": 309.0,
+      "premium": 99.97782415711367,
+      "kids_under6_allpar_lf": 30041.0,
+      "years_positive_2019_22": 4
+    }
+  ],
+  "reliability": {
+    "corr_with_2022": {
+      "2015": 0.578624272673225,
+      "2016": 0.5964029289443653,
+      "2017": 0.6669683137964393,
+      "2018": 0.697425952399375,
+      "2019": 0.8160601259402014,
+      "2020": 0.876399366200427,
+      "2021": 0.9352813100920812,
+      "2022": 1.0
+    },
+    "persistence_top_decile": {
+      "2015": 0.4788732394366197,
+      "2016": 0.5211267605633803,
+      "2017": 0.5633802816901409,
+      "2018": 0.5492957746478874,
+      "2019": 0.6901408450704225,
+      "2020": 0.7605633802816901,
+      "2021": 0.8873239436619719
+    },
+    "balanced_n": 712,
+    "state_share_of_premium_variance": 0.42919760183520445,
+    "shared_exact_price_within_state": 0.5961923847695391,
+    "spearman_level_vs_log": 0.9825872629086069,
+    "log_model_r2": 0.5799114602188786,
+    "top10_rank_in_log_model": {
+      "51013": 5,
+      "27145": 1,
+      "51510": 12,
+      "06075": 27,
+      "55139": 2,
+      "27109": 9,
+      "55063": 3,
+      "25021": 50,
+      "17113": 8,
+      "55009": 10
+    },
+    "breusch_pagan_p": 1.8111923436858665e-19,
+    "oot_slope_2019_to_2022": 0.876380134824917,
+    "oot_r2": 0.665954129149537
+  },
+  "characteristics_regression": {
+    "params": {
+      "Intercept": -39.14833001923611,
+      "inc_k": 0.4932976867494453,
+      "female_college_share": 51.90630111785204,
+      "female_ftyr_share": -8.033741402232307,
+      "under6_careneed_share": 331.69072019032194,
+      "log_pop": -0.5390089785034563
+    },
+    "t": {
+      "Intercept": -2.9499670522181445,
+      "inc_k": 2.1202780310885623,
+      "female_college_share": 2.637644850563335,
+      "female_ftyr_share": -0.32179552016826857,
+      "under6_careneed_share": 2.261210677984843,
+      "log_pop": -0.5635358774307305
+    },
+    "r2": 0.07196985585700688,
+    "n": 998
+  },
+  "market_profile": {
+    "Preschool price, $/week": {
+      "Top 10": 351.855,
+      "Eligible (screened)": 244.5742580645161,
+      "All metro counties": 174.47948897795575
+    },
+    "Cost-predicted price, $/week": {
+      "Top 10": 216.96383630910555,
+      "Eligible (screened)": 197.2923439957769,
+      "All metro counties": 174.47948897795595
+    },
+    "Premium, $/week": {
+      "Top 10": 134.89116369089447,
+      "Eligible (screened)": 47.28191406873922,
+      "All metro counties": -2.449165341698141e-14
+    },
+    "Childcare wage, $/yr": {
+      "Top 10": 31014.0,
+      "Eligible (screened)": 29868.129032258064,
+      "All metro counties": 27780.470941883766
+    },
+    "Median gross rent, $/month": {
+      "Top 10": 1436.7,
+      "Eligible (screened)": 1241.3935483870969,
+      "All metro counties": 1105.9669338677354
+    },
+    "Per-capita income, $": {
+      "Top 10": 55668.6,
+      "Eligible (screened)": 44191.56129032258,
+      "All metro counties": 37859.08817635271
+    },
+    "Women 25+ with bachelor's+": {
+      "Top 10": 0.48693654839897416,
+      "Eligible (screened)": 0.3873832209176446,
+      "All metro counties": 0.30618799679159037
+    },
+    "Women full-time year-round": {
+      "Top 10": 0.5133478852770909,
+      "Eligible (screened)": 0.46867520456771394,
+      "All metro counties": 0.44621885334805833
+    },
+    "Children under 6, all parents working": {
+      "Top 10": 13739.6,
+      "Eligible (screened)": 19951.651612903224,
+      "All metro counties": 11537.889779559118
+    },
+    "Share of pop. under 6 needing care": {
+      "Top 10": 0.04932508932968701,
+      "Eligible (screened)": 0.04734542022272486,
+      "All metro counties": 0.04323196167563197
+    },
+    "Population": {
+      "Top 10": 301860.6,
+      "Eligible (screened)": 425553.3741935484,
+      "All metro counties": 255802.99899799598
+    }
+  },
+  "top10_county_specific_prices": [
+    {
+      "county_fips": "51013",
+      "county_name": "Arlington County, Virginia",
+      "state": "VA",
+      "premium": 200.73443469926082,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "27145",
+      "county_name": "Stearns County, Minnesota",
+      "state": "MN",
+      "premium": 169.72169182805948,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "51510",
+      "county_name": "Alexandria city, Virginia",
+      "state": "VA",
+      "premium": 143.14576049622286,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "06075",
+      "county_name": "San Francisco County, California",
+      "state": "CA",
+      "premium": 142.87513965757415,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "25021",
+      "county_name": "Norfolk County, Massachusetts",
+      "state": "MA",
+      "premium": 116.48745345300915,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "17113",
+      "county_name": "McLean County, Illinois",
+      "state": "IL",
+      "premium": 111.29478841386359,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "24027",
+      "county_name": "Howard County, Maryland",
+      "state": "MD",
+      "premium": 88.93285863330465,
+      "n_sharing_price": 1
+    },
+    {
+      "county_fips": "34005",
+      "county_name": "Burlington County, New Jersey",
+      "state": "NJ",
+      "premium": 88.25230655139086,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "17043",
+      "county_name": "DuPage County, Illinois",
+      "state": "IL",
+      "premium": 86.32237217826156,
+      "n_sharing_price": 0
+    },
+    {
+      "county_fips": "34015",
+      "county_name": "Gloucester County, New Jersey",
+      "state": "NJ",
+      "premium": 85.17683774636907,
+      "n_sharing_price": 0
+    }
+  ],
+  "top10_also_in_specific_list": {
+    "51013": true,
+    "27145": true,
+    "51510": true,
+    "06075": true,
+    "55139": false,
+    "27109": false,
+    "55063": false,
+    "25021": true,
+    "17113": true,
+    "55009": false
+  },
+  "price_granularity_by_state": {
+    "TX": {
+      "metro_counties": 82,
+      "distinct_prices": 25
+    },
+    "VA": {
+      "metro_counties": 80,
+      "distinct_prices": 64
+    },
+    "GA": {
+      "metro_counties": 74,
+      "distinct_prices": 4
+    },
+    "NC": {
+      "metro_counties": 46,
+      "distinct_prices": 40
+    },
+    "TN": {
+      "metro_counties": 42,
+      "distinct_prices": 2
+    },
+    "FL": {
+      "metro_counties": 41,
+      "distinct_prices": 24
+    },
+    "OH": {
+      "metro_counties": 38,
+      "distinct_prices": 3
+    },
+    "NY": {
+      "metro_counties": 38,
+      "distinct_prices": 5
+    },
+    "CA": {
+      "metro_counties": 36,
+      "distinct_prices": 36
+    },
+    "KY": {
+      "metro_counties": 35,
+      "distinct_prices": 17
+    },
+    "LA": {
+      "metro_counties": 34,
+      "distinct_prices": 9
+    },
+    "IL": {
+      "metro_counties": 33,
+      "distinct_prices": 28
+    },
+    "AL": {
+      "metro_counties": 28,
+      "distinct_prices": 15
+    },
+    "MN": {
+      "metro_counties": 27,
+      "distinct_prices": 7
+    },
+    "SC": {
+      "metro_counties": 26,
+      "distinct_prices": 5
+    },
+    "MI": {
+      "metro_counties": 26,
+      "distinct_prices": 26
+    },
+    "WI": {
+      "metro_counties": 24,
+      "distinct_prices": 4
+    },
+    "NJ": {
+      "metro_counties": 21,
+      "distinct_prices": 21
+    },
+    "IA": {
+      "metro_counties": 21,
+      "distinct_prices": 21
+    },
+    "WV": {
+      "metro_counties": 21,
+      "distinct_prices": 21
+    },
+    "WA": {
+      "metro_counties": 20,
+      "distinct_prices": 7
+    },
+    "KS": {
+      "metro_counties": 19,
+      "distinct_prices": 4
+    },
+    "OK": {
+      "metro_counties": 19,
+      "distinct_prices": 19
+    },
+    "MD": {
+      "metro_counties": 19,
+      "distinct_prices": 9
+    },
+    "CO": {
+      "metro_counties": 17,
+      "distinct_prices": 17
+    },
+    "MS": {
+      "metro_counties": 17,
+      "distinct_prices": 17
+    },
+    "ID": {
+      "metro_counties": 14,
+      "distinct_prices": 5
+    },
+    "OR": {
+      "metro_counties": 13,
+      "distinct_prices": 13
+    },
+    "NE": {
+      "metro_counties": 13,
+      "distinct_prices": 2
+    },
+    "MA": {
+      "metro_counties": 10,
+      "distinct_prices": 6
+    },
+    "UT": {
+      "metro_counties": 10,
+      "distinct_prices": 1
+    },
+    "SD": {
+      "metro_counties": 8,
+      "distinct_prices": 4
+    },
+    "AZ": {
+      "metro_counties": 7,
+      "distinct_prices": 6
+    },
+    "ND": {
+      "metro_counties": 6,
+      "distinct_prices": 6
+    },
+    "RI": {
+      "metro_counties": 5,
+      "distinct_prices": 5
+    },
+    "MT": {
+      "metro_counties": 5,
+      "distinct_prices": 5
+    },
+    "NV": {
+      "metro_counties": 4,
+      "distinct_prices": 4
+    },
+    "ME": {
+      "metro_counties": 4,
+      "distinct_prices": 4
+    },
+    "AK": {
+      "metro_counties": 3,
+      "distinct_prices": 3
+    },
+    "NH": {
+      "metro_counties": 3,
+      "distinct_prices": 3
+    },
+    "HI": {
+      "metro_counties": 3,
+      "distinct_prices": 3
+    },
+    "DE": {
+      "metro_counties": 3,
+      "distinct_prices": 2
+    },
+    "WY": {
+      "metro_counties": 2,
+      "distinct_prices": 2
+    },
+    "DC": {
+      "metro_counties": 1,
+      "distinct_prices": 1
+    }
+  }
+}

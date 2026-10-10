@@ -138,5 +138,17 @@ coincide. AI: confirmed the CI difference (1.9609 vs 1.96), switched `ps5_analys
 applied all wording fixes. The title stays "Question 3" because the document covers only PS5 Question 3 (Q1–Q2 are
 individual).
 
+## Session 4 — Claude Code, 2026-10-10 (pre-analysis and final project analysis)
+
+**Prompt 28:** "now we are doing this part of the homework, please run it. Don't do the slides yet. Just the content
+in a word doc" (Final Project Analysis – Where Should You Locate Your Childcare?). AI: ran the pre-analysis the
+ranking depends on (merge, 2022 table, scatter plots, price on wage / rent / both, with the omitted-variable
+decomposition 7.09 + 5.91 × 0.518 = 10.15), then built `final_analysis.py`. It estimates a yearly cost model,
+computes premiums, applies market-size and persistence screens, and ranks the 155 surviving counties. Checks:
+coefficient stability, out-of-time prediction (2019 premium predicts 2022, slope 0.88), log-model ranking (Spearman
+0.98), heteroskedasticity, and regional-price sharing (WI/MN publish regional rates), with a county-specific-price
+robustness list. The persistence screen was revised so that states missing from NDCP in a year (e.g. VA 2021) are
+not penalized. Wrote `Final_Project_Analysis.md` → `.docx`/`.pdf`.
+
 ## How to reproduce
 See `README.md` ("Reproducing Problem Set 4, Q2").

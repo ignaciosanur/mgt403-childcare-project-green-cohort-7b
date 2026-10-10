@@ -1,0 +1,11 @@
+county_fips,county_name,state,area_title,price,predicted,premium,premium_pct,premium_2019,avg_premium_2019_22,wage_childcare,median_gross_rent,kids_under6_allpar_lf,per_capita_income,female_college_share,rank_all,n_sharing_price
+27123,"Ramsey County, Minnesota",MN,"Minneapolis-St. Paul-Bloomington, MN-WI",309.00,209.02,99.98,47.83,105.58,99.54,31750.00,1214.00,30041.00,43203.00,0.46,15,7
+27003,"Anoka County, Minnesota",MN,"Minneapolis-St. Paul-Bloomington, MN-WI",309.00,217.41,91.59,42.12,95.76,91.11,31750.00,1356.00,18753.00,43106.00,0.34,17,7
+27053,"Hennepin County, Minnesota",MN,"Minneapolis-St. Paul-Bloomington, MN-WI",309.00,218.42,90.58,41.47,94.26,89.89,31750.00,1373.00,68842.00,55199.00,0.53,18,7
+39155,"Trumbull County, Ohio",OH,"Youngstown-Warren-Boardman, OH-PA",232.00,141.43,90.57,64.04,80.18,86.34,26070.00,752.00,7515.00,30294.00,0.21,19,21
+27019,"Carver County, Minnesota",MN,"Minneapolis-St. Paul-Bloomington, MN-WI",309.00,219.07,89.93,41.05,93.29,89.64,31750.00,1384.00,6106.00,55216.00,0.51,20,7
+24027,"Howard County, Maryland",MD,"Baltimore-Columbia-Towson, MD",335.71,246.78,88.93,36.04,72.55,81.75,31190.00,1920.00,16287.00,63441.00,0.63,22,1
+55079,"Milwaukee County, Wisconsin",WI,"Milwaukee-Waukesha-West Allis, WI",258.75,170.20,88.55,52.03,149.82,114.62,27960.00,1012.00,51295.00,35039.00,0.35,23,8
+27037,"Dakota County, Minnesota",MN,"Minneapolis-St. Paul-Bloomington, MN-WI",309.00,220.61,88.39,40.07,90.81,86.42,31750.00,1410.00,24192.00,48894.00,0.44,24,7
+55101,"Racine County, Wisconsin",WI,"Racine, WI",258.75,170.45,88.30,51.81,102.73,84.16,28220.00,985.00,9658.00,38288.00,0.31,25,8
+34005,"Burlington County, New Jersey",NJ,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",305.63,217.38,88.25,40.60,40.48,67.46,29920.00,1575.00,19547.00,51549.00,0.42,26,0

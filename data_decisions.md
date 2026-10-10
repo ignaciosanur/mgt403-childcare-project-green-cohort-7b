@@ -100,3 +100,13 @@ CPI-U, CUUR0000SA0, annual average (the mean of the 12 monthly values from the B
   (F = t² = 8.45, p = 0.0037); Welch gives t = 2.90, p = 0.0037. Variance checks are mixed (Bartlett p = 0.0002,
   Levene p = 0.12), so Welch is the safe default and ANOVA gives the same answer. Mann–Whitney (non-parametric)
   also rejects (p = 0.008). Paired test on the same counties: t = 8.58.
+
+## 10. Final project ranking (2026-10-10)
+- Analysis dataset: metro county-years with a preschool price and all predictors (998 counties in 2022).
+- Cost model per year: price ($/wk) = a + b·wage ($1,000/yr) + c·rent ($100/mo), real 2022 $. Premium = residual.
+- Screens: >= 5,000 children under 6 with all parents working; positive premium in every observed year 2019-2022,
+  observed in >= 3 of 4 years (missing state-years such as VA/CA/NC/PA 2021 not counted as failures; DC excluded,
+  2022 only). 155 counties pass; ranked by 2022 premium.
+- Regional prices flagged (number of other metro counties in the state with the identical 2022 price); robustness
+  ranking uses counties sharing their price with at most two others. 4 of the top 10 (WI x3, Olmsted MN) have
+  regional prices.
