@@ -185,6 +185,19 @@ bp = __import__("statsmodels.stats.diagnostic", fromlist=["het_breuschpagan"]).h
     fits["(c) wage + rent"].resid, fits["(c) wage + rent"].model.exog)
 # out-of-time check: does the 2019 premium predict the 2022 premium?
 oot = smf.ols("p22 ~ p19", pd.DataFrame({"p22": bal[2022], "p19": bal[2019]})).fit()
+# same check on every county observed in both 2019 and 2022 (not only the balanced panel)
+both_19_22 = prem[[2019, 2022]].dropna()
+oot_all = smf.ols("p22 ~ p19", pd.DataFrame({"p22": both_19_22[2022], "p19": both_19_22[2019]})).fit()
+# typical miss of the 2022 cost model (RMSE) and premiums measured in RMSE units
+rmse_2022 = float(np.sqrt(np.mean(fits["(c) wage + rent"].resid ** 2)))
+# signal vs. noise (balanced panel): lasting part = SD of each county's average premium; yearly noise = SD of
+# within-county deviations from that average
+county_mean = bal.mean(axis=1)
+signal_sd = float(county_mean.std())
+noise_sd = float(bal.sub(county_mean, axis=0).stack().std())
+# within-state robustness: add state fixed effects to the 2022 cost model and re-rank
+fe = smf.ols("price ~ wage_k + rent_100 + C(state)", x).fit()
+x["rank_within_state"] = pd.Series(fe.resid, index=x.index).rank(ascending=False)
 
 # ------------------------------------------------------------------ market characteristics
 x["log_pop"] = np.log(x.pop_total)
@@ -318,7 +331,10 @@ results = {
                     "shared_exact_price_within_state": shared_price, "spearman_level_vs_log": spearman_log,
                     "log_model_r2": log_m.rsquared, "top10_rank_in_log_model": top10_rank_log,
                     "breusch_pagan_p": float(bp[1]), "oot_slope_2019_to_2022": oot.params.p19,
-                    "oot_r2": oot.rsquared},
+                    "oot_r2": oot.rsquared, "oot_slope_all_2019_2022": oot_all.params.p19,
+                    "oot_n_all": int(len(both_19_22)), "oot_resid_sd_all": float(np.sqrt(oot_all.scale)),
+                    "rmse_2022": rmse_2022, "signal_sd": signal_sd, "noise_sd": noise_sd},
+    "top10_rank_within_state_model": x.loc[top10.index, "rank_within_state"].astype(int).to_dict(),
     "characteristics_regression": {"params": char.params.to_dict(), "t": char.tvalues.to_dict(), "r2": char.rsquared,
                                    "n": int(char.nobs)},
     "market_profile": profile.to_dict(orient="index"),

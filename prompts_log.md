@@ -158,5 +158,16 @@ confidence tiers (High: Arlington, Alexandria, San Francisco, Norfolk) to `final
 document, then built a 6-slide deck with `build_slides.js` (native PowerPoint charts, speaker notes, all numbers
 read from `results.json`), validated it and checked every slide rendered through PowerPoint.
 
+## Session 5 — Claude Code, 2026-10-12 (team review of the slides)
+
+**Prompts 30–31:** Gary (chat: "R² is kinda low… should there be a MSE data point?") sent a v2 deck replacing the R²
+stat with RMSE and adding signal-vs-noise, all-county slope, within-state and SOC 25-2011 points; Claudia flagged four
+wording fixes (all already in v2). AI: explained that R² = 0.61 is solid for county data and the unexplained part is
+the premium itself, and that RMSE ($ per week) is the interpretable form of MSE. It verified every new v2 number
+(RMSE $37.4; 2.7–5.4×; slopes 0.876 / 0.902 on 974; $37 → $22; within-state ranks 1, 2, 3, 8). It could not reproduce
+Gary's $33/$16 signal/noise pair and used the code-reproducible $31/$15 instead. It added these statistics to
+`final_analysis.py`, ported v2 into `build_slides.js` and updated the Word document (reliability table and the
+missing-factors item on SOC 25-2011).
+
 ## How to reproduce
 See `README.md` ("Reproducing Problem Set 4, Q2").

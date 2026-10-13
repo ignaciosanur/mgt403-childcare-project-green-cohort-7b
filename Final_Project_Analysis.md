@@ -163,11 +163,13 @@ more than costs alone would predict, which is the margin opportunity for a new c
 
 | Check | Result | What it means |
 |---|---|---|
-| Model fit | $R^2$ between 0.56 and 0.67 in every year | Costs explain most, not all, of price differences |
+| Model fit | $R^2$ between 0.56 and 0.67 in every year; 2022 RMSE \$37/week | Costs explain most, not all, of price differences; the unexplained part is the premium we rank on, and the top 10 premiums are 2.7–5.4× the RMSE |
 | Coefficient stability | wage slope 6.1–8.2, rent slope 5.7–8.2 (\$/week), 2015–2022 | The cost model is not a one-year artifact |
-| Out-of-time prediction | the 2019 premium predicts the 2022 premium with slope 0.88, $R^2 = 0.67$ | Premiums are a persistent market feature |
+| Out-of-time prediction | the 2019 premium predicts the 2022 premium with slope 0.88, $R^2 = 0.67$ (712 counties; 0.90 across all 974 counties observed in both years) | Premiums are a persistent market feature: knowing the 2019 premium cuts the 2022 price error from \$37 to \$22 |
 | Functional form | a log-log model ranks counties almost identically (Spearman 0.98); 8 of our top 10 are in its top 12 | Not sensitive to linear vs. percentage premiums |
 | Residual spread | larger residuals at higher predicted prices (Breusch–Pagan $p < 0.001$) | Coefficients stay valid; very high-price counties are less predictable |
+| Signal vs. noise | SD of each county's average premium \$31/week vs. SD of its year-to-year deviations \$15 | The lasting part of a premium is about twice the yearly noise |
+| Within-state model | adding state fixed effects to the cost model keeps the four high-confidence picks at ranks 1, 2, 3 and 8 | Their premiums are not just a state effect |
 | Regional prices | 43% of the variation in premiums is between states; 60% of counties share an exact price with another county in their state | Part of a premium can reflect a state's regional survey rate rather than the county itself |
 | Price trends | NDCP fills years between surveys with straight lines (77% of metro counties have exactly linear 2019–2022 prices); 2018–2022 growth median +10.6%, 99th percentile +55.5% | Stearns MN (+77%) and McLean IL (+59%) are extreme; their 2022 premium may partly be an extrapolated trend |
 
@@ -252,9 +254,10 @@ earlier vs. 2022) is the more honest test, and premiums still persist there.
 1. **Competition and capacity.** We see prices, not supply. A high premium might mean unmet demand (good) or a
    regulated, capacity-constrained market that is hard to enter (licensing waits, staff shortages). Next step:
    number of licensed centers, slots per child, and waitlists by county.
-2. **Regulation and staffing ratios.** States with strict staff-to-child ratios or credential rules (Minnesota is
-   among the strictest) raise labor cost *per child* beyond the wage level we measure. Part of a Minnesota premium
-   may be cost, not margin.
+2. **Labor cost measurement, regulation and staffing ratios.** The OEWS wage we use covers childcare workers (SOC
+   39-9011) and excludes preschool teachers (SOC 25-2011), who staff many center classrooms and earn more. States with
+   strict staff-to-child ratios or credential rules (Minnesota is among the strictest) also raise labor cost *per
+   child* beyond the wage level we measure, so part of a Minnesota premium may be cost, not margin.
 3. **Commercial real estate.** We use residential median gross rent as a proxy; center costs depend on commercial
    lease rates, zoning and outdoor-space requirements.
 4. **Missing markets.** The NDCP has no usable 2022 prices for Pennsylvania, Indiana, Missouri, New Mexico, Arkansas

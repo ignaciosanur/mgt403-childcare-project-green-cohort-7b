@@ -111,7 +111,9 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
 // ================================================================ 2. (a) top 10
 {
   const s = pres.addSlide({ masterName: "CONTENT" });
-  title(s, "Ten counties charge $100–$200 a week above their cost prediction", false);
+  const rmse = rel.rmse_2022;
+  const pmin = Math.min(...top10.map((r) => r.premium)), pmax = Math.max(...top10.map((r) => r.premium));
+  title(s, `Ten counties price $${fmt(pmin)}–$${fmt(pmax)} a week above cost: ${fmt(pmin / rmse, 1)}–${fmt(pmax / rmse, 1)}× the model's typical error`, false);
   const rows = [...top10].reverse();     // bar charts draw the first category at the bottom
   const labels = rows.map((r) => `${r.rank}. ${short(r.county_name)}`);
   s.addChart(pres.charts.BAR, [
@@ -158,9 +160,9 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   const s = pres.addSlide({ masterName: "CONTENT" });
   title(s, "We rank counties by how far price exceeds what costs predict", false);
   const steps = [
-    ["Cost model", `Price = a + ${fmt(reg.params.wage_k, 2)} × wage ($1k) + ${fmt(reg.params.rent_100, 2)} × rent ($100)`, `R² = ${fmt(reg.r2, 2)}, re-estimated every year`],
+    ["Cost model", `Price = a + ${fmt(reg.params.wage_k, 2)} × wage ($1k) + ${fmt(reg.params.rent_100, 2)} × rent ($100)`, `R² = ${fmt(reg.r2, 2)}, RMSE $${fmt(rel.rmse_2022)}/week; refit every year`],
     ["Premium", "Actual price − predicted price", "$/week, 2022 dollars"],
-    ["Screens", "≥ 5,000 children under 6 with working parents; premium > 0 every year 2019–22", `${fmt(sc.counties_2022)} → ${sc.eligible} counties`],
+    ["Screens", "≥ 5,000 kids under 6, parents working; premium > 0 in every observed year 2019–22 (≥ 3 of 4)", `${fmt(sc.counties_2022)} → ${sc.eligible} counties`],
     ["Rank + flag", "Order by 2022 premium; flag regional prices and extreme trends", "Top 10 + confidence tier"],
   ];
   steps.forEach(([h, b, f], i) => {
@@ -177,10 +179,10 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   s.addText("How reliable is it?", { x: 0.5, y: 3.3, w: 9, h: 0.3, fontFace: HEAD, fontSize: 14, bold: true,
              color: COL.teal, margin: 0, isTextBox: true });
   const checks = [
-    [fmt(rel.oot_slope_2019_to_2022, 2), "2019 premium predicts 2022 premium (slope)"],
+    [fmt(rel.oot_slope_2019_to_2022, 2), `2019 premium predicts 2022 premium (slope, ${rel.balanced_n} counties)`],
     [fmt(rel.spearman_level_vs_log, 2), "rank agreement with a log-price model"],
-    [`${fmt(R.yearly_cost_model["2015"].r2, 2)}–${fmt(R.yearly_cost_model["2021"].r2, 2)}`, "cost-model R² in every year 2015–22"],
-    [`${Math.round(rel.state_share_of_premium_variance * 100)}%`, "of premium variation is between states (regional survey prices)"],
+    [`$${fmt(rel.rmse_2022)}`, `typical miss (RMSE). What costs don't explain is the premium we rank on; top 10 clear it ${fmt(Math.min(...top10.map((r) => r.premium)) / rel.rmse_2022, 1)}–${fmt(Math.max(...top10.map((r) => r.premium)) / rel.rmse_2022, 1)}×`],
+    [`${Math.round(rel.state_share_of_premium_variance * 100)}%`, `of premium variation is between states; a within-state model keeps all 4 high-confidence picks in its top ${Math.max(...["51013", "51510", "06075", "25021"].map((f) => R.top10_rank_within_state_model[f]))}`],
   ];
   checks.forEach(([big, small], i) => {
     const x = 0.5 + i * 2.28;
@@ -219,7 +221,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   });
   // profile comparison
   card(s, 5.0, 1.0, 4.5, 4.1);
-  s.addText("Top 10 vs. all metro counties (2022)", { x: 5.2, y: 1.1, w: 4.1, h: 0.3, fontFace: HEAD, fontSize: 13,
+  s.addText(`Top 10 vs. all ${fmt(R.screens.counties_2022)} metro counties (2022)`, { x: 5.2, y: 1.1, w: 4.1, h: 0.3, fontFace: HEAD, fontSize: 13,
              bold: true, color: COL.teal, margin: 0, isTextBox: true });
   const P = (k) => [prof[k]["Top 10"], prof[k]["All metro counties"]];
   const stats = [
@@ -231,7 +233,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   ];
   s.addText("Top 10", { x: 7.45, y: 1.48, w: 0.9, h: 0.25, fontFace: BODY, fontSize: 10, bold: true, color: COL.coral,
              align: "right", margin: 0, isTextBox: true });
-  s.addText("All metro", { x: 8.4, y: 1.48, w: 0.95, h: 0.25, fontFace: BODY, fontSize: 10, bold: true, color: COL.ink2,
+  s.addText(`All ${fmt(R.screens.counties_2022)} metro`, { x: 8.4, y: 1.48, w: 0.95, h: 0.25, fontFace: BODY, fontSize: 10, bold: true, color: COL.ink2,
              align: "right", margin: 0, isTextBox: true });
   stats.forEach(([lab, [a, b]], i) => {
     const y = 1.82 + i * 0.5;
@@ -253,7 +255,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
 // ================================================================ 5. (d) stability
 {
   const s = pres.addSlide({ masterName: "CONTENT" });
-  title(s, "Premiums persist: high-premium markets stay on top", false);
+  title(s, "Premiums persist, so they are signal, not noise", false);
   const yrs = ["2015", "2016", "2017", "2018", "2019", "2020", "2021"];
   s.addChart(pres.charts.LINE, [
     { name: "Correlation of each year's premium with 2022", labels: yrs, values: yrs.map((y) => +rel.corr_with_2022[y].toFixed(2)) },
@@ -271,15 +273,16 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   card(s, 6.45, 1.05, 3.05, 1.6);
   s.addText(fmt(rel.oot_slope_2019_to_2022, 2), { x: 6.6, y: 1.12, w: 2.8, h: 0.65, fontFace: HEAD, fontSize: 36, bold: true,
              color: COL.coral, margin: 0, isTextBox: true });
-  s.addText("A $1 premium in 2019 still meant about 88¢ in 2022, through the pandemic", { x: 6.6, y: 1.8, w: 2.75, h: 0.8,
+  s.addText(`A $1 premium in 2019 still meant about ${Math.round(rel.oot_slope_2019_to_2022 * 100)}¢ in 2022 (${rel.balanced_n} counties; ${fmt(rel.oot_slope_all_2019_2022, 2)} across all ${fmt(rel.oot_n_all)})`, { x: 6.6, y: 1.8, w: 2.75, h: 0.8,
              fontFace: BODY, fontSize: 12, color: COL.ink, valign: "top", margin: 0, isTextBox: true });
-  card(s, 6.45, 2.8, 3.05, 1.0);
-  s.addText([{ text: "All 10 picks ", options: { bold: true } },
-             { text: "had a positive premium in every observed year since 2019; 8 were above $75/week already in 2019.", options: {} }],
-            { x: 6.6, y: 2.88, w: 2.8, h: 0.85, fontFace: BODY, fontSize: 12, color: COL.ink, valign: "top", margin: 0, isTextBox: true });
+  card(s, 6.45, 2.8, 3.05, 1.3);
+  s.addText([{ text: "Signal, not noise: ", options: { bold: true } },
+             { text: `the lasting part of each premium (SD $${fmt(rel.signal_sd)}/wk) is twice the yearly noise ($${fmt(rel.noise_sd)}). ` +
+                     `Knowing the 2019 premium cuts the 2022 price error from $${fmt(rel.rmse_2022)} to $${fmt(rel.oot_resid_sd_all)}.`, options: {} }],
+            { x: 6.6, y: 2.88, w: 2.8, h: 1.15, fontFace: BODY, fontSize: 11.5, color: COL.ink, valign: "top", margin: 0, isTextBox: true });
   s.addText("Caveat: states survey prices every 2–3 years and NDCP interpolates in between, so adjacent years look more " +
-            "alike than they are. The 3+ year comparisons are the honest test, and they hold.", { x: 6.45, y: 3.95, w: 3.05,
-            h: 1.15, fontFace: BODY, fontSize: 10.5, italic: true, color: COL.ink2, valign: "top", margin: 0, isTextBox: true });
+            "alike than they are. The 3+ year comparisons are the honest test, and they hold.", { x: 6.45, y: 4.22, w: 3.05,
+            h: 0.95, fontFace: BODY, fontSize: 10, italic: true, color: COL.ink2, valign: "top", margin: 0, isTextBox: true });
   s.addNotes(
     "We re-estimated the cost model every year and tracked each county's premium. Premiums fade slowly: correlation with " +
     "2022 is 0.94 one year back, 0.82 three years back, 0.58 seven years back. Of today's top-decile counties, 69% were " +
@@ -293,7 +296,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   title(s, "Before committing capital, close these gaps", true);
   const miss = [
     ["Competition and capacity", "Licensed slots, waitlists, incumbents (incl. existing Bright Horizons sites)"],
-    ["Regulation", "Staff-to-child ratios raise cost per child beyond wages (MN is among the strictest)"],
+    ["Labor cost", "OEWS childcare workers exclude preschool teachers (SOC 25‑2011); ratio rules raise cost per child (MN strictest)"],
     ["Real estate", "Commercial lease rates and zoning, not residential rent"],
     ["Missing markets", "No 2022 NDCP prices for PA, IN, MO, NM, AR, PR (Philadelphia, Pittsburgh, St. Louis, Indianapolis)"],
     ["Price quality", "Posted survey medians, some regional or interpolated; not realized prices after discounts"],
