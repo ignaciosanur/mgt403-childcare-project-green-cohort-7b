@@ -75,6 +75,89 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
                              bold: true, color: COL.white, margin: 0, isTextBox: true });
 }
 
+
+// ---------------------------------------------------------------- speaker notes (timed script, ~9.5 min total)
+// Each note: time budget, what to say, the numbers to land, the hand-off, and likely questions.
+const hcNames = hc.slice(0, 4).map((r) => short(r.county_name)).join(", ");
+const NOTES = [
+  () => [
+    "SLIDE 1 | 1:15 min | Speaker A",
+    "",
+    "SAY: We were asked where a for-profit chain should open center-based preschools. We call a market attractive when " +
+    "families pay much more than the two main costs, childcare wages and rent, would predict.",
+    `Our answer: start with four counties, ${hcNames}. In each, the median preschool price is $${fmt(hc[3].premium)} to ` +
+    `$${fmt(hc[0].premium)} a week above what local labor and rent costs predict. Six more counties look promising but need a local price check.`,
+    `We looked at all ${fmt(sc.counties_2022)} metro counties with 2022 data; ${sc.eligible} passed our market-size and persistence screens.`,
+    "",
+    "HAND-OFF: Here is the full top 10.",
+  ].join("\n"),
+  () => [
+    "SLIDE 2 | 2:00 min | Speaker A",
+    "",
+    "SAY: Each bar is a county's premium: its actual 2022 preschool price minus the price our cost model predicts.",
+    `Example: Arlington charges about $${fmt(top10[0].price)} a week where wages and rent predict $${fmt(top10[0].predicted)}, a premium of $${fmt(top10[0].premium)}.`,
+    `Our model's typical miss is $${fmt(rel.rmse_2022)} a week, so these premiums are ${fmt(Math.min(...top10.map((r) => r.premium)) / rel.rmse_2022, 1)} to ` +
+    `${fmt(Math.max(...top10.map((r) => r.premium)) / rel.rmse_2022, 1)} times bigger than normal noise.`,
+    "Coral bars pass every data check. Amber bars are real in the data but rest on weaker price data: four use one regional survey " +
+    "price shared by many counties, and two show price jumps faster than 99% of counties (+77% and +59%, 2018-22).",
+    "If the amber six fail a local check, the alternates on the right pass every check.",
+    "",
+    "HAND-OFF: How did we get these numbers? [Speaker B]",
+    "",
+    "LIKELY Q: Why not just pick the most expensive counties? A: Expensive places also cost more to run; we want price HIGH RELATIVE TO COST.",
+  ].join("\n"),
+  () => [
+    "SLIDE 3 | 2:00 min | Speaker B",
+    "",
+    "SAY: Four steps. (1) Across metro counties we regress the preschool price on childcare-worker wages and rent. Each $1,000 of " +
+    `annual wages adds $${fmt(reg.params.wage_k, 2)} a week; each $100 of monthly rent adds $${fmt(reg.params.rent_100, 2)}. ` +
+    `(2) The premium is the gap between actual and predicted price. (3) We keep markets with at least 5,000 young children whose ` +
+    "parents all work, and premiums that were positive in every year we observe since 2019. (4) We rank and flag weaker price data.",
+    `RELIABILITY (bottom row): the 2019 premium predicts the 2022 premium (slope ${fmt(rel.oot_slope_2019_to_2022, 2)}); ` +
+    `a log-price model gives the same ranking (${fmt(rel.spearman_level_vs_log, 2)}); the typical miss is $${fmt(rel.rmse_2022)}. ` +
+    `Caveat in amber: ${Math.round(rel.state_share_of_premium_variance * 100)}% of premium differences are between states, partly ` +
+    "because some states publish regional prices. But even comparing counties only within their own state, our four high-confidence picks stay in the top 8.",
+    "",
+    "HAND-OFF: What do these markets look like? [Speaker C]",
+    "",
+    `LIKELY Q: R² of ${fmt(reg.r2, 2)} is low? A: The unexplained part IS the premium we rank on; a perfect fit would leave nothing to find.`,
+  ].join("\n"),
+  () => [
+    "SLIDE 4 | 1:30 min | Speaker C",
+    "",
+    "SAY: We pick locations on four measured characteristics: the premium, the two costs that define it, and demand depth.",
+    `Our top 10 are affluent and dual-earner: per-capita income about $${fmt(prof["Per-capita income, $"]["Top 10"] / 1000)}k vs ` +
+    `$${fmt(prof["Per-capita income, $"]["All metro counties"] / 1000)}k, and ${fmt(prof["Women 25+ with bachelor's+"]["Top 10"] * 100)}% of women ` +
+    `hold a bachelor's degree vs ${fmt(prof["Women 25+ with bachelor's+"]["All metro counties"] * 100)}%.`,
+    `Important nuance: demographics alone explain only ${Math.round(char.r2 * 100)}% of premiums. So we rank on the measured premium, ` +
+    "and use demographics only as a sanity check.",
+    "",
+    "HAND-OFF: Will these premiums last?",
+  ].join("\n"),
+  () => [
+    "SLIDE 5 | 1:30 min | Speaker C",
+    "",
+    `SAY: Yes. We rebuilt the cost model every year. A dollar of premium in 2019 was still worth about ${Math.round(rel.oot_slope_2019_to_2022 * 100)} cents in 2022, ` +
+    "right through the pandemic.",
+    `The lines show the link fading slowly: of today's top-10% counties, ${Math.round(rel.persistence_top_decile["2019"] * 100)}% were already top 10% in 2019.`,
+    `The lasting part of a premium (about $${fmt(rel.signal_sd)} a week) is twice the year-to-year noise ($${fmt(rel.noise_sd)}). Premiums are a market feature, not luck.`,
+    "Caveat: states survey prices every 2-3 years and the database fills in between, so neighbouring years look more alike than they are; " +
+    "we therefore lean on the 2019 vs 2022 comparison.",
+    "",
+    "HAND-OFF: What would we still check before investing? [Speaker D]",
+  ].join("\n"),
+  () => [
+    "SLIDE 6 | 1:15 min | Speaker D (then lead Q&A)",
+    "",
+    "SAY: Our model sees prices and two costs, not supply. Five gaps matter: competition and licensed capacity; labor cost " +
+    "(our wage data cover childcare workers, not preschool teachers, and ratio rules differ by state); commercial rents rather " +
+    "than residential; six states with no 2022 prices, including Philadelphia and St. Louis; and survey-based posted prices.",
+    `NEXT STEPS: site and competitor scan in ${hcNames}; collect local prices for the six amber counties; add capacity and commercial rents; rerun when newer data arrive.`,
+    "",
+    "CLOSE: Four counties are ready for diligence today; six more after a local price check. Data-handling details are in our appendix and GitHub repository.",
+  ].join("\n"),
+];
+
 // ================================================================ 1. title + answer
 {
   const s = pres.addSlide({ masterName: "DARK" });
@@ -100,12 +183,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
     { text: "Ignacio Sanchez Urdaneta · Beck Jamilov · Claudia Palacios Surco · Gary Chen", options: {} },
   ], { x: 0.6, y: 4.4, w: 8.8, h: 0.7, fontFace: BODY, fontSize: 12, color: "CFE3E4", margin: 0, paraSpaceAfter: 6,
        isTextBox: true });
-  s.addNotes(
-    "We were asked where a for-profit chain should open center-based preschools. Our definition of attractive: " +
-    "prices high relative to the two main costs, childcare wages and rent. Our answer: four counties pass every check " +
-    "(Arlington, Alexandria, San Francisco, Norfolk); six more look promising but need local price validation. " +
-    "We analyzed all metro counties with 2022 data; the slides walk through the list, how we got it, the market profile, " +
-    "whether premiums last, and what the data miss.");
+  s.addNotes(NOTES[0]());
 }
 
 // ================================================================ 2. (a) top 10
@@ -113,7 +191,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   const s = pres.addSlide({ masterName: "CONTENT" });
   const rmse = rel.rmse_2022;
   const pmin = Math.min(...top10.map((r) => r.premium)), pmax = Math.max(...top10.map((r) => r.premium));
-  title(s, `Ten counties price $${fmt(pmin)}–$${fmt(pmax)} a week above cost: ${fmt(pmin / rmse, 1)}–${fmt(pmax / rmse, 1)}× the model's typical error`, false);
+  title(s, `Top 10 charge $${fmt(pmin)}–$${fmt(pmax)}/wk above cost: ${fmt(pmin / rmse, 1)}–${fmt(pmax / rmse, 1)}× typical error`, false);
   const rows = [...top10].reverse();     // bar charts draw the first category at the bottom
   const labels = rows.map((r) => `${r.rank}. ${short(r.county_name)}`);
   s.addChart(pres.charts.BAR, [
@@ -147,12 +225,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
                                             options: { bullet: { indent: 14 }, breakLine: i < arr.length - 1 } })),
   ], { x: 6.4, y: 3.25, w: 2.95, h: 1.85, fontFace: BODY, fontSize: 12, color: COL.ink, valign: "top", margin: 0,
        paraSpaceAfter: 4, isTextBox: true });
-  s.addNotes(
-    "Premium = actual 2022 median preschool price minus the price our cost model predicts from childcare wages and rent. " +
-    "Arlington charges about $496 a week where costs predict $296. Coral bars pass every data check. Amber bars are real " +
-    "premiums in the data but rest on weaker price data: four report a regional survey rate, two have price trends far " +
-    "outside the norm that the NDCP interpolates between surveys. If those six fail local validation, the alternates on the " +
-    "right (Howard MD, Burlington NJ, DuPage IL, Gloucester NJ) pass every check.");
+  s.addNotes(NOTES[1]());
 }
 
 // ================================================================ 3. (b) methodology and reliability
@@ -191,13 +264,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
     s.addText(small, { x, y: 4.3, w: 2.05, h: 0.7, fontFace: BODY, fontSize: 11, color: COL.ink2, valign: "top",
                        margin: 0, isTextBox: true });
   });
-  s.addNotes(
-    "Step 1: across metro counties we regress the median preschool price on childcare-worker wages and rent; both matter " +
-    "separately and together explain about 60% of price differences. Step 2: the residual is the premium. Step 3: we keep " +
-    "markets with at least 5,000 young children whose parents all work, and premiums that were positive in every observed " +
-    "year since 2019. Step 4: rank, then flag counties whose price data are weaker. Reliability: premiums predict themselves " +
-    "three years ahead, a log model gives the same ranking, and the model fits every year. The caveat in amber: a big share " +
-    "of premiums is state-level, partly because several states publish regional survey prices.");
+  s.addNotes(NOTES[2]());
 }
 
 // ================================================================ 4. (c) market characteristics
@@ -244,12 +311,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   s.addText(`But demographics alone explain only ${Math.round(char.r2 * 100)}% of premiums, so we rank on the measured premium, ` +
             "not on demographics.", { x: 5.2, y: 4.38, w: 4.15, h: 0.6, fontFace: BODY, fontSize: 11, italic: true,
             color: COL.teal2, valign: "top", margin: 0, isTextBox: true });
-  s.addNotes(
-    "We pick locations on four measured characteristics: the premium, the two cost drivers that define it, and demand " +
-    "depth. The recommended counties share a profile: about 50% higher income, far more college-educated women, more " +
-    "women working full-time. Income, female college share and the share of young children needing care are each " +
-    "significantly related to premiums, but together explain only 7% of them, so most of the premium is local market " +
-    "conditions our data do not see directly. That is why we rank on the premium itself.");
+  s.addNotes(NOTES[3]());
 }
 
 // ================================================================ 5. (d) stability
@@ -283,11 +345,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   s.addText("Caveat: states survey prices every 2–3 years and NDCP interpolates in between, so adjacent years look more " +
             "alike than they are. The 3+ year comparisons are the honest test, and they hold.", { x: 6.45, y: 4.22, w: 3.05,
             h: 0.95, fontFace: BODY, fontSize: 10, italic: true, color: COL.ink2, valign: "top", margin: 0, isTextBox: true });
-  s.addNotes(
-    "We re-estimated the cost model every year and tracked each county's premium. Premiums fade slowly: correlation with " +
-    "2022 is 0.94 one year back, 0.82 three years back, 0.58 seven years back. Of today's top-decile counties, 69% were " +
-    "already top decile in 2019. A regression of 2022 on 2019 premiums has slope 0.88. Caveat: survey cycles and NDCP's " +
-    "interpolation make adjacent years artificially similar, so we lean on the 2019 vs 2022 comparison.");
+  s.addNotes(NOTES[4]());
 }
 
 // ================================================================ 6. (e) missing factors + next steps
@@ -320,12 +378,7 @@ function numCircle(slide, x, y, n, fill = COL.teal2) {
   s.addText(steps.map((t, i) => ({ text: t, options: { bullet: { type: "number", indent: 18 }, breakLine: i < steps.length - 1 } })),
             { x: 6.4, y: 1.85, w: 2.9, h: 3.1, fontFace: BODY, fontSize: 12, color: COL.white, valign: "top", margin: 0,
               paraSpaceAfter: 8, isTextBox: true });
-  s.addNotes(
-    "Our model sees prices and two costs, not supply. A high premium could signal unmet demand or a market that is hard " +
-    "to enter. State ratio rules raise labor cost per child; residential rent is only a proxy for commercial leases; six " +
-    "states have no usable 2022 prices; and NDCP prices are posted survey medians. Next steps: diligence on the four " +
-    "high-confidence counties, local price checks for the six to verify, and adding capacity and commercial rents. " +
-    "Data handling decisions are documented in the appendix document and the GitHub repository.");
+  s.addNotes(NOTES[5]());
 }
 
 (async () => {

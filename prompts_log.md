@@ -169,5 +169,11 @@ Gary's $33/$16 signal/noise pair and used the code-reproducible $31/$15 instead.
 `final_analysis.py`, ported v2 into `build_slides.js` and updated the Word document (reliability table and the
 missing-factors item on SOC 25-2011).
 
+**Prompt 32:** "give me the final PPT then, please. Also make it easy to present for a human while abiding to the
+limitations that we have for the project". AI: kept 6 slides and the 10-minute limit; rewrote the speaker notes as a timed
+script (9:30 total; say / numbers / hand-off / likely question per slide, numbers read from `results.json`); shortened
+the slide 2 title to one line; added `make_presenter_guide.py`, which builds a printable Presenter Guide (run of show,
+script taken from the deck's notes, Q&A cheat sheet, rehearsal checklist).
+
 ## How to reproduce
 See `README.md` ("Reproducing Problem Set 4, Q2").
